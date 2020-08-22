@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 3 7
 Title ""
 Date "2020-08-14"
 Rev ""
@@ -81,154 +81,6 @@ Wire Wire Line
 	1150 3900 1150 2150
 Wire Wire Line
 	1150 2150 5950 2150
-$Comp
-L Amplifier_Operational:LMC6482 U?
-U 1 1 5F36BD59
-P 7750 2650
-F 0 "U?" H 7750 3017 50  0000 C CNN
-F 1 "LMC6482" H 7750 2926 50  0000 C CNN
-F 2 "" H 7750 2650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 7750 2650 50  0001 C CNN
-	1    7750 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LMC6482 U?
-U 2 1 5F36BDC6
-P 8850 2550
-F 0 "U?" H 8850 2917 50  0000 C CNN
-F 1 "LMC6482" H 8850 2826 50  0000 C CNN
-F 2 "" H 8850 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 8850 2550 50  0001 C CNN
-	2    8850 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LMC6482 U?
-U 3 1 5F36BE38
-P 9850 2700
-F 0 "U?" H 9808 2746 50  0000 L CNN
-F 1 "LMC6482" H 9808 2655 50  0000 L CNN
-F 2 "" H 9850 2700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 9850 2700 50  0001 C CNN
-	3    9850 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F36BEB0
-P 7750 2950
-F 0 "R?" V 7850 2950 50  0000 C CNN
-F 1 "47k" V 7650 2950 50  0000 C CNN
-F 2 "" V 7680 2950 50  0001 C CNN
-F 3 "~" H 7750 2950 50  0001 C CNN
-	1    7750 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F36C004
-P 7450 2550
-F 0 "#PWR?" H 7450 2390 50  0001 C CNN
-F 1 "GND" V 7450 2473 39  0000 R CNN
-F 2 "" H 7450 2550 50  0001 C CNN
-F 3 "" H 7450 2550 50  0001 C CNN
-	1    7450 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F36C2B1
-P 7150 2950
-F 0 "R?" V 7250 2950 50  0000 C CNN
-F 1 "10M" V 7050 2950 50  0000 C CNN
-F 2 "" V 7080 2950 50  0001 C CNN
-F 3 "~" H 7150 2950 50  0001 C CNN
-	1    7150 2950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7450 2750 7450 2950
-Wire Wire Line
-	7450 2950 7300 2950
-Wire Wire Line
-	7450 2950 7600 2950
-Connection ~ 7450 2950
-$Comp
-L Device:R R?
-U 1 1 5F36C4CE
-P 8300 2950
-F 0 "R?" V 8400 2950 50  0000 C CNN
-F 1 "47k" V 8200 2950 50  0000 C CNN
-F 2 "" V 8230 2950 50  0001 C CNN
-F 3 "~" H 8300 2950 50  0001 C CNN
-	1    8300 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F36C516
-P 8800 2950
-F 0 "R?" V 8900 2950 50  0000 C CNN
-F 1 "47k" V 8700 2950 50  0000 C CNN
-F 2 "" V 8730 2950 50  0001 C CNN
-F 3 "~" H 8800 2950 50  0001 C CNN
-	1    8800 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F36C57F
-P 8550 2450
-F 0 "#PWR?" H 8550 2290 50  0001 C CNN
-F 1 "GND" V 8550 2373 39  0000 R CNN
-F 2 "" H 8550 2450 50  0001 C CNN
-F 3 "" H 8550 2450 50  0001 C CNN
-	1    8550 2450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8150 2950 8050 2950
-Connection ~ 8050 2950
-Wire Wire Line
-	8450 2950 8550 2950
-Wire Wire Line
-	8550 2650 8550 2950
-Connection ~ 8550 2950
-Wire Wire Line
-	8550 2950 8650 2950
-Wire Wire Line
-	9150 2550 9150 2950
-Wire Wire Line
-	9150 2950 8950 2950
-$Comp
-L power:+5V #PWR?
-U 1 1 5F36C931
-P 9750 2400
-F 0 "#PWR?" H 9750 2250 50  0001 C CNN
-F 1 "+5V" H 9765 2573 50  0000 C CNN
-F 2 "" H 9750 2400 50  0001 C CNN
-F 3 "" H 9750 2400 50  0001 C CNN
-	1    9750 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-5V #PWR?
-U 1 1 5F36C989
-P 9750 3000
-F 0 "#PWR?" H 9750 3100 50  0001 C CNN
-F 1 "-5V" H 9765 3173 50  0000 C CNN
-F 2 "" H 9750 3000 50  0001 C CNN
-F 3 "" H 9750 3000 50  0001 C CNN
-	1    9750 3000
-	-1   0    0    1   
-$EndComp
-Text Notes 7050 3200 0    50   ~ 0
-I_drawn = U_meas/10M
-Wire Wire Line
-	8050 2650 8050 2950
-Wire Wire Line
-	7900 2950 8050 2950
 $Comp
 L Device:R R?
 U 1 1 5F36DBAE
@@ -333,11 +185,6 @@ Wire Wire Line
 	5900 4900 6100 4900
 Text Label 5900 4900 0    50   ~ 0
 I_adc
-Wire Wire Line
-	9150 2550 9450 2550
-Connection ~ 9150 2550
-Text Label 9200 2550 0    50   ~ 0
-U_adc
 Wire Wire Line
 	5200 4700 5050 4700
 Wire Wire Line

@@ -1,0 +1,341 @@
+EESchema Schematic File Version 4
+LIBS:uScope-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F464B33
+P 3900 3300
+F 0 "Q?" H 4105 3346 50  0000 L CNN
+F 1 "NMOS" H 4105 3255 50  0000 L CNN
+F 2 "" H 4100 3400 50  0001 C CNN
+F 3 "~" H 3900 3300 50  0001 C CNN
+	1    3900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 5F464DCC
+P 3550 3500
+F 0 "D?" V 3596 3421 50  0000 R CNN
+F 1 "15 V" V 3505 3421 50  0000 R CNN
+F 2 "" H 3550 3500 50  0001 C CNN
+F 3 "~" H 3550 3500 50  0001 C CNN
+	1    3550 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 3350 3550 3300
+Wire Wire Line
+	3550 3300 3700 3300
+Wire Wire Line
+	4000 3500 4000 3700
+Wire Wire Line
+	4000 3700 3550 3700
+Wire Wire Line
+	3550 3700 3550 3650
+Text HLabel 2600 2350 0    50   Input ~ 0
+HV_input
+Wire Wire Line
+	2600 2350 3550 2350
+Wire Wire Line
+	4000 2350 4000 2900
+$Comp
+L Device:D_TVS D?
+U 1 1 5F4666BF
+P 4500 3500
+F 0 "D?" V 4546 3421 50  0000 R CNN
+F 1 "450 V" V 4455 3421 50  0000 R CNN
+F 2 "" H 4500 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 5F466775
+P 4500 3100
+F 0 "D?" V 4546 3021 50  0000 R CNN
+F 1 "450 V" V 4455 3021 50  0000 R CNN
+F 2 "" H 4500 3100 50  0001 C CNN
+F 3 "~" H 4500 3100 50  0001 C CNN
+	1    4500 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3650 4500 3700
+Wire Wire Line
+	4500 3700 4000 3700
+Connection ~ 4000 3700
+Wire Wire Line
+	4500 3350 4500 3250
+Wire Wire Line
+	4500 2950 4500 2900
+Wire Wire Line
+	4500 2900 4000 2900
+Connection ~ 4000 2900
+Wire Wire Line
+	4000 2900 4000 3100
+$Comp
+L Device:R R?
+U 1 1 5F46852F
+P 3550 3050
+AR Path="/5F40DCB9/5F46852F" Ref="R?"  Part="1" 
+AR Path="/5F463F4C/5F46852F" Ref="R?"  Part="1" 
+F 0 "R?" H 3500 3100 50  0000 R CNN
+F 1 "4k3" H 3500 3000 50  0000 R CNN
+F 2 "" V 3480 3050 50  0001 C CNN
+F 3 "~" H 3550 3050 50  0001 C CNN
+	1    3550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F46860E
+P 3550 2650
+AR Path="/5F40DCB9/5F46860E" Ref="R?"  Part="1" 
+AR Path="/5F463F4C/5F46860E" Ref="R?"  Part="1" 
+F 0 "R?" H 3500 2700 50  0000 R CNN
+F 1 "4k3" H 3500 2600 50  0000 R CNN
+F 2 "" V 3480 2650 50  0001 C CNN
+F 3 "~" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3200 3550 3300
+Connection ~ 3550 3300
+Connection ~ 3550 2350
+Wire Wire Line
+	3550 2350 4000 2350
+Wire Wire Line
+	3550 2500 3550 2350
+Wire Wire Line
+	3550 2800 3550 2850
+$Comp
+L Device:C_Small C?
+U 1 1 5F469A6E
+P 3200 2850
+AR Path="/5F40DCB9/5F469A6E" Ref="C?"  Part="1" 
+AR Path="/5F463F4C/5F469A6E" Ref="C?"  Part="1" 
+F 0 "C?" V 3150 2800 50  0000 R CNN
+F 1 "100n" V 3150 2900 50  0000 L CNN
+F 2 "" H 3200 2850 50  0001 C CNN
+F 3 "~" H 3200 2850 50  0001 C CNN
+	1    3200 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2850 3550 2850
+Connection ~ 3550 2850
+Wire Wire Line
+	3550 2850 3550 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5F46ABD8
+P 3050 2850
+AR Path="/5F40DCB9/5F46ABD8" Ref="#PWR?"  Part="1" 
+AR Path="/5F463F4C/5F46ABD8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 2690 50  0001 C CNN
+F 1 "GND" V 3050 2773 39  0000 R CNN
+F 2 "" H 3050 2850 50  0001 C CNN
+F 3 "" H 3050 2850 50  0001 C CNN
+	1    3050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2850 3050 2850
+$Comp
+L Device:C_Small C?
+U 1 1 5F46AFF8
+P 850 4100
+AR Path="/5F40DCB9/5F46AFF8" Ref="C?"  Part="1" 
+AR Path="/5F463F4C/5F46AFF8" Ref="C?"  Part="1" 
+F 0 "C?" H 800 4050 50  0000 R CNN
+F 1 "10n" H 800 4150 50  0000 R CNN
+F 2 "" H 850 4100 50  0001 C CNN
+F 3 "~" H 850 4100 50  0001 C CNN
+	1    850  4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5F46B1C7
+P 1150 3800
+F 0 "L?" V 1250 3900 50  0000 C CNN
+F 1 "L" V 1250 3700 50  0000 C CNN
+F 2 "" H 1150 3800 50  0001 C CNN
+F 3 "~" H 1150 3800 50  0001 C CNN
+	1    1150 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 5F46B257
+P 1150 3550
+F 0 "D?" H 1150 3766 50  0000 C CNN
+F 1 "150 V" H 1150 3675 50  0000 C CNN
+F 2 "" H 1150 3550 50  0001 C CNN
+F 3 "~" H 1150 3550 50  0001 C CNN
+	1    1150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F46B5E6
+P 1450 4100
+AR Path="/5F40DCB9/5F46B5E6" Ref="C?"  Part="1" 
+AR Path="/5F463F4C/5F46B5E6" Ref="C?"  Part="1" 
+F 0 "C?" H 1400 4050 50  0000 R CNN
+F 1 "10n" H 1400 4150 50  0000 R CNN
+F 2 "" H 1450 4100 50  0001 C CNN
+F 3 "~" H 1450 4100 50  0001 C CNN
+	1    1450 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F46C52A
+P 1150 3900
+AR Path="/5F40DCB9/5F46C52A" Ref="C?"  Part="1" 
+AR Path="/5F463F4C/5F46C52A" Ref="C?"  Part="1" 
+F 0 "C?" V 1200 3850 50  0000 R CNN
+F 1 "1n" V 1200 3950 50  0000 L CNN
+F 2 "" H 1150 3900 50  0001 C CNN
+F 3 "~" H 1150 3900 50  0001 C CNN
+	1    1150 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  4000 850  3900
+Wire Wire Line
+	850  3800 1000 3800
+Wire Wire Line
+	1050 3900 850  3900
+Connection ~ 850  3900
+Wire Wire Line
+	850  3900 850  3800
+Wire Wire Line
+	1300 3800 1450 3800
+Wire Wire Line
+	1450 3800 1450 3900
+Wire Wire Line
+	1250 3900 1450 3900
+Connection ~ 1450 3900
+Wire Wire Line
+	1450 3900 1450 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5F46D690
+P 850 4200
+AR Path="/5F40DCB9/5F46D690" Ref="#PWR?"  Part="1" 
+AR Path="/5F463F4C/5F46D690" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 850 4040 50  0001 C CNN
+F 1 "GND" V 850 4123 39  0000 R CNN
+F 2 "" H 850 4200 50  0001 C CNN
+F 3 "" H 850 4200 50  0001 C CNN
+	1    850  4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F46D707
+P 1450 4200
+AR Path="/5F40DCB9/5F46D707" Ref="#PWR?"  Part="1" 
+AR Path="/5F463F4C/5F46D707" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1450 4040 50  0001 C CNN
+F 1 "GND" V 1450 4123 39  0000 R CNN
+F 2 "" H 1450 4200 50  0001 C CNN
+F 3 "" H 1450 4200 50  0001 C CNN
+	1    1450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3550 1450 3550
+Wire Wire Line
+	1450 3550 1450 3800
+Connection ~ 1450 3800
+Wire Wire Line
+	1000 3550 850  3550
+Wire Wire Line
+	850  3550 850  3800
+Connection ~ 850  3800
+$Comp
+L Isolator:LTV-352T U?
+U 1 1 5F470EC6
+P 3650 4750
+F 0 "U?" H 3650 5075 50  0000 C CNN
+F 1 "LTV-352T" H 3650 4984 50  0000 C CNN
+F 2 "Package_SO:SO-4_4.4x3.6mm_P2.54mm" H 3350 4550 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-002/S_110_LTV-352T%2020140520.pdf" H 3650 4750 50  0001 L CNN
+	1    3650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-358T U?
+U 1 1 5F470F8D
+P 3600 5400
+F 0 "U?" H 3600 5725 50  0000 C CNN
+F 1 "LTV-358T" H 3600 5634 50  0000 C CNN
+F 2 "Package_SO:SO-4_4.4x3.6mm_P2.54mm" H 3400 5200 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-022/S_110_LTV-358T%2020140520.pdf" H 3600 5400 50  0001 L CNN
+	1    3600 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LR8K4-G U?
+U 1 1 5F48A814
+P 6250 4350
+F 0 "U?" H 6250 4617 50  0000 C CNN
+F 1 "LR8K4-G" H 6250 4526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 6250 4400 50  0001 C CNN
+F 3 "http://www.supertex.com/pdf/datasheets/LR8.pdf" H 6250 4350 50  0001 C CNN
+	1    6250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_Photo_NPN_CE Q?
+U 1 1 5F48B431
+P 7500 3650
+F 0 "Q?" H 7691 3696 50  0000 L CNN
+F 1 "Q_Photo_NPN_CE" H 7691 3605 50  0000 L CNN
+F 2 "" H 7700 3750 50  0001 C CNN
+F 3 "~" H 7500 3650 50  0001 C CNN
+	1    7500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:NSL-32 U?
+U 1 1 5F48B58A
+P 7650 4350
+F 0 "U?" H 7650 4667 50  0000 C CNN
+F 1 "NSL-32" H 7650 4576 50  0000 C CNN
+F 2 "OptoDevice:Luna_NSL-32" H 7650 4050 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 7700 4350 50  0001 C CNN
+	1    7650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R?
+U 1 1 5F48B6CB
+P 7650 4800
+F 0 "R?" H 7720 4846 50  0000 L CNN
+F 1 "R_PHOTO" H 7720 4755 50  0000 L CNN
+F 2 "" V 7700 4550 50  0001 L CNN
+F 3 "~" H 7650 4750 50  0001 C CNN
+	1    7650 4800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
