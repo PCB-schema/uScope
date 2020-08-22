@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:uScope-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 5
 Title ""
 Date "2020-08-14"
 Rev ""
@@ -25,10 +26,10 @@ F 3 "" H 5300 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:VSOURCE V_K
+L pspice:VSOURCE V_K?
 U 1 1 5F36B478
 P 1250 2300
-F 0 "V_K" H 884 2254 50  0000 R CNN
+F 0 "V_K?" H 884 2254 50  0000 R CNN
 F 1 "4.5 kV" H 884 2345 50  0000 R CNN
 F 2 "" H 1250 2300 50  0001 C CNN
 F 3 "~" H 1250 2300 50  0001 C CNN
@@ -47,10 +48,10 @@ F 3 "" H 2800 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:VSOURCE V_Wh
+L pspice:VSOURCE V_Wh?
 U 1 1 5F36B607
 P 2150 2300
-F 0 "V_Wh" H 1784 2254 50  0000 R CNN
+F 0 "V_Wh?" H 1784 2254 50  0000 R CNN
 F 1 "5 kV" H 1784 2345 50  0000 R CNN
 F 2 "" H 2150 2300 50  0001 C CNN
 F 3 "~" H 2150 2300 50  0001 C CNN
@@ -58,10 +59,10 @@ F 3 "~" H 2150 2300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pspice:VSOURCE V_Focus
+L pspice:VSOURCE V_Focus?
 U 1 1 5F36B645
 P 3450 2300
-F 0 "V_Focus" H 3678 2346 50  0000 L CNN
+F 0 "V_Focus?" H 3678 2346 50  0000 L CNN
 F 1 "500 V" H 3678 2255 50  0000 L CNN
 F 2 "" H 3450 2300 50  0001 C CNN
 F 3 "~" H 3450 2300 50  0001 C CNN
