@@ -1,0 +1,533 @@
+EESchema Schematic File Version 4
+LIBS:uScope-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3500 1100 0    50   Input ~ 0
+dac_K
+Text HLabel 3500 4300 0    50   Input ~ 0
+dac_F
+Text HLabel 3500 2700 0    50   Input ~ 0
+dac_E
+$Comp
+L uScope:APD_P2_single U?
+U 1 1 5F61E605
+P 5500 1700
+AR Path="/5F61E605" Ref="U?"  Part="1" 
+AR Path="/5F61C123/5F61E605" Ref="U1"  Part="1" 
+F 0 "U1" H 5728 1751 50  0000 L CNN
+F 1 "K" H 5728 1660 50  0000 L CNN
+F 2 "" H 5500 1700 50  0001 C CNN
+F 3 "" H 5500 1700 50  0001 C CNN
+	1    5500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L uScope:APD_P2_single U?
+U 1 1 5F61E60C
+P 5500 3300
+AR Path="/5F61E60C" Ref="U?"  Part="1" 
+AR Path="/5F61C123/5F61E60C" Ref="U2"  Part="1" 
+F 0 "U2" H 5728 3351 50  0000 L CNN
+F 1 "E" H 5728 3260 50  0000 L CNN
+F 2 "" H 5500 3300 50  0001 C CNN
+F 3 "" H 5500 3300 50  0001 C CNN
+	1    5500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L uScope:APD_P2_single U?
+U 1 1 5F61E613
+P 5500 4900
+AR Path="/5F61E613" Ref="U?"  Part="1" 
+AR Path="/5F61C123/5F61E613" Ref="U3"  Part="1" 
+F 0 "U3" H 5728 4951 50  0000 L CNN
+F 1 "F" H 5728 4860 50  0000 L CNN
+F 2 "" H 5500 4900 50  0001 C CNN
+F 3 "" H 5500 4900 50  0001 C CNN
+	1    5500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F61F5A5
+P 5200 2000
+F 0 "#PWR?" H 5200 1840 50  0001 C CNN
+F 1 "GND" V 5200 1923 39  0000 R CNN
+F 2 "" H 5200 2000 50  0001 C CNN
+F 3 "" H 5200 2000 50  0001 C CNN
+	1    5200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F61F5AB
+P 5200 1000
+F 0 "#PWR?" H 5200 850 50  0001 C CNN
+F 1 "+12V" H 5200 1116 39  0000 C CNN
+F 2 "" H 5200 1000 50  0001 C CNN
+F 3 "" H 5200 1000 50  0001 C CNN
+	1    5200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6482 U?
+U 1 1 5F61F5B1
+P 4300 1200
+F 0 "U?" H 4300 1567 50  0000 C CNN
+F 1 "LMC6482" H 4300 1476 50  0000 C CNN
+F 2 "" H 4300 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 4300 1200 50  0001 C CNN
+	1    4300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1100 3800 1100
+$Comp
+L Device:R R?
+U 1 1 5F61F5BA
+P 3650 1100
+F 0 "R?" V 3750 1100 50  0000 C CNN
+F 1 "10k" V 3550 1100 50  0000 C CNN
+F 2 "" V 3580 1100 50  0001 C CNN
+F 3 "~" H 3650 1100 50  0001 C CNN
+	1    3650 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F61F5C1
+P 4750 1200
+F 0 "R?" V 4850 1200 50  0000 C CNN
+F 1 "1k" V 4650 1200 50  0000 C CNN
+F 2 "" V 4680 1200 50  0001 C CNN
+F 3 "~" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F61F5C8
+P 4950 1550
+F 0 "R?" H 4900 1600 50  0000 R CNN
+F 1 "12k" H 4900 1500 50  0000 R CNN
+F 2 "" V 4880 1550 50  0001 C CNN
+F 3 "~" H 4950 1550 50  0001 C CNN
+	1    4950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1400 4950 1400
+Wire Wire Line
+	5200 1400 5200 1550
+Wire Wire Line
+	5200 2000 5200 1850
+Connection ~ 5200 2000
+Wire Wire Line
+	4950 1700 4600 1700
+Wire Wire Line
+	4000 1700 4000 1300
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F61F5D5
+P 5100 1200
+F 0 "Q?" H 5305 1246 50  0000 L CNN
+F 1 "NMOS" H 5305 1155 50  0000 L CNN
+F 2 "" H 5300 1300 50  0001 C CNN
+F 3 "~" H 5100 1200 50  0001 C CNN
+	1    5100 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 1400
+$Comp
+L Device:R R?
+U 1 1 5F61F5DD
+P 4950 1850
+F 0 "R?" H 4900 1900 50  0000 R CNN
+F 1 "4k3" H 4900 1800 50  0000 R CNN
+F 2 "" V 4880 1850 50  0001 C CNN
+F 3 "~" H 4950 1850 50  0001 C CNN
+	1    4950 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 1700
+Wire Wire Line
+	4950 2000 5200 2000
+$Comp
+L Amplifier_Operational:LMC6482 U?
+U 3 1 5F61F5E6
+P 6550 1350
+F 0 "U?" H 6508 1396 50  0000 L CNN
+F 1 "LMC6482" H 6508 1305 50  0000 L CNN
+F 2 "" H 6550 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6550 1350 50  0001 C CNN
+	3    6550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F61F5ED
+P 6450 1650
+F 0 "#PWR?" H 6450 1490 50  0001 C CNN
+F 1 "GND" V 6450 1573 39  0000 R CNN
+F 2 "" H 6450 1650 50  0001 C CNN
+F 3 "" H 6450 1650 50  0001 C CNN
+	1    6450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5F61F5F3
+P 6450 1050
+F 0 "#PWR?" H 6450 900 50  0001 C CNN
+F 1 "+15V" H 6465 1223 50  0000 C CNN
+F 2 "" H 6450 1050 50  0001 C CNN
+F 3 "" H 6450 1050 50  0001 C CNN
+	1    6450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F61F5F9
+P 4600 1400
+F 0 "C?" H 4550 1450 50  0000 R CNN
+F 1 "1n" H 4550 1350 50  0000 R CNN
+F 2 "" H 4600 1400 50  0001 C CNN
+F 3 "~" H 4600 1400 50  0001 C CNN
+	1    4600 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1300 4600 1200
+Connection ~ 4600 1200
+Wire Wire Line
+	4600 1500 4600 1700
+Connection ~ 4600 1700
+Wire Wire Line
+	4600 1700 4000 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5F620EBC
+P 5200 3600
+F 0 "#PWR?" H 5200 3440 50  0001 C CNN
+F 1 "GND" V 5200 3523 39  0000 R CNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F620EC2
+P 5200 2600
+F 0 "#PWR?" H 5200 2450 50  0001 C CNN
+F 1 "+12V" H 5200 2716 39  0000 C CNN
+F 2 "" H 5200 2600 50  0001 C CNN
+F 3 "" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6482 U?
+U 1 1 5F620EC8
+P 4300 2800
+F 0 "U?" H 4300 3167 50  0000 C CNN
+F 1 "LMC6482" H 4300 3076 50  0000 C CNN
+F 2 "" H 4300 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2700 3800 2700
+$Comp
+L Device:R R?
+U 1 1 5F620ED0
+P 3650 2700
+F 0 "R?" V 3750 2700 50  0000 C CNN
+F 1 "10k" V 3550 2700 50  0000 C CNN
+F 2 "" V 3580 2700 50  0001 C CNN
+F 3 "~" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F620ED7
+P 4750 2800
+F 0 "R?" V 4850 2800 50  0000 C CNN
+F 1 "1k" V 4650 2800 50  0000 C CNN
+F 2 "" V 4680 2800 50  0001 C CNN
+F 3 "~" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F620EDE
+P 4950 3150
+F 0 "R?" H 4900 3200 50  0000 R CNN
+F 1 "12k" H 4900 3100 50  0000 R CNN
+F 2 "" V 4880 3150 50  0001 C CNN
+F 3 "~" H 4950 3150 50  0001 C CNN
+	1    4950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3000 4950 3000
+Wire Wire Line
+	5200 3000 5200 3150
+Wire Wire Line
+	5200 3600 5200 3450
+Connection ~ 5200 3600
+Wire Wire Line
+	4950 3300 4600 3300
+Wire Wire Line
+	4000 3300 4000 2900
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F620EEB
+P 5100 2800
+F 0 "Q?" H 5305 2846 50  0000 L CNN
+F 1 "NMOS" H 5305 2755 50  0000 L CNN
+F 2 "" H 5300 2900 50  0001 C CNN
+F 3 "~" H 5100 2800 50  0001 C CNN
+	1    5100 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 3000
+$Comp
+L Device:R R?
+U 1 1 5F620EF3
+P 4950 3450
+F 0 "R?" H 4900 3500 50  0000 R CNN
+F 1 "4k3" H 4900 3400 50  0000 R CNN
+F 2 "" V 4880 3450 50  0001 C CNN
+F 3 "~" H 4950 3450 50  0001 C CNN
+	1    4950 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 3300
+Wire Wire Line
+	4950 3600 5200 3600
+$Comp
+L Device:C_Small C?
+U 1 1 5F620EFC
+P 4600 3000
+F 0 "C?" H 4550 3050 50  0000 R CNN
+F 1 "1n" H 4550 2950 50  0000 R CNN
+F 2 "" H 4600 3000 50  0001 C CNN
+F 3 "~" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2900 4600 2800
+Connection ~ 4600 2800
+Wire Wire Line
+	4600 3100 4600 3300
+Connection ~ 4600 3300
+Wire Wire Line
+	4600 3300 4000 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5F62129D
+P 5200 5200
+F 0 "#PWR?" H 5200 5040 50  0001 C CNN
+F 1 "GND" V 5200 5123 39  0000 R CNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F6212A3
+P 5200 4200
+F 0 "#PWR?" H 5200 4050 50  0001 C CNN
+F 1 "+12V" H 5200 4316 39  0000 C CNN
+F 2 "" H 5200 4200 50  0001 C CNN
+F 3 "" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6482 U?
+U 1 1 5F6212A9
+P 4300 4400
+F 0 "U?" H 4300 4767 50  0000 C CNN
+F 1 "LMC6482" H 4300 4676 50  0000 C CNN
+F 2 "" H 4300 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 4300 4400 50  0001 C CNN
+	1    4300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4300 3800 4300
+$Comp
+L Device:R R?
+U 1 1 5F6212B1
+P 3650 4300
+F 0 "R?" V 3750 4300 50  0000 C CNN
+F 1 "10k" V 3550 4300 50  0000 C CNN
+F 2 "" V 3580 4300 50  0001 C CNN
+F 3 "~" H 3650 4300 50  0001 C CNN
+	1    3650 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6212B8
+P 4750 4400
+F 0 "R?" V 4850 4400 50  0000 C CNN
+F 1 "1k" V 4650 4400 50  0000 C CNN
+F 2 "" V 4680 4400 50  0001 C CNN
+F 3 "~" H 4750 4400 50  0001 C CNN
+	1    4750 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6212BF
+P 4950 4750
+F 0 "R?" H 4900 4800 50  0000 R CNN
+F 1 "12k" H 4900 4700 50  0000 R CNN
+F 2 "" V 4880 4750 50  0001 C CNN
+F 3 "~" H 4950 4750 50  0001 C CNN
+	1    4950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4600 4950 4600
+Wire Wire Line
+	5200 4600 5200 4750
+Wire Wire Line
+	5200 5200 5200 5050
+Connection ~ 5200 5200
+Wire Wire Line
+	4950 4900 4600 4900
+Wire Wire Line
+	4000 4900 4000 4500
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F6212CC
+P 5100 4400
+F 0 "Q?" H 5305 4446 50  0000 L CNN
+F 1 "NMOS" H 5305 4355 50  0000 L CNN
+F 2 "" H 5300 4500 50  0001 C CNN
+F 3 "~" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 4600
+$Comp
+L Device:R R?
+U 1 1 5F6212D4
+P 4950 5050
+F 0 "R?" H 4900 5100 50  0000 R CNN
+F 1 "4k3" H 4900 5000 50  0000 R CNN
+F 2 "" V 4880 5050 50  0001 C CNN
+F 3 "~" H 4950 5050 50  0001 C CNN
+	1    4950 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 4900
+Wire Wire Line
+	4950 5200 5200 5200
+$Comp
+L Device:C_Small C?
+U 1 1 5F6212DD
+P 4600 4600
+F 0 "C?" H 4550 4650 50  0000 R CNN
+F 1 "1n" H 4550 4550 50  0000 R CNN
+F 2 "" H 4600 4600 50  0001 C CNN
+F 3 "~" H 4600 4600 50  0001 C CNN
+	1    4600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4500 4600 4400
+Connection ~ 4600 4400
+Wire Wire Line
+	4600 4700 4600 4900
+Connection ~ 4600 4900
+Wire Wire Line
+	4600 4900 4000 4900
+$Comp
+L Amplifier_Operational:LMC6482 U?
+U 3 1 5F62268A
+P 6550 3000
+F 0 "U?" H 6508 3046 50  0000 L CNN
+F 1 "LMC6482" H 6508 2955 50  0000 L CNN
+F 2 "" H 6550 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6550 3000 50  0001 C CNN
+	3    6550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F622691
+P 6450 3300
+F 0 "#PWR?" H 6450 3140 50  0001 C CNN
+F 1 "GND" V 6450 3223 39  0000 R CNN
+F 2 "" H 6450 3300 50  0001 C CNN
+F 3 "" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5F622697
+P 6450 2700
+F 0 "#PWR?" H 6450 2550 50  0001 C CNN
+F 1 "+15V" H 6465 2873 50  0000 C CNN
+F 2 "" H 6450 2700 50  0001 C CNN
+F 3 "" H 6450 2700 50  0001 C CNN
+	1    6450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6482 U?
+U 3 1 5F622A70
+P 6550 4650
+F 0 "U?" H 6508 4696 50  0000 L CNN
+F 1 "LMC6482" H 6508 4605 50  0000 L CNN
+F 2 "" H 6550 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6550 4650 50  0001 C CNN
+	3    6550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F622A77
+P 6450 4950
+F 0 "#PWR?" H 6450 4790 50  0001 C CNN
+F 1 "GND" V 6450 4873 39  0000 R CNN
+F 2 "" H 6450 4950 50  0001 C CNN
+F 3 "" H 6450 4950 50  0001 C CNN
+	1    6450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5F622A7D
+P 6450 4350
+F 0 "#PWR?" H 6450 4200 50  0001 C CNN
+F 1 "+15V" H 6465 4523 50  0000 C CNN
+F 2 "" H 6450 4350 50  0001 C CNN
+F 3 "" H 6450 4350 50  0001 C CNN
+	1    6450 4350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -86,7 +86,7 @@ P 4400 2350
 AR Path="/5F40DCB9/5F479BF7" Ref="R?"  Part="1" 
 AR Path="/5F479892/5F479BF7" Ref="R?"  Part="1" 
 F 0 "R?" V 4500 2350 50  0000 C CNN
-F 1 "10M" V 4300 2350 50  0000 C CNN
+F 1 "500M" V 4300 2350 50  0000 C CNN
 F 2 "" V 4330 2350 50  0001 C CNN
 F 3 "~" H 4400 2350 50  0001 C CNN
 	1    4400 2350
@@ -179,7 +179,7 @@ F 3 "" H 7950 2350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 3350 2050 0    50   ~ 0
-I_drawn = U_meas/10M
+I_drawn = U_meas/R_in
 Wire Wire Line
 	5300 2050 5300 2350
 Wire Wire Line
@@ -544,13 +544,13 @@ U_Focus
 Text HLabel 3800 3650 0    50   Input ~ 0
 U_K
 Text HLabel 3800 4950 0    50   Input ~ 0
-U_Wh
+U_Ext
 Text HLabel 6700 1950 2    50   Output ~ 0
 U_adcFocus
 Text HLabel 6700 3250 2    50   Output ~ 0
 U_adcK
 Text HLabel 6700 4550 2    50   Output ~ 0
-U_adcWh
+U_adcExt
 $Comp
 L Device:C_Small C?
 U 1 1 5F47C5DF

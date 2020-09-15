@@ -1,6 +1,28 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# APD_P2_single
+#
+DEF APD_P2_single U 0 1 Y Y 2 L N
+F0 "U" 0 250 50 H V C CNN
+F1 "APD_P2_single" 0 -250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 150 2 0 0 N
+T 0 -100 100 50 0 1 0 DC Normal 0 C C
+T 0 100 -100 50 0 1 0 DC Normal 0 C C
+S -200 -200 200 200 1 1 0 N
+P 2 2 0 0 0 -80 0 80 N
+P 4 2 0 0 -30 30 0 80 30 30 -30 30 N
+P 2 1 1 0 -200 -200 200 200 N
+X in+ 1 -300 150 100 R 50 50 1 1 I
+X in- 2 -300 -150 100 R 50 50 1 1 I
+X + 3 0 250 100 D 50 50 2 1 I
+X - 4 0 -250 100 U 50 50 2 1 I
+ENDDRAW
+ENDDEF
+#
 # ElectronGun
 #
 DEF ElectronGun U 0 1 Y N 1 F N
@@ -35,6 +57,35 @@ X Kathode 1 0 550 100 D 50 50 1 1 I
 X Wehnelt 2 -300 350 100 R 50 50 1 1 I
 X Anode 3 -300 150 100 R 50 50 1 1 I
 X Focus 4 -300 -200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ElectronGun_MEMS
+#
+DEF ElectronGun_MEMS U 0 1 Y N 1 F N
+F0 "U" 100 500 50 H V C CNN
+F1 "ElectronGun_MEMS" 0 -250 50 H V C CNN
+F2 "" 0 -500 50 H I C CNN
+F3 "" 0 -500 50 H I C CNN
+DRAW
+T 0 150 400 50 0 0 0 "cold K" Normal 0 L C
+T 0 150 -150 50 0 1 0 Anode Normal 0 L C
+T 0 150 300 50 0 1 0 Extract Normal 0 L C
+T 0 150 150 50 0 1 0 Focus Normal 0 L C
+P 2 0 1 0 -150 -200 150 -200 N
+P 2 0 1 0 -150 300 -50 300 N
+P 2 0 1 0 -150 450 -150 -200 N
+P 2 0 1 0 -150 450 150 450 N
+P 2 0 1 0 -50 150 -150 150 N
+P 2 0 1 0 0 400 -50 450 N
+P 2 0 1 0 0 400 50 450 N
+P 2 0 1 0 50 150 150 150 N
+P 2 0 1 0 150 450 150 -200 N
+P 2 1 1 0 50 300 150 300 N
+X Kathode 1 0 550 100 D 50 50 1 1 I
+X Wehnelt 2 -250 300 100 R 50 50 1 1 I
+X Anode 3 -250 150 100 R 50 50 1 1 I
+X Focus 4 -250 -200 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

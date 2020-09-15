@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP APD_P2_single
+K DC/DC, converter, HV
+$ENDCMP
+#
 #End Doc Library
