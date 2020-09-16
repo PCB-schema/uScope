@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -55,23 +55,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 9050 4050 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 5F618E9F
-P 4350 4300
-AR Path="/5F40DCB9/5F618E9F" Ref="#PWR?"  Part="1" 
-AR Path="/5F618AB9/5F618E9F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4350 4140 50  0001 C CNN
-F 1 "GND" V 4350 4223 39  0000 R CNN
-F 2 "" H 4350 4300 50  0001 C CNN
-F 3 "" H 4350 4300 50  0001 C CNN
-	1    4350 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 5F618EA5
 P 5000 3800
 AR Path="/5F40DCB9/5F618EA5" Ref="#PWR?"  Part="1" 
 AR Path="/5F618AB9/5F618EA5" Ref="#PWR?"  Part="1" 
+AR Path="/5F618EA5" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5000 3640 50  0001 C CNN
 F 1 "GND" V 5000 3723 39  0000 R CNN
 F 2 "" H 5000 3800 50  0001 C CNN
@@ -233,11 +221,6 @@ Wire Wire Line
 	4500 4000 4950 4000
 Wire Wire Line
 	4200 4000 4500 4000
-Wire Wire Line
-	4500 4300 4350 4300
-Connection ~ 4350 4300
-Wire Wire Line
-	4350 4300 4200 4300
 $Comp
 L Device:C_Small C?
 U 1 1 5F618EFF
@@ -297,6 +280,7 @@ U 1 1 5F618F1D
 P 6950 3700
 AR Path="/5F40DCB9/5F618F1D" Ref="#PWR?"  Part="1" 
 AR Path="/5F618AB9/5F618F1D" Ref="#PWR?"  Part="1" 
+AR Path="/5F618F1D" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 6950 3540 50  0001 C CNN
 F 1 "GND" V 6950 3623 39  0000 R CNN
 F 2 "" H 6950 3700 50  0001 C CNN
@@ -334,4 +318,23 @@ Text HLabel 4000 4000 0    50   Input ~ 0
 in
 Text HLabel 7900 3800 2    50   Output ~ 0
 outAdc
+$Comp
+L power:GND #PWR?
+U 1 1 5F626D4A
+P 4350 4300
+AR Path="/5F40DCB9/5F626D4A" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F626D4A" Ref="#PWR?"  Part="1" 
+AR Path="/5F626D4A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 4140 50  0001 C CNN
+F 1 "GND" H 4350 4200 39  0000 C TNN
+F 2 "" H 4350 4300 50  0001 C CNN
+F 3 "" H 4350 4300 50  0001 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4300 4350 4300
+Connection ~ 4350 4300
+Wire Wire Line
+	4350 4300 4500 4300
 $EndSCHEMATC

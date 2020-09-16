@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -135,7 +135,7 @@ AR Path="/5F40DCB9/5F61B422" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F61B422" Ref="#PWR?"  Part="1" 
 AR Path="/5F61B422" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5050 3740 50  0001 C CNN
-F 1 "GND" V 5050 3823 39  0000 R CNN
+F 1 "GND" H 5050 3800 39  0000 C TNN
 F 2 "" H 5050 3900 50  0001 C CNN
 F 3 "" H 5050 3900 50  0001 C CNN
 	1    5050 3900
@@ -166,4 +166,10 @@ Text Notes 5450 3050 0    50   ~ 0
 (optional\nU_K-E filter)
 Wire Wire Line
 	5800 3900 5800 3750
+$Sheet
+S 1300 5100 2450 1250
+U 5F620813
+F0 "supply" 50
+F1 "supply.sch" 50
+$EndSheet
 $EndSCHEMATC

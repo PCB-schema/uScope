@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 8
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -57,17 +57,6 @@ F 1 "F" H 5728 4860 50  0000 L CNN
 F 2 "" H 5500 4900 50  0001 C CNN
 F 3 "" H 5500 4900 50  0001 C CNN
 	1    5500 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F61F5A5
-P 5200 2000
-F 0 "#PWR?" H 5200 1840 50  0001 C CNN
-F 1 "GND" V 5200 1923 39  0000 R CNN
-F 2 "" H 5200 2000 50  0001 C CNN
-F 3 "" H 5200 2000 50  0001 C CNN
-	1    5200 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -133,7 +122,6 @@ Wire Wire Line
 	5200 1400 5200 1550
 Wire Wire Line
 	5200 2000 5200 1850
-Connection ~ 5200 2000
 Wire Wire Line
 	4950 1700 4600 1700
 Wire Wire Line
@@ -176,17 +164,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6550 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5F61F5ED
-P 6450 1650
-F 0 "#PWR?" H 6450 1490 50  0001 C CNN
-F 1 "GND" V 6450 1573 39  0000 R CNN
-F 2 "" H 6450 1650 50  0001 C CNN
-F 3 "" H 6450 1650 50  0001 C CNN
-	1    6450 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+15V #PWR?
 U 1 1 5F61F5F3
 P 6450 1050
@@ -216,17 +193,6 @@ Wire Wire Line
 Connection ~ 4600 1700
 Wire Wire Line
 	4600 1700 4000 1700
-$Comp
-L power:GND #PWR?
-U 1 1 5F620EBC
-P 5200 3600
-F 0 "#PWR?" H 5200 3440 50  0001 C CNN
-F 1 "GND" V 5200 3523 39  0000 R CNN
-F 2 "" H 5200 3600 50  0001 C CNN
-F 3 "" H 5200 3600 50  0001 C CNN
-	1    5200 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5F620EC2
@@ -290,7 +256,6 @@ Wire Wire Line
 	5200 3000 5200 3150
 Wire Wire Line
 	5200 3600 5200 3450
-Connection ~ 5200 3600
 Wire Wire Line
 	4950 3300 4600 3300
 Wire Wire Line
@@ -340,17 +305,6 @@ Wire Wire Line
 Connection ~ 4600 3300
 Wire Wire Line
 	4600 3300 4000 3300
-$Comp
-L power:GND #PWR?
-U 1 1 5F62129D
-P 5200 5200
-F 0 "#PWR?" H 5200 5040 50  0001 C CNN
-F 1 "GND" V 5200 5123 39  0000 R CNN
-F 2 "" H 5200 5200 50  0001 C CNN
-F 3 "" H 5200 5200 50  0001 C CNN
-	1    5200 5200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5F6212A3
@@ -414,7 +368,6 @@ Wire Wire Line
 	5200 4600 5200 4750
 Wire Wire Line
 	5200 5200 5200 5050
-Connection ~ 5200 5200
 Wire Wire Line
 	4950 4900 4600 4900
 Wire Wire Line
@@ -476,17 +429,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6550 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5F622691
-P 6450 3300
-F 0 "#PWR?" H 6450 3140 50  0001 C CNN
-F 1 "GND" V 6450 3223 39  0000 R CNN
-F 2 "" H 6450 3300 50  0001 C CNN
-F 3 "" H 6450 3300 50  0001 C CNN
-	1    6450 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+15V #PWR?
 U 1 1 5F622697
 P 6450 2700
@@ -509,17 +451,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6550 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5F622A77
-P 6450 4950
-F 0 "#PWR?" H 6450 4790 50  0001 C CNN
-F 1 "GND" V 6450 4873 39  0000 R CNN
-F 2 "" H 6450 4950 50  0001 C CNN
-F 3 "" H 6450 4950 50  0001 C CNN
-	1    6450 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+15V #PWR?
 U 1 1 5F622A7D
 P 6450 4350
@@ -530,4 +461,97 @@ F 3 "" H 6450 4350 50  0001 C CNN
 	1    6450 4350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F62755D
+P 6450 1650
+AR Path="/5F40DCB9/5F62755D" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F62755D" Ref="#PWR?"  Part="1" 
+AR Path="/5F62755D" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5F62755D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 1490 50  0001 C CNN
+F 1 "GND" H 6450 1550 39  0000 C TNN
+F 2 "" H 6450 1650 50  0001 C CNN
+F 3 "" H 6450 1650 50  0001 C CNN
+	1    6450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6278F0
+P 5200 2000
+AR Path="/5F40DCB9/5F6278F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F6278F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F6278F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5F6278F0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 1840 50  0001 C CNN
+F 1 "GND" H 5200 1900 39  0000 C TNN
+F 2 "" H 5200 2000 50  0001 C CNN
+F 3 "" H 5200 2000 50  0001 C CNN
+	1    5200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F627D40
+P 6450 3300
+AR Path="/5F40DCB9/5F627D40" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F627D40" Ref="#PWR?"  Part="1" 
+AR Path="/5F627D40" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5F627D40" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 3140 50  0001 C CNN
+F 1 "GND" H 6450 3200 39  0000 C TNN
+F 2 "" H 6450 3300 50  0001 C CNN
+F 3 "" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6280D3
+P 5200 3600
+AR Path="/5F40DCB9/5F6280D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F6280D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F6280D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5F6280D3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 3440 50  0001 C CNN
+F 1 "GND" H 5200 3500 39  0000 C TNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F628523
+P 6450 4950
+AR Path="/5F40DCB9/5F628523" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F628523" Ref="#PWR?"  Part="1" 
+AR Path="/5F628523" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5F628523" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 4790 50  0001 C CNN
+F 1 "GND" H 6450 4850 39  0000 C TNN
+F 2 "" H 6450 4950 50  0001 C CNN
+F 3 "" H 6450 4950 50  0001 C CNN
+	1    6450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6288B6
+P 5200 5200
+AR Path="/5F40DCB9/5F6288B6" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F6288B6" Ref="#PWR?"  Part="1" 
+AR Path="/5F6288B6" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5F6288B6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 5040 50  0001 C CNN
+F 1 "GND" H 5200 5100 39  0000 C TNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 5200
+Connection ~ 5200 3600
+Connection ~ 5200 2000
 $EndSCHEMATC
