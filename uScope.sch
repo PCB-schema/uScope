@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -15,25 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1350 950  1000 350 
+S 750  750  1000 350 
 U 5F40D708
 F0 "uScope_koncepcja" 50
 F1 "uScope_koncepcja.sch" 50
 $EndSheet
 $Sheet
-S 1350 1650 1000 350 
-U 5F40DA28
-F0 "uScope_koncepcja1" 50
-F1 "uScope_koncepcja1.sch" 50
-$EndSheet
-$Sheet
-S 1350 2400 1000 350 
-U 5F40DB43
-F0 "uScope_koncepcja2" 50
-F1 "uScope_koncepcja2.sch" 50
-$EndSheet
-$Sheet
-S 1350 3900 1000 400 
+S 750  1400 1000 400 
 U 5F463F4C
 F0 "postRegulator" 50
 F1 "postRegulator.sch" 50
@@ -167,26 +155,33 @@ Text Notes 5450 3050 0    50   ~ 0
 Wire Wire Line
 	5800 3900 5800 3750
 $Sheet
-S 1300 5100 2450 1250
+S 2900 5000 950  700 
 U 5F620813
 F0 "supply" 50
 F1 "supply.sch" 50
+F2 "BATT_IN" I L 2900 5350 50 
 $EndSheet
-$Comp
-L Device:Rotary_Encoder_Switch SW?
-U 1 1 5F742764
-P 5850 5700
-F 0 "SW?" H 5850 6067 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 5850 5976 50  0000 C CNN
-F 2 "" H 5700 5860 50  0001 C CNN
-F 3 "~" H 5850 5960 50  0001 C CNN
-	1    5850 5700
-	1    0    0    -1  
-$EndComp
 $Sheet
-S 1300 6700 1400 800 
+S 1350 5000 950  700 
 U 5F7A93EE
 F0 "Battery_Charger" 50
 F1 "Battery_Charger.sch" 50
+F2 "V_BATT" O R 2300 5350 50 
+F3 "PWRON_LOCK" I L 1350 5450 50 
 $EndSheet
+Wire Wire Line
+	2300 5350 2900 5350
+$Sheet
+S 5250 4800 1700 1250
+U 5F7D6767
+F0 "MCU" 50
+F1 "MCU.sch" 50
+F2 "PWRON_MCU" O L 5250 5150 50 
+F3 "BATT_SENSE" I L 5250 5550 50 
+F4 "dac_K" O R 6950 5150 50 
+F5 "dac_F" O R 6950 5300 50 
+F6 "dac_E" O R 6950 5550 50 
+$EndSheet
+Text Notes 8000 1100 0    100  ~ 20
+TODO:\n- symbol i footprint dla koszyka Li-ion\n- footprint dla rezystorow 500 MOhm\n- footprint dla P2series
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 10 9
 Title ""
 Date ""
 Rev ""
@@ -18,6 +18,8 @@ $Comp
 L Device:Battery_Cell BT?
 U 1 1 5F7AA8B0
 P 6150 3600
+AR Path="/5F620813/5F7AA8B0" Ref="BT?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8B0" Ref="BT?"  Part="1" 
 F 0 "BT?" H 6268 3696 50  0000 L CNN
 F 1 "Battery_Cell" H 6268 3605 50  0000 L CNN
 F 2 "" V 6150 3660 50  0001 C CNN
@@ -29,6 +31,8 @@ $Comp
 L Battery_Management:BQ24079RGT U?
 U 1 1 5F7AA8B7
 P 4850 3400
+AR Path="/5F620813/5F7AA8B7" Ref="U?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8B7" Ref="U?"  Part="1" 
 F 0 "U?" H 4850 4178 50  0000 C CNN
 F 1 "BQ24079RGT" H 4850 4087 50  0000 C CNN
 F 2 "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 5150 2850 50  0001 L CNN
@@ -40,6 +44,8 @@ $Comp
 L Connector:USB_B_Micro J?
 U 1 1 5F7AA8BE
 P 3000 2650
+AR Path="/5F620813/5F7AA8BE" Ref="J?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8BE" Ref="J?"  Part="1" 
 F 0 "J?" H 3055 3117 50  0000 C CNN
 F 1 "USB_B_Micro" H 3055 3026 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 3150 2600 50  0001 C CNN
@@ -55,6 +61,7 @@ AR Path="/5F40DCB9/5F7AA8C5" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA8C5" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA8C5" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA8C5" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8C5" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3000 2890 50  0001 C CNN
 F 1 "GND" H 3000 2950 39  0000 C TNN
 F 2 "" H 3000 3050 50  0001 C CNN
@@ -74,6 +81,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5F7AA8D1
 P 3450 2650
+AR Path="/5F620813/5F7AA8D1" Ref="C?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8D1" Ref="C?"  Part="1" 
 F 0 "C?" H 3542 2696 50  0000 L CNN
 F 1 "1u" H 3542 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3450 2650 50  0001 C CNN
@@ -89,6 +98,7 @@ AR Path="/5F40DCB9/5F7AA8D8" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA8D8" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA8D8" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA8D8" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8D8" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3450 2590 50  0001 C CNN
 F 1 "GND" H 3450 2650 39  0000 C TNN
 F 2 "" H 3450 2750 50  0001 C CNN
@@ -107,6 +117,8 @@ $Comp
 L Device:LED_Small D?
 U 1 1 5F7AA8E8
 P 4450 4550
+AR Path="/5F620813/5F7AA8E8" Ref="D?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8E8" Ref="D?"  Part="1" 
 F 0 "D?" V 4496 4480 50  0000 R CNN
 F 1 "Red" V 4405 4480 50  0000 R CNN
 F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4450 4550 50  0001 C CNN
@@ -124,6 +136,7 @@ AR Path="/5F40DCB9/5F7AA8F0" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA8F0" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA8F0" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA8F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8F0" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4850 3840 50  0001 C CNN
 F 1 "GND" H 4850 3900 39  0000 C TNN
 F 2 "" H 4850 4000 50  0001 C CNN
@@ -139,6 +152,7 @@ AR Path="/5F40DCB9/5F7AA8F6" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA8F6" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA8F6" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA8F6" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8F6" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 6150 3540 50  0001 C CNN
 F 1 "GND" H 6150 3600 39  0000 C TNN
 F 2 "" H 6150 3700 50  0001 C CNN
@@ -154,6 +168,7 @@ AR Path="/5F40DCB9/5F7AA8FC" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA8FC" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA8FC" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA8FC" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA8FC" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3850 2940 50  0001 C CNN
 F 1 "GND" H 3850 3000 39  0000 C TNN
 F 2 "" H 3850 3100 50  0001 C CNN
@@ -165,6 +180,8 @@ $Comp
 L Switch:SW_DIP_x02 SW?
 U 1 1 5F7AA902
 P 3150 3500
+AR Path="/5F620813/5F7AA902" Ref="SW?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA902" Ref="SW?"  Part="1" 
 F 0 "SW?" V 3196 3370 50  0000 R CNN
 F 1 "SW_DIP_x02" V 3105 3370 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W8.61mm_P2.54mm_LowProfile" H 3150 3500 50  0001 C CNN
@@ -178,6 +195,8 @@ $Comp
 L Device:LED_Small D?
 U 1 1 5F7AA90A
 P 4450 5150
+AR Path="/5F620813/5F7AA90A" Ref="D?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA90A" Ref="D?"  Part="1" 
 F 0 "D?" V 4496 5080 50  0000 R CNN
 F 1 "Green" V 4405 5080 50  0000 R CNN
 F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4450 5150 50  0001 C CNN
@@ -189,6 +208,8 @@ $Comp
 L Transistor_BJT:BC807 Q?
 U 1 1 5F7AA911
 P 5050 5050
+AR Path="/5F620813/5F7AA911" Ref="Q?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA911" Ref="Q?"  Part="1" 
 F 0 "Q?" H 5241 5004 50  0000 L CNN
 F 1 "BC807" H 5241 5095 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 4975 50  0001 L CIN
@@ -200,6 +221,8 @@ $Comp
 L Device:Q_NPN_BCE Q?
 U 1 1 5F7AA918
 P 5050 4650
+AR Path="/5F620813/5F7AA918" Ref="Q?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA918" Ref="Q?"  Part="1" 
 F 0 "Q?" H 5241 4696 50  0000 L CNN
 F 1 "BC817" H 5241 4605 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 4750 50  0001 C CNN
@@ -217,6 +240,7 @@ AR Path="/5F40DCB9/5F7AA920" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA920" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA920" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA920" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA920" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4950 5090 50  0001 C CNN
 F 1 "GND" H 4950 5150 39  0000 C TNN
 F 2 "" H 4950 5250 50  0001 C CNN
@@ -230,6 +254,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA927
 P 5250 4550
+AR Path="/5F620813/5F7AA927" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA927" Ref="R?"  Part="1" 
 F 0 "R?" H 5309 4596 50  0000 L CNN
 F 1 "10k" H 5309 4505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5250 4550 50  0001 C CNN
@@ -271,6 +297,7 @@ AR Path="/5F40DCB9/5F7AA93D" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA93D" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA93D" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA93D" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA93D" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4350 3890 50  0001 C CNN
 F 1 "GND" H 4350 3950 39  0000 C TNN
 F 2 "" H 4350 4050 50  0001 C CNN
@@ -286,6 +313,7 @@ AR Path="/5F40DCB9/5F7AA943" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA943" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA943" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA943" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA943" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4050 3890 50  0001 C CNN
 F 1 "GND" H 4050 3950 39  0000 C TNN
 F 2 "" H 4050 4050 50  0001 C CNN
@@ -305,6 +333,7 @@ AR Path="/5F40DCB9/5F7AA94B" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA94B" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA94B" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA94B" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA94B" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3800 3890 50  0001 C CNN
 F 1 "GND" H 3800 3950 39  0000 C TNN
 F 2 "" H 3800 4050 50  0001 C CNN
@@ -316,6 +345,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA951
 P 3550 3950
+AR Path="/5F620813/5F7AA951" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA951" Ref="R?"  Part="1" 
 F 0 "R?" H 3609 3996 50  0000 L CNN
 F 1 "47k" H 3609 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3550 3950 50  0001 C CNN
@@ -331,6 +362,7 @@ AR Path="/5F40DCB9/5F7AA958" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA958" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA958" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA958" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA958" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3550 3890 50  0001 C CNN
 F 1 "GND" H 3550 3950 39  0000 C TNN
 F 2 "" H 3550 4050 50  0001 C CNN
@@ -360,6 +392,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA968
 P 3800 3950
+AR Path="/5F620813/5F7AA968" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA968" Ref="R?"  Part="1" 
 F 0 "R?" H 3859 3996 50  0000 L CNN
 F 1 "47k" H 3859 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3800 3950 50  0001 C CNN
@@ -371,6 +405,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA96F
 P 4050 3950
+AR Path="/5F620813/5F7AA96F" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA96F" Ref="R?"  Part="1" 
 F 0 "R?" H 4109 3996 50  0000 L CNN
 F 1 "1k3" H 4109 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4050 3950 50  0001 C CNN
@@ -382,6 +418,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA976
 P 4350 3950
+AR Path="/5F620813/5F7AA976" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA976" Ref="R?"  Part="1" 
 F 0 "R?" H 4409 3996 50  0000 L CNN
 F 1 "890R" H 4409 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4350 3950 50  0001 C CNN
@@ -393,6 +431,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA97D
 P 4450 4750
+AR Path="/5F620813/5F7AA97D" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA97D" Ref="R?"  Part="1" 
 F 0 "R?" H 4509 4796 50  0000 L CNN
 F 1 "1k" H 4509 4705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4450 4750 50  0001 C CNN
@@ -404,6 +444,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA984
 P 4450 4950
+AR Path="/5F620813/5F7AA984" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA984" Ref="R?"  Part="1" 
 F 0 "R?" H 4509 4996 50  0000 L CNN
 F 1 "1k" H 4509 4905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4450 4950 50  0001 C CNN
@@ -416,6 +458,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA98C
 P 2750 3450
+AR Path="/5F620813/5F7AA98C" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA98C" Ref="R?"  Part="1" 
 F 0 "R?" V 2900 3450 50  0000 C CNN
 F 1 "1k" V 2850 3450 50  0000 C BNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 3450 50  0001 C CNN
@@ -436,6 +480,8 @@ $Comp
 L Device:Thermistor_NTC NTC?
 U 1 1 5F7AA998
 P 5700 3750
+AR Path="/5F620813/5F7AA998" Ref="NTC?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA998" Ref="NTC?"  Part="1" 
 F 0 "NTC?" H 5798 3796 50  0000 L CNN
 F 1 "10k" H 5798 3705 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 5700 3800 50  0001 C CNN
@@ -455,6 +501,7 @@ AR Path="/5F40DCB9/5F7AA9A1" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA9A1" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA9A1" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA9A1" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9A1" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5700 3740 50  0001 C CNN
 F 1 "GND" H 5700 3800 39  0000 C TNN
 F 2 "" H 5700 3900 50  0001 C CNN
@@ -466,6 +513,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5F7AA9A7
 P 5550 3150
+AR Path="/5F620813/5F7AA9A7" Ref="C?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9A7" Ref="C?"  Part="1" 
 F 0 "C?" H 5600 3200 50  0000 L BNN
 F 1 "2u2" H 5600 3100 50  0000 L TNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 3150 50  0001 C CNN
@@ -477,6 +526,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5F7AA9AE
 P 5550 2850
+AR Path="/5F620813/5F7AA9AE" Ref="C?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9AE" Ref="C?"  Part="1" 
 F 0 "C?" H 5600 2900 50  0000 L BNN
 F 1 "2u2" H 5600 2800 50  0000 L TNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 2850 50  0001 C CNN
@@ -488,6 +539,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5F7AA9B5
 P 5850 3150
+AR Path="/5F620813/5F7AA9B5" Ref="C?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9B5" Ref="C?"  Part="1" 
 F 0 "C?" H 5900 3200 50  0000 L BNN
 F 1 "2u2" H 5900 3100 50  0000 L TNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5850 3150 50  0001 C CNN
@@ -499,6 +552,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 5F7AA9BC
 P 5850 2850
+AR Path="/5F620813/5F7AA9BC" Ref="C?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9BC" Ref="C?"  Part="1" 
 F 0 "C?" H 5900 2900 50  0000 L BNN
 F 1 "2u2" H 5900 2800 50  0000 L TNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5850 2850 50  0001 C CNN
@@ -514,6 +569,7 @@ AR Path="/5F40DCB9/5F7AA9C3" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AA9C3" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AA9C3" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AA9C3" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9C3" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 6150 2840 50  0001 C CNN
 F 1 "GND" H 6150 2900 39  0000 C TNN
 F 2 "" H 6150 3000 50  0001 C CNN
@@ -564,6 +620,8 @@ $Comp
 L Switch:SW_MEC_5E SW?
 U 1 1 5F7AA9DF
 P 7050 3900
+AR Path="/5F620813/5F7AA9DF" Ref="SW?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9DF" Ref="SW?"  Part="1" 
 F 0 "SW?" V 7100 3950 50  0000 R CNN
 F 1 "PWRON" V 7000 3950 50  0000 R CNN
 F 2 "" H 7050 4200 50  0001 C CNN
@@ -575,6 +633,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA9E6
 P 4150 3300
+AR Path="/5F620813/5F7AA9E6" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9E6" Ref="R?"  Part="1" 
 F 0 "R?" V 4300 3300 50  0000 C CNN
 F 1 "47k" V 4250 3300 50  0000 C BNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 3300 50  0001 C CNN
@@ -601,6 +661,8 @@ $Comp
 L Device:R_Small R?
 U 1 1 5F7AA9F5
 P 6950 3400
+AR Path="/5F620813/5F7AA9F5" Ref="R?"  Part="1" 
+AR Path="/5F7A93EE/5F7AA9F5" Ref="R?"  Part="1" 
 F 0 "R?" H 7009 3446 50  0000 L CNN
 F 1 "47k" H 7009 3355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6950 3400 50  0001 C CNN
@@ -631,6 +693,7 @@ AR Path="/5F40DCB9/5F7AAA05" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5F7AAA05" Ref="#PWR?"  Part="1" 
 AR Path="/5F7AAA05" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F7AAA05" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/5F7AAA05" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 6950 4140 50  0001 C CNN
 F 1 "GND" H 6950 4200 39  0000 C TNN
 F 2 "" H 6950 4300 50  0001 C CNN
@@ -643,6 +706,8 @@ $Comp
 L Transistor_FET:BSS138 Q?
 U 1 1 5F7AAA0C
 P 7600 4100
+AR Path="/5F620813/5F7AAA0C" Ref="Q?"  Part="1" 
+AR Path="/5F7A93EE/5F7AAA0C" Ref="Q?"  Part="1" 
 F 0 "Q?" H 7805 4146 50  0000 L CNN
 F 1 "BSS138" H 7805 4055 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7800 4025 50  0001 L CIN
@@ -664,6 +729,8 @@ $Comp
 L Transistor_FET:BSS138 Q?
 U 1 1 5F7AAA19
 P 8250 4100
+AR Path="/5F620813/5F7AAA19" Ref="Q?"  Part="1" 
+AR Path="/5F7A93EE/5F7AAA19" Ref="Q?"  Part="1" 
 F 0 "Q?" H 8455 4146 50  0000 L CNN
 F 1 "BSS138" H 8455 4055 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8450 4025 50  0001 L CIN
@@ -674,7 +741,7 @@ $EndComp
 Wire Wire Line
 	8150 3900 8150 3700
 Text HLabel 8450 4100 2    50   Input ~ 0
-PWRON_MCU
+PWRON_LOCK
 Text Label 7800 4000 1    50   ~ 0
 Vusb
 Wire Wire Line
@@ -698,9 +765,11 @@ F 3 "" H 5550 2650 50  0001 C CNN
 	1    5550 2650
 	1    0    0    -1  
 $EndComp
-Text HLabel 6150 2700 2    50   Input ~ 0
+Text HLabel 6150 2700 2    50   Output ~ 0
 V_BATT
 Wire Wire Line
 	6150 2700 5850 2700
 Connection ~ 5850 2700
+Text Notes 3850 1800 0    50   ~ 0
+SYSOFF high: Idle state, battery disconnected (draws 6 uA - ca. 10 years)\nSYSOFF low:\n- charger connected (voltage on IN pin)\n- key pressed, must be locked by CPU at startup
 $EndSCHEMATC

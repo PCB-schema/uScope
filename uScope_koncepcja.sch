@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 10
+Sheet 2 9
 Title ""
 Date "2020-08-14"
 Rev ""
@@ -446,4 +446,79 @@ F 3 "" H 1300 6000 50  0001 C CNN
 	1    1300 6000
 	1    0    0    -1  
 $EndComp
+$Comp
+L pspice:VSOURCE V_K?
+U 1 1 5F8FB35A
+P 9050 1300
+AR Path="/5F40DB43/5F8FB35A" Ref="V_K?"  Part="1" 
+AR Path="/5F40D708/5F8FB35A" Ref="V_K?"  Part="1" 
+F 0 "V_K?" H 8684 1254 50  0000 R CNN
+F 1 "500 V" H 8684 1345 50  0000 R CNN
+F 2 "" H 9050 1300 50  0001 C CNN
+F 3 "~" H 9050 1300 50  0001 C CNN
+	1    9050 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:VSOURCE V_K?
+U 1 1 5F8FB361
+P 8100 2800
+AR Path="/5F40DB43/5F8FB361" Ref="V_K?"  Part="1" 
+AR Path="/5F40D708/5F8FB361" Ref="V_K?"  Part="1" 
+F 0 "V_K?" H 7734 2754 50  0000 R CNN
+F 1 "5 kV" H 7734 2845 50  0000 R CNN
+F 2 "" H 8100 2800 50  0001 C CNN
+F 3 "~" H 8100 2800 50  0001 C CNN
+	1    8100 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:VSOURCE V_Focus?
+U 1 1 5F8FB368
+P 9250 2800
+AR Path="/5F40DB43/5F8FB368" Ref="V_Focus?"  Part="1" 
+AR Path="/5F40D708/5F8FB368" Ref="V_Focus?"  Part="1" 
+F 0 "V_Focus?" H 9478 2846 50  0000 L CNN
+F 1 "500 V" H 9478 2755 50  0000 L CNN
+F 2 "" H 9250 2800 50  0001 C CNN
+F 3 "~" H 9250 2800 50  0001 C CNN
+	1    9250 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2150 9250 2500
+Wire Wire Line
+	8100 1000 8100 2500
+Wire Wire Line
+	9450 2150 9250 2150
+Text Label 9550 1000 0    50   ~ 0
+U_K
+Text Label 9250 2450 1    50   ~ 0
+U_Focus
+Wire Wire Line
+	8100 1000 9050 1000
+Wire Wire Line
+	9750 1000 9750 1400
+$Comp
+L uScope:ElectronGun_MEMS U?
+U 1 1 5F8FB376
+P 9750 1950
+AR Path="/5F40DB43/5F8FB376" Ref="U?"  Part="1" 
+AR Path="/5F40D708/5F8FB376" Ref="U?"  Part="1" 
+F 0 "U?" H 10187 2148 50  0000 L CNN
+F 1 "ElectronGun_MEMS" H 10187 2057 50  0000 L CNN
+F 2 "" H 9750 1450 50  0001 C CNN
+F 3 "" H 9750 1450 50  0001 C CNN
+	1    9750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3100 9250 3100
+Connection ~ 9050 1000
+Wire Wire Line
+	9050 1000 9750 1000
+Wire Wire Line
+	9500 1650 9050 1650
+Wire Wire Line
+	9050 1650 9050 1600
 $EndSCHEMATC
