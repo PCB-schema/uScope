@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -171,5 +171,22 @@ S 1300 5100 2450 1250
 U 5F620813
 F0 "supply" 50
 F1 "supply.sch" 50
+$EndSheet
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5F742764
+P 5850 5700
+F 0 "SW?" H 5850 6067 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 5850 5976 50  0000 C CNN
+F 2 "" H 5700 5860 50  0001 C CNN
+F 3 "~" H 5850 5960 50  0001 C CNN
+	1    5850 5700
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1300 6700 1400 800 
+U 5F7A93EE
+F0 "Battery_Charger" 50
+F1 "Battery_Charger.sch" 50
 $EndSheet
 $EndSCHEMATC
