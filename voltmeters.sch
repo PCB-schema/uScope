@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -61,7 +61,7 @@ AR Path="/5F40DCB9/5F479BF7" Ref="R?"  Part="1"
 AR Path="/5F479892/5F479BF7" Ref="R?"  Part="1" 
 F 0 "R?" V 4500 2350 50  0000 C CNN
 F 1 "500M" V 4300 2350 50  0000 C CNN
-F 2 "" V 4330 2350 50  0001 C CNN
+F 2 "resistors_moje:MHR0317SA" V 4330 2350 50  0001 C CNN
 F 3 "~" H 4400 2350 50  0001 C CNN
 	1    4400 2350
 	0    -1   -1   0   
@@ -474,32 +474,6 @@ F 3 "" H 4700 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5F631A1F
-P 4400 3650
-AR Path="/5F40DCB9/5F631A1F" Ref="R?"  Part="1" 
-AR Path="/5F479892/5F631A1F" Ref="R?"  Part="1" 
-F 0 "R?" V 4500 3650 50  0000 C CNN
-F 1 "500M" V 4300 3650 50  0000 C CNN
-F 2 "" V 4330 3650 50  0001 C CNN
-F 3 "~" H 4400 3650 50  0001 C CNN
-	1    4400 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F631ACB
-P 4400 4950
-AR Path="/5F40DCB9/5F631ACB" Ref="R?"  Part="1" 
-AR Path="/5F479892/5F631ACB" Ref="R?"  Part="1" 
-F 0 "R?" V 4500 4950 50  0000 C CNN
-F 1 "500M" V 4300 4950 50  0000 C CNN
-F 2 "" V 4330 4950 50  0001 C CNN
-F 3 "~" H 4400 4950 50  0001 C CNN
-	1    4400 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5F8ED95A
 P 6100 2600
@@ -692,6 +666,32 @@ F 1 "47k" V 4900 2350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4930 2350 50  0001 C CNN
 F 3 "~" H 5000 2350 50  0001 C CNN
 	1    5000 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6E8D99
+P 4400 3650
+AR Path="/5F40DCB9/5F6E8D99" Ref="R?"  Part="1" 
+AR Path="/5F479892/5F6E8D99" Ref="R?"  Part="1" 
+F 0 "R?" V 4500 3650 50  0000 C CNN
+F 1 "500M" V 4300 3650 50  0000 C CNN
+F 2 "resistors_moje:MHR0317SA" V 4330 3650 50  0001 C CNN
+F 3 "~" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6E8E1F
+P 4400 4950
+AR Path="/5F40DCB9/5F6E8E1F" Ref="R?"  Part="1" 
+AR Path="/5F479892/5F6E8E1F" Ref="R?"  Part="1" 
+F 0 "R?" V 4500 4950 50  0000 C CNN
+F 1 "500M" V 4300 4950 50  0000 C CNN
+F 2 "resistors_moje:MHR0317SA" V 4330 4950 50  0001 C CNN
+F 3 "~" H 4400 4950 50  0001 C CNN
+	1    4400 4950
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

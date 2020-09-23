@@ -59,7 +59,7 @@ U 2 1 5F612D06
 P 4750 3650
 F 0 "U1" H 4572 3604 50  0000 R CNN
 F 1 "K" H 4572 3695 50  0000 R CNN
-F 2 "" H 4750 3650 50  0001 C CNN
+F 2 "Library_uScope:APD_P2_single" H 4750 3650 50  0001 C CNN
 F 3 "" H 4750 3650 50  0001 C CNN
 	2    4750 3650
 	-1   0    0    1   
@@ -70,7 +70,7 @@ U 2 1 5F612F4D
 P 5050 3000
 F 0 "U2" H 4872 2954 50  0000 R CNN
 F 1 "E" H 4872 3045 50  0000 R CNN
-F 2 "" H 5050 3000 50  0001 C CNN
+F 2 "Library_uScope:APD_P2_single" H 5050 3000 50  0001 C CNN
 F 3 "" H 5050 3000 50  0001 C CNN
 	2    5050 3000
 	-1   0    0    1   
@@ -81,7 +81,7 @@ U 2 1 5F612FE8
 P 5350 3650
 F 0 "U3" H 5528 3696 50  0000 L CNN
 F 1 "F" H 5528 3605 50  0000 L CNN
-F 2 "" H 5350 3650 50  0001 C CNN
+F 2 "Library_uScope:APD_P2_single" H 5350 3650 50  0001 C CNN
 F 3 "" H 5350 3650 50  0001 C CNN
 	2    5350 3650
 	1    0    0    -1  
@@ -182,6 +182,6 @@ F4 "dac_K" O R 6950 5150 50
 F5 "dac_F" O R 6950 5300 50 
 F6 "dac_E" O R 6950 5550 50 
 $EndSheet
-Text Notes 8000 1100 0    100  ~ 20
-TODO:\n- symbol i footprint dla koszyka Li-ion\n- footprint dla rezystorow 500 MOhm\n- footprint dla P2series
+Text Notes 7950 1600 0    100  ~ 20
+TODO:\n- symbol i footprint dla koszyka Li-ion\n- footprint dla rezystorow 500 MOhm\n- footprint dla P2series\n- tranzystory drivera, moc dobrac\n- battery fuse (reverse connection protection - nie ma sensu)\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow
 $EndSCHEMATC

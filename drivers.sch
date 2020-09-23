@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -28,7 +28,7 @@ AR Path="/5F61E605" Ref="U?"  Part="1"
 AR Path="/5F61C123/5F61E605" Ref="U1"  Part="1" 
 F 0 "U1" H 5728 1751 50  0000 L CNN
 F 1 "K" H 5728 1660 50  0000 L CNN
-F 2 "" H 5500 1700 50  0001 C CNN
+F 2 "Library_uScope:APD_P2_single" H 5500 1700 50  0001 C CNN
 F 3 "" H 5500 1700 50  0001 C CNN
 	1    5500 1700
 	1    0    0    -1  
@@ -41,7 +41,7 @@ AR Path="/5F61E60C" Ref="U?"  Part="1"
 AR Path="/5F61C123/5F61E60C" Ref="U2"  Part="1" 
 F 0 "U2" H 5728 3351 50  0000 L CNN
 F 1 "E" H 5728 3260 50  0000 L CNN
-F 2 "" H 5500 3300 50  0001 C CNN
+F 2 "Library_uScope:APD_P2_single" H 5500 3300 50  0001 C CNN
 F 3 "" H 5500 3300 50  0001 C CNN
 	1    5500 3300
 	1    0    0    -1  
@@ -54,7 +54,7 @@ AR Path="/5F61E613" Ref="U?"  Part="1"
 AR Path="/5F61C123/5F61E613" Ref="U3"  Part="1" 
 F 0 "U3" H 5728 4951 50  0000 L CNN
 F 1 "F" H 5728 4860 50  0000 L CNN
-F 2 "" H 5500 4900 50  0001 C CNN
+F 2 "Library_uScope:APD_P2_single" H 5500 4900 50  0001 C CNN
 F 3 "" H 5500 4900 50  0001 C CNN
 	1    5500 4900
 	1    0    0    -1  
