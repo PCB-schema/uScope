@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -14,12 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 750  750  1000 350 
-U 5F40D708
-F0 "uScope_koncepcja" 50
-F1 "uScope_koncepcja.sch" 50
-$EndSheet
 $Sheet
 S 750  1400 1000 400 
 U 5F463F4C
@@ -54,17 +48,6 @@ F 3 "" H 6050 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L uScope:APD_P2_single U1
-U 2 1 5F612D06
-P 4750 3650
-F 0 "U1" H 4572 3604 50  0000 R CNN
-F 1 "K" H 4572 3695 50  0000 R CNN
-F 2 "Library_uScope:APD_P2_single" H 4750 3650 50  0001 C CNN
-F 3 "" H 4750 3650 50  0001 C CNN
-	2    4750 3650
-	-1   0    0    1   
-$EndComp
-$Comp
 L uScope:APD_P2_single U2
 U 2 1 5F612F4D
 P 5050 3000
@@ -78,19 +61,15 @@ $EndComp
 $Comp
 L uScope:APD_P2_single U3
 U 2 1 5F612FE8
-P 5350 3650
-F 0 "U3" H 5528 3696 50  0000 L CNN
-F 1 "F" H 5528 3605 50  0000 L CNN
-F 2 "Library_uScope:APD_P2_single" H 5350 3650 50  0001 C CNN
-F 3 "" H 5350 3650 50  0001 C CNN
-	2    5350 3650
-	1    0    0    -1  
+P 4000 3100
+F 0 "U3" H 4178 3146 50  0000 L CNN
+F 1 "F" H 4178 3055 50  0000 L CNN
+F 2 "Library_uScope:APD_P2_single" H 4000 3100 50  0001 C CNN
+F 3 "" H 4000 3100 50  0001 C CNN
+	2    4000 3100
+	-1   0    0    1   
 $EndComp
 Connection ~ 5050 2750
-Wire Wire Line
-	4750 2750 4750 3400
-Wire Wire Line
-	5350 3900 5050 3900
 Wire Wire Line
 	5800 3400 5350 3400
 Wire Wire Line
@@ -118,20 +97,17 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5F61B422
-P 5050 3900
+P 900 3300
 AR Path="/5F40DCB9/5F61B422" Ref="#PWR?"  Part="1" 
 AR Path="/5F618AB9/5F61B422" Ref="#PWR?"  Part="1" 
 AR Path="/5F61B422" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5050 3740 50  0001 C CNN
-F 1 "GND" H 5050 3800 39  0000 C TNN
-F 2 "" H 5050 3900 50  0001 C CNN
-F 3 "" H 5050 3900 50  0001 C CNN
-	1    5050 3900
+F 0 "#PWR?" H 900 3140 50  0001 C CNN
+F 1 "GND" H 900 3200 39  0000 C TNN
+F 2 "" H 900 3300 50  0001 C CNN
+F 3 "" H 900 3300 50  0001 C CNN
+	1    900  3300
 	1    0    0    -1  
 $EndComp
-Connection ~ 5050 3900
-Wire Wire Line
-	5050 3900 4750 3900
 $Sheet
 S 7500 4750 1200 600 
 U 5F61C123
@@ -183,5 +159,215 @@ F5 "dac_F" O R 6950 5300 50
 F6 "dac_E" O R 6950 5550 50 
 $EndSheet
 Text Notes 7950 1600 0    100  ~ 20
-TODO:\n- symbol i footprint dla koszyka Li-ion\n- footprint dla rezystorow 500 MOhm\n- footprint dla P2series\n- tranzystory drivera, moc dobrac\n- battery fuse (reverse connection protection - nie ma sensu)\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow
+TODO:\n- tranzystory drivera, moc dobrac\n- battery fuse (reverse connection protection - nie ma sensu)\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow\n- ! polaczenie zrodel zasilania moze byc uwarunkowane tym, z ktorej strony wplywa prad. Bo nie sa to zrodla push-pull, tylko push.
+$Comp
+L power:-VDC #PWR?
+U 1 1 5F7DB7A7
+P 2100 2600
+F 0 "#PWR?" H 2100 2500 50  0001 C CNN
+F 1 "-VDC" H 2100 2875 50  0000 C CNN
+F 2 "" H 2100 2600 50  0001 C CNN
+F 3 "" H 2100 2600 50  0001 C CNN
+	1    2100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7FDE7C
+P 1200 2600
+AR Path="/5F40DCB9/5F7FDE7C" Ref="R?"  Part="1" 
+AR Path="/5F479892/5F7FDE7C" Ref="R?"  Part="1" 
+AR Path="/5F7FDE7C" Ref="R?"  Part="1" 
+F 0 "R?" V 1300 2600 50  0000 C CNN
+F 1 "VR25 470k" V 1100 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1130 2600 50  0001 C CNN
+F 3 "~" H 1200 2600 50  0001 C CNN
+	1    1200 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7FE032
+P 1800 2600
+AR Path="/5F40DCB9/5F7FE032" Ref="R?"  Part="1" 
+AR Path="/5F479892/5F7FE032" Ref="R?"  Part="1" 
+AR Path="/5F7FE032" Ref="R?"  Part="1" 
+F 0 "R?" V 1900 2600 50  0000 C CNN
+F 1 "VR25 470k" V 1700 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2600 50  0001 C CNN
+F 3 "~" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7FE5C6
+P 1500 3000
+AR Path="/5F61C123/5F7FE5C6" Ref="C?"  Part="1" 
+AR Path="/5F7FE5C6" Ref="C?"  Part="1" 
+F 0 "C?" H 1450 3050 50  0000 R CNN
+F 1 "10n" H 1450 2950 50  0000 R CNN
+F 2 "Capacitor_moja:C_Disc_D18.0_W5.0_P10.0mm" H 1500 3000 50  0001 C CNN
+F 3 "~" H 1500 3000 50  0001 C CNN
+F 4 "6kV cer." V 1600 3000 50  0000 C CNN "Voltage"
+	1    1500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F801B66
+P 2100 3000
+AR Path="/5F61C123/5F801B66" Ref="C?"  Part="1" 
+AR Path="/5F801B66" Ref="C?"  Part="1" 
+F 0 "C?" H 2050 3050 50  0000 R CNN
+F 1 "10n" H 2050 2950 50  0000 R CNN
+F 2 "Capacitor_moja:C_Disc_D18.0_W5.0_P10.0mm" H 2100 3000 50  0001 C CNN
+F 3 "~" H 2100 3000 50  0001 C CNN
+F 4 "6kV cer." V 2200 3000 50  0000 C CNN "Voltage"
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L uScope:APD_P2_single U1
+U 2 1 5F612D06
+P 900 3050
+F 0 "U1" H 722 3004 50  0000 R CNN
+F 1 "K" H 722 3095 50  0000 R CNN
+F 2 "Library_uScope:APD_P2_single" H 900 3050 50  0001 C CNN
+F 3 "" H 900 3050 50  0001 C CNN
+	2    900  3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8034A0
+P 1500 3300
+AR Path="/5F40DCB9/5F8034A0" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F8034A0" Ref="#PWR?"  Part="1" 
+AR Path="/5F8034A0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 3140 50  0001 C CNN
+F 1 "GND" H 1500 3200 39  0000 C TNN
+F 2 "" H 1500 3300 50  0001 C CNN
+F 3 "" H 1500 3300 50  0001 C CNN
+	1    1500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8034BB
+P 2100 3300
+AR Path="/5F40DCB9/5F8034BB" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F8034BB" Ref="#PWR?"  Part="1" 
+AR Path="/5F8034BB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 3140 50  0001 C CNN
+F 1 "GND" H 2100 3200 39  0000 C TNN
+F 2 "" H 2100 3300 50  0001 C CNN
+F 3 "" H 2100 3300 50  0001 C CNN
+	1    2100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3300 2100 3100
+Wire Wire Line
+	1500 3300 1500 3100
+Wire Wire Line
+	1350 2600 1500 2600
+Wire Wire Line
+	1950 2600 2100 2600
+Wire Wire Line
+	2100 2600 2100 2900
+Wire Wire Line
+	1500 2900 1500 2600
+Connection ~ 1500 2600
+Wire Wire Line
+	1500 2600 1650 2600
+Wire Wire Line
+	900  2800 900  2600
+Wire Wire Line
+	900  2600 1050 2600
+Connection ~ 2100 2600
+$Comp
+L power:-VDC #PWR?
+U 1 1 5F8051FA
+P 6050 2650
+F 0 "#PWR?" H 6050 2550 50  0001 C CNN
+F 1 "-VDC" H 6050 2925 50  0000 C CNN
+F 2 "" H 6050 2650 50  0001 C CNN
+F 3 "" H 6050 2650 50  0001 C CNN
+	1    6050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #PWR?
+U 1 1 5F807D09
+P 4000 2650
+F 0 "#PWR?" H 4000 2550 50  0001 C CNN
+F 1 "-VDC" H 4000 2925 50  0000 C CNN
+F 2 "" H 4000 2650 50  0001 C CNN
+F 3 "" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:RECOM_RHV2_single_vert U?
+U 1 1 5F80C561
+P 2650 4150
+F 0 "U?" H 2930 4196 50  0000 L CNN
+F 1 "RHV2-1212S/R20" H 2930 4105 50  0000 L CNN
+F 2 "" H 1000 5400 50  0001 C CNN
+F 3 "" H 1000 5400 50  0001 C CNN
+	1    2650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F811D88
+P 2800 4700
+AR Path="/5F40DCB9/5F811D88" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F811D88" Ref="#PWR?"  Part="1" 
+AR Path="/5F811D88" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5F811D88" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2800 4540 50  0001 C CNN
+F 1 "GND" H 2800 4600 39  0000 C TNN
+F 2 "" H 2800 4700 50  0001 C CNN
+F 3 "" H 2800 4700 50  0001 C CNN
+	1    2800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F812227
+P 2500 4700
+AR Path="/5F61C123/5F812227" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5F812227" Ref="#PWR?"  Part="1" 
+AR Path="/5F812227" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2500 4550 50  0001 C CNN
+F 1 "+12V" H 2500 4816 39  0000 C CNN
+F 2 "" H 2500 4700 50  0001 C CNN
+F 3 "" H 2500 4700 50  0001 C CNN
+	1    2500 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5F813615
+P 2800 3600
+F 0 "#PWR?" H 2800 3550 50  0001 C CNN
+F 1 "HVGND" H 2800 3427 50  0000 C CNN
+F 2 "" H 2800 3600 50  0001 C CNN
+F 3 "" H 2800 3600 50  0001 C CNN
+	1    2800 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power_my:HV+12V #PWR?
+U 1 1 5F8136A3
+P 2500 3600
+F 0 "#PWR?" H 2500 3450 50  0001 C CNN
+F 1 "HV+12V" H 2505 3773 50  0000 C CNN
+F 2 "" H 2500 3600 50  0001 C CNN
+F 3 "" H 2500 3600 50  0001 C CNN
+	1    2500 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
