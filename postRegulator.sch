@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 10
 Title ""
 Date ""
 Rev ""
@@ -1043,4 +1043,15 @@ Wire Wire Line
 	6000 3100 6450 3100
 Wire Wire Line
 	8550 3650 8900 3650
+$Comp
+L Interface_Optical:QSE159 U?
+U 1 1 5F82FE36
+P 6400 5600
+F 0 "U?" H 6138 5646 50  0000 R CNN
+F 1 "QSE159" H 6138 5555 50  0000 R CNN
+F 2 "OptoDevice:ONSemi_QSE15x" H 6400 5200 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/QSE159-D.pdf" H 7050 5900 50  0001 C CNN
+	1    6400 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

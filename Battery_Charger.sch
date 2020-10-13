@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 7 10
 Title ""
 Date ""
 Rev ""
@@ -35,8 +35,10 @@ AR Path="/5F620813/5F7AA8BE" Ref="J?"  Part="1"
 AR Path="/5F7A93EE/5F7AA8BE" Ref="J?"  Part="1" 
 F 0 "J?" H 3155 2917 50  0000 C CNN
 F 1 "USB_B_Micro" H 3155 2826 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 3250 2400 50  0001 C CNN
-F 3 "~" H 3250 2400 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal" H 3250 2400 50  0001 C CNN
+F 3 "https://www.amphenol-icc.com/micro-usb-101181940001lf.html" H 3250 2400 50  0001 C CNN
+F 4 "Amphenol" H 3100 2450 50  0001 C CNN "Mfr."
+F 5 "10118194-0001LF" H 3100 2450 50  0001 C CNN "Mfr. No"
 	1    3100 2450
 	1    0    0    -1  
 $EndComp
@@ -574,19 +576,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 3250 5950 3300
 $Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5F7AA9DF
-P 7850 3900
-AR Path="/5F620813/5F7AA9DF" Ref="SW?"  Part="1" 
-AR Path="/5F7A93EE/5F7AA9DF" Ref="SW?"  Part="1" 
-F 0 "SW?" V 7900 3950 50  0000 R CNN
-F 1 "PWRON" V 7800 3950 50  0000 R CNN
-F 2 "" H 7850 4200 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 7850 4200 50  0001 C CNN
-	1    7850 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5F7AA9E6
 P 4150 3300
@@ -634,8 +623,6 @@ Wire Wire Line
 Wire Wire Line
 	7750 3700 7750 3550
 Connection ~ 7750 3550
-Wire Wire Line
-	7850 3700 7750 3700
 Connection ~ 7750 3700
 Wire Wire Line
 	7850 4100 7750 4100
@@ -655,39 +642,11 @@ F 3 "" H 7750 4300 50  0001 C CNN
 	1    7750 4300
 	1    0    0    -1  
 $EndComp
-Connection ~ 7750 4100
-$Comp
-L Transistor_FET:BSS138 Q?
-U 1 1 5F7AAA0C
-P 7200 4100
-AR Path="/5F620813/5F7AAA0C" Ref="Q?"  Part="1" 
-AR Path="/5F7A93EE/5F7AAA0C" Ref="Q?"  Part="1" 
-F 0 "Q?" H 7405 4146 50  0000 L CNN
-F 1 "BSS138" H 7405 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7400 4025 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 7200 4100 50  0001 L CNN
-	1    7200 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7300 3900 7300 3700
-Connection ~ 7850 3700
 Wire Wire Line
 	7750 4300 7750 4100
 Connection ~ 7750 4300
-$Comp
-L Transistor_FET:BSS138 Q?
-U 1 1 5F7AAA19
-P 8500 4100
-AR Path="/5F620813/5F7AAA19" Ref="Q?"  Part="1" 
-AR Path="/5F7A93EE/5F7AAA19" Ref="Q?"  Part="1" 
-F 0 "Q?" H 8705 4146 50  0000 L CNN
-F 1 "BSS138" H 8705 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 4025 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 8500 4100 50  0001 L CNN
-	1    8500 4100
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 3900 8400 3700
 Text HLabel 8700 4100 2    50   Input ~ 0
@@ -729,23 +688,15 @@ F 3 "" H 6800 4550 50  0001 C CNN
 $EndComp
 $Comp
 L Device:Polyfuse_Small F?
-U 1 1 5F6C212E
-P 6450 3400
-F 0 "F?" H 6518 3446 50  0000 L CNN
-F 1 "Polyfuse" H 6518 3355 50  0000 L CNN
-F 2 "" H 6500 3200 50  0001 L CNN
-F 3 "~" H 6450 3400 50  0001 C CNN
-	1    6450 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Polyfuse_Small F?
 U 1 1 5F6C226D
 P 6250 3400
 F 0 "F?" H 6300 3350 50  0000 L CNN
-F 1 "Polyfuse" H 6300 3450 50  0000 L CNN
-F 2 "" H 6300 3200 50  0001 L CNN
+F 1 "2.5A" H 6300 3450 50  0000 L CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 6300 3200 50  0001 L CNN
 F 3 "~" H 6250 3400 50  0001 C CNN
+F 4 "Bel Fuse" H 6250 3400 50  0001 C CNN "Mfr."
+F 5 "0ZCG0125AF2B " H 6250 3400 50  0001 C CNN "Mfr. No"
+F 6 "0.45" H 6250 3400 50  0001 C CNN "Price [PLN]"
 	1    6250 3400
 	-1   0    0    1   
 $EndComp
@@ -783,14 +734,9 @@ F 3 "" H 6450 4000 50  0001 C CNN
 $EndComp
 Connection ~ 6250 3300
 Wire Wire Line
-	6250 3300 6450 3300
-Connection ~ 6450 3300
+	5900 3900 5900 3950
 Wire Wire Line
-	6450 3300 7750 3300
-Wire Wire Line
-	5900 3900 5900 4000
-Wire Wire Line
-	5350 3500 5900 3500
+	5350 3500 5700 3500
 Wire Wire Line
 	5350 3300 5650 3300
 Connection ~ 5650 3300
@@ -806,7 +752,90 @@ Wire Wire Line
 Wire Wire Line
 	7750 4300 7300 4300
 Wire Wire Line
-	7850 3700 8400 3700
-Wire Wire Line
 	7750 4300 8400 4300
+Wire Wire Line
+	6250 3300 6450 3300
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5F86532F
+P 6450 3400
+F 0 "F?" H 6500 3350 50  0000 L CNN
+F 1 "2.5A" H 6450 3500 50  0000 L CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 6500 3200 50  0001 L CNN
+F 3 "~" H 6450 3400 50  0001 C CNN
+F 4 "Bel Fuse" H 6450 3400 50  0001 C CNN "Mfr."
+F 5 "0ZCG0125AF2B " H 6450 3400 50  0001 C CNN "Mfr. No"
+F 6 "0.45" H 6450 3400 50  0001 C CNN "Price [PLN]"
+	1    6450 3400
+	-1   0    0    1   
+$EndComp
+Connection ~ 6450 3300
+Wire Wire Line
+	6450 3300 7750 3300
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5F8658FF
+P 7200 4100
+F 0 "Q?" H 7405 4146 50  0000 L CNN
+F 1 "2N7002" H 7405 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7400 4025 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7200 4100 50  0001 L CNN
+	1    7200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5F865B17
+P 8500 4100
+F 0 "Q?" H 8705 4146 50  0000 L CNN
+F 1 "2N7002" H 8705 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 4025 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8500 4100 50  0001 L CNN
+	1    8500 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW?
+U 1 1 5F865F09
+P 7850 3900
+F 0 "SW?" V 7896 3812 50  0000 R CNN
+F 1 "PWRON" V 7805 3812 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7850 4200 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 7850 4200 50  0001 C CNN
+F 4 "TL3301TF160QG" V 7850 3900 50  0001 C CNN "Mfr. No"
+F 5 "1.27" V 7850 3900 50  0001 C CNN "Price [PLN]"
+	1    7850 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 3700 7850 3700
+Connection ~ 7750 4100
+Wire Wire Line
+	8400 3700 7850 3700
+Connection ~ 7850 3700
+$Comp
+L Device:Thermistor_NTC NTC?
+U 1 1 5F869CC1
+P 5700 3750
+AR Path="/5F620813/5F869CC1" Ref="NTC?"  Part="1" 
+AR Path="/5F7A93EE/5F869CC1" Ref="NTC?"  Part="1" 
+F 0 "NTC?" H 5798 3796 50  0001 L CNN
+F 1 "10k" H 5798 3705 50  0001 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5700 3800 50  0001 C CNN
+F 3 "~" H 5700 3800 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3600 5700 3500
+Connection ~ 5700 3500
+Wire Wire Line
+	5700 3500 5900 3500
+Wire Wire Line
+	5700 3900 5700 3950
+Wire Wire Line
+	5700 3950 5900 3950
+Connection ~ 5900 3950
+Wire Wire Line
+	5900 3950 5900 4000
 $EndSCHEMATC

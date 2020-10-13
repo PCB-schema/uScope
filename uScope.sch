@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -150,8 +150,8 @@ Wire Wire Line
 $Sheet
 S 5250 4800 1700 1250
 U 5F7D6767
-F0 "MCU" 50
-F1 "MCU.sch" 50
+F0 "MCU_low" 50
+F1 "MCU_low.sch" 50
 F2 "PWRON_MCU" O L 5250 5150 50 
 F3 "BATT_SENSE" I L 5250 5550 50 
 F4 "dac_K" O R 6950 5150 50 
@@ -159,7 +159,7 @@ F5 "dac_F" O R 6950 5300 50
 F6 "dac_E" O R 6950 5550 50 
 $EndSheet
 Text Notes 7950 1600 0    100  ~ 20
-TODO:\n- tranzystory drivera, moc dobrac\n- battery fuse (reverse connection protection - nie ma sensu)\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow\n- ! polaczenie zrodel zasilania moze byc uwarunkowane tym, z ktorej strony wplywa prad. Bo nie sa to zrodla push-pull, tylko push.
+TODO:\n- battery fuse (reverse connection protection - nie ma sensu)\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow\n- zasilanie strony wysokiej przewidziec z baterii, miejsce zostawic (gdyby RECOM nie doszedl)\n- STM32G030K8 symbol dodac.. a moze 'F' bedzie ok? Porownac rozklad pinow\n- Nucleo dodac symbol connectorow, i wytrzasnac skads model 3D i footprint
 $Comp
 L power:-VDC #PWR?
 U 1 1 5F7DB7A7
@@ -172,7 +172,7 @@ F 3 "" H 2100 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R_Small R?
 U 1 1 5F7FDE7C
 P 1200 2600
 AR Path="/5F40DCB9/5F7FDE7C" Ref="R?"  Part="1" 
@@ -182,21 +182,10 @@ F 0 "R?" V 1300 2600 50  0000 C CNN
 F 1 "VR25 470k" V 1100 2600 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1130 2600 50  0001 C CNN
 F 3 "~" H 1200 2600 50  0001 C CNN
+F 4 "Vishay" V 1200 2600 50  0001 C CNN "Mfr."
+F 5 "VR25000004703JA500" V 1200 2600 50  0001 C CNN "Mfr. No"
+F 6 "0.6" V 1200 2600 50  0001 C CNN "Price [PLN]"
 	1    1200 2600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F7FE032
-P 1800 2600
-AR Path="/5F40DCB9/5F7FE032" Ref="R?"  Part="1" 
-AR Path="/5F479892/5F7FE032" Ref="R?"  Part="1" 
-AR Path="/5F7FE032" Ref="R?"  Part="1" 
-F 0 "R?" V 1900 2600 50  0000 C CNN
-F 1 "VR25 470k" V 1700 2600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2600 50  0001 C CNN
-F 3 "~" H 1800 2600 50  0001 C CNN
-	1    1800 2600
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -271,20 +260,20 @@ Wire Wire Line
 Wire Wire Line
 	1500 3300 1500 3100
 Wire Wire Line
-	1350 2600 1500 2600
+	1300 2600 1500 2600
 Wire Wire Line
-	1950 2600 2100 2600
+	1900 2600 2100 2600
 Wire Wire Line
 	2100 2600 2100 2900
 Wire Wire Line
 	1500 2900 1500 2600
 Connection ~ 1500 2600
 Wire Wire Line
-	1500 2600 1650 2600
+	1500 2600 1700 2600
 Wire Wire Line
 	900  2800 900  2600
 Wire Wire Line
-	900  2600 1050 2600
+	900  2600 1100 2600
 Connection ~ 2100 2600
 $Comp
 L power:-VDC #PWR?
@@ -368,6 +357,74 @@ F 1 "HV+12V" H 2505 3773 50  0000 C CNN
 F 2 "" H 2500 3600 50  0001 C CNN
 F 3 "" H 2500 3600 50  0001 C CNN
 	1    2500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F82AF16
+P 1800 2600
+AR Path="/5F40DCB9/5F82AF16" Ref="R?"  Part="1" 
+AR Path="/5F479892/5F82AF16" Ref="R?"  Part="1" 
+AR Path="/5F82AF16" Ref="R?"  Part="1" 
+F 0 "R?" V 1900 2600 50  0000 C CNN
+F 1 "VR25 470k" V 1700 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2600 50  0001 C CNN
+F 3 "~" H 1800 2600 50  0001 C CNN
+F 4 "Vishay" V 1800 2600 50  0001 C CNN "Mfr."
+F 5 "VR25000004703JA500" V 1800 2600 50  0001 C CNN "Mfr. No"
+F 6 "0.6" V 1800 2600 50  0001 C CNN "Price [PLN]"
+	1    1800 2600
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 3800 3700 600  900 
+U 5F82F010
+F0 "communication" 50
+F1 "communication.sch" 50
+F2 "UART_TX" I R 4400 4400 50 
+F3 "UART_RX" O R 4400 4500 50 
+F4 "HV_UART_RX" O L 3800 3750 50 
+F5 "HV_UART_TX" I L 3800 3850 50 
+$EndSheet
+$Sheet
+S 2850 900  900  600 
+U 5F8337DC
+F0 "MCU_high" 50
+F1 "MCU_high.sch" 50
+F2 "UART_RX" I L 2850 1150 50 
+F3 "UART_TX" O L 2850 1250 50 
+$EndSheet
+$Comp
+L Isolator_Analog:IL300 U?
+U 1 1 5F862EA9
+P 10100 2750
+F 0 "U?" H 10100 3275 50  0000 C CNN
+F 1 "IL300" H 10100 3184 50  0000 C CNN
+F 2 "" H 9800 3050 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/83622/il300.pdf" H 9900 3150 50  0001 L CNN
+	1    10100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:NHD-0420H1Z U?
+U 1 1 5F873B78
+P 9600 4150
+F 0 "U?" H 9600 3264 50  0000 C CNN
+F 1 "NHD-0420H1Z" H 9600 3173 50  0000 C CNN
+F 2 "Display:NHD-0420H1Z" H 9600 3250 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 9700 4050 50  0001 C CNN
+	1    9600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:NHD-C0220BIZ U?
+U 1 1 5F873C49
+P 10600 4350
+F 0 "U?" H 10600 5028 50  0000 C CNN
+F 1 "NHD-C0220BIZ" H 10600 4937 50  0000 C CNN
+F 2 "Display:NHD-C0220BiZ" H 10600 3750 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-C0220BiZ-FSW-FBW-3V3M.pdf" H 10300 4950 50  0001 C CNN
+	1    10600 4350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
