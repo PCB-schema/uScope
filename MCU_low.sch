@@ -15,19 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Rotary_Encoder_Switch SW?
-U 1 1 5F7D692F
-P 2400 6850
-AR Path="/5F7D692F" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5F7D692F" Ref="SW?"  Part="1" 
-F 0 "SW?" H 2400 7217 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 2400 7126 50  0000 C CNN
-F 2 "" H 2250 7010 50  0001 C CNN
-F 3 "~" H 2400 7110 50  0001 C CNN
-	1    2400 6850
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_Module:NUCLEO64-F411RE U?
 U 1 1 5F7D791C
 P 5850 3850
@@ -428,4 +415,69 @@ F 3 "" H 8450 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8450 5300
+$Comp
+L miscellaneous:LCD_I2C U?
+U 1 1 5F8792B9
+P 8950 1200
+F 0 "U?" H 9579 1246 50  0000 L CNN
+F 1 "LCD_I2C" H 9579 1155 50  0000 L CNN
+F 2 "" H 8950 1200 50  0001 C CNN
+F 3 "" H 8950 1200 50  0001 C CNN
+	1    8950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F879504
+P 8550 1500
+AR Path="/5F40DCB9/5F879504" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5F879504" Ref="#PWR?"  Part="1" 
+AR Path="/5F879504" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5F879504" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5F879504" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8550 1340 50  0001 C CNN
+F 1 "GND" H 8550 1400 39  0000 C TNN
+F 2 "" H 8550 1500 50  0001 C CNN
+F 3 "" H 8550 1500 50  0001 C CNN
+	1    8550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5F87AEF8
+P 7700 1200
+AR Path="/5F87AEF8" Ref="SW?"  Part="1" 
+AR Path="/5F7D6767/5F87AEF8" Ref="SW?"  Part="1" 
+F 0 "SW?" H 7700 1567 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 7700 1476 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm_CircularMountingHoles" H 7550 1360 50  0001 C CNN
+F 3 "~" H 7700 1460 50  0001 C CNN
+F 4 "PEC12R-4222F-S0024" H 7700 1200 50  0001 C CNN "Mfr. No"
+F 5 "4.33" H 7700 1200 50  0001 C CNN "Price [PLN]"
+	1    7700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 5F87E496
+P 3050 2950
+F 0 "U?" H 3000 1364 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 3000 1273 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 2450 1550 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 3050 2950 50  0001 C CNN
+	1    3050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L miscellaneous:DAC8564 U?
+U 1 1 5F888149
+P 5500 6750
+F 0 "U?" H 5500 5814 50  0000 C CNN
+F 1 "DAC8564" H 5500 5723 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6500 5700 50  0001 C CNN
+F 3 "" H 6500 5700 50  0001 C CNN
+F 4 "44.7" H 5500 6750 50  0001 C CNN "Price [PLN]"
+	1    5500 6750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

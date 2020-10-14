@@ -159,7 +159,7 @@ F5 "dac_F" O R 6950 5300 50
 F6 "dac_E" O R 6950 5550 50 
 $EndSheet
 Text Notes 7950 1600 0    100  ~ 20
-TODO:\n- battery fuse (reverse connection protection - nie ma sensu)\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow\n- zasilanie strony wysokiej przewidziec z baterii, miejsce zostawic (gdyby RECOM nie doszedl)\n- STM32G030K8 symbol dodac.. a moze 'F' bedzie ok? Porownac rozklad pinow\n- Nucleo dodac symbol connectorow, i wytrzasnac skads model 3D i footprint
+TODO:\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow\n- zasilanie strony wysokiej przewidziec z baterii, miejsce zostawic (gdyby RECOM nie doszedl)\n- STM32G030K8 symbol dodac.. a moze 'F' bedzie ok? Porownac rozklad pinow\n- Nucleo dodac symbol connectorow, i wytrzasnac skads model 3D i footprint\n- ADS'y dodac symbole, rozpisac piny CPU (CubeMX) i wybrac proce.\n- IL300 moze byc zasilane z baterii, a jej zalaczanie zrobie przez transoptor
 $Comp
 L power:-VDC #PWR?
 U 1 1 5F7DB7A7
@@ -403,28 +403,6 @@ F 1 "IL300" H 10100 3184 50  0000 C CNN
 F 2 "" H 9800 3050 50  0001 L CNN
 F 3 "http://www.vishay.com/docs/83622/il300.pdf" H 9900 3150 50  0001 L CNN
 	1    10100 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Display_Character:NHD-0420H1Z U?
-U 1 1 5F873B78
-P 9600 4150
-F 0 "U?" H 9600 3264 50  0000 C CNN
-F 1 "NHD-0420H1Z" H 9600 3173 50  0000 C CNN
-F 2 "Display:NHD-0420H1Z" H 9600 3250 50  0001 C CNN
-F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 9700 4050 50  0001 C CNN
-	1    9600 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Display_Character:NHD-C0220BIZ U?
-U 1 1 5F873C49
-P 10600 4350
-F 0 "U?" H 10600 5028 50  0000 C CNN
-F 1 "NHD-C0220BIZ" H 10600 4937 50  0000 C CNN
-F 2 "Display:NHD-C0220BiZ" H 10600 3750 50  0001 C CNN
-F 3 "http://www.newhavendisplay.com/specs/NHD-C0220BiZ-FSW-FBW-3V3M.pdf" H 10300 4950 50  0001 C CNN
-	1    10600 4350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
