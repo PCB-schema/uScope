@@ -109,13 +109,19 @@ F 3 "" H 900 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 7500 4750 1200 600 
+S 7500 4750 1200 1250
 U 5F61C123
 F0 "drivers" 50
 F1 "drivers.sch" 50
-F2 "dac_K" I L 7500 4900 50 
-F3 "dac_F" I L 7500 5200 50 
-F4 "dac_E" I L 7500 5050 50 
+F2 "TIM_CH1" I L 7500 4850 50 
+F3 "TIM_CH2" I L 7500 4950 50 
+F4 "TIM_CH3" I L 7500 5050 50 
+F5 "TIM_CH4" I L 7500 5150 50 
+F6 "loadDAC" I L 7500 5350 50 
+F7 "DAC_SPI_DIN" I L 7500 5450 50 
+F8 "DAC_SPI_CLK" I L 7500 5550 50 
+F9 "~DAC_SPI_CS" I L 7500 5650 50 
+F10 "~DAC_SPI_SYNC" I L 7500 5750 50 
 $EndSheet
 Text Notes 4750 2300 0    50   ~ 0
 Napiecie E: takie polaczenie jest dobre\nze wzgledu na moc, ale tez na eliminacje ripple (nie wplywaja na prad).\nAle co z Focus, moze F tez lepiej podczepic pod katode?\nTo zalezy, czy bedzie tylko dodatnie czy +/- od katody
@@ -131,32 +137,32 @@ Text Notes 5450 3050 0    50   ~ 0
 Wire Wire Line
 	5800 3900 5800 3750
 $Sheet
-S 2900 5000 950  700 
+S 2450 6250 950  700 
 U 5F620813
 F0 "supply" 50
 F1 "supply.sch" 50
-F2 "BATT_IN" I L 2900 5350 50 
+F2 "BATT_IN" I L 2450 6600 50 
 $EndSheet
 $Sheet
-S 1350 5000 950  700 
+S 900  6250 950  700 
 U 5F7A93EE
 F0 "Battery_Charger" 50
 F1 "Battery_Charger.sch" 50
-F2 "V_BATT" O R 2300 5350 50 
-F3 "PWRON_LOCK" I L 1350 5450 50 
+F2 "V_BATT" O R 1850 6600 50 
+F3 "PWRON_LOCK" I L 900 6700 50 
 $EndSheet
 Wire Wire Line
-	2300 5350 2900 5350
+	1850 6600 2450 6600
 $Sheet
-S 5250 4800 1700 1250
+S 4700 5750 1700 1250
 U 5F7D6767
 F0 "MCU_low" 50
 F1 "MCU_low.sch" 50
-F2 "PWRON_MCU" O L 5250 5150 50 
-F3 "BATT_SENSE" I L 5250 5550 50 
-F4 "dac_K" O R 6950 5150 50 
-F5 "dac_F" O R 6950 5300 50 
-F6 "dac_E" O R 6950 5550 50 
+F2 "PWRON_MCU" O L 4700 6100 50 
+F3 "BATT_SENSE" I L 4700 6500 50 
+F4 "dac_K" O R 6400 6100 50 
+F5 "dac_F" O R 6400 6250 50 
+F6 "dac_E" O R 6400 6500 50 
 $EndSheet
 Text Notes 7950 1600 0    100  ~ 20
 TODO:\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow\n- zasilanie strony wysokiej przewidziec z baterii, miejsce zostawic (gdyby RECOM nie doszedl)\n- STM32G030K8 symbol dodac.. a moze 'F' bedzie ok? Porownac rozklad pinow\n- Nucleo dodac symbol connectorow, i wytrzasnac skads model 3D i footprint\n- ADS'y dodac symbole, rozpisac piny CPU (CubeMX) i wybrac proce.\n- IL300 moze byc zasilane z baterii, a jej zalaczanie zrobie przez transoptor
@@ -394,15 +400,19 @@ F1 "MCU_high.sch" 50
 F2 "UART_RX" I L 2850 1150 50 
 F3 "UART_TX" O L 2850 1250 50 
 $EndSheet
+Text Notes 850  7650 0    50   ~ 0
+NOTE:\n* ADS131M06 pin-to-pin compatible with: -M08
 $Comp
-L Isolator_Analog:IL300 U?
-U 1 1 5F862EA9
-P 10100 2750
-F 0 "U?" H 10100 3275 50  0000 C CNN
-F 1 "IL300" H 10100 3184 50  0000 C CNN
-F 2 "" H 9800 3050 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/83622/il300.pdf" H 9900 3150 50  0001 L CNN
-	1    10100 2750
+L uScope:APD_P2_single U?
+U 2 1 5FA4EFC3
+P 5600 4250
+AR Path="/5FA4EFC3" Ref="U?"  Part="2" 
+AR Path="/5F61C123/5FA4EFC3" Ref="U?"  Part="2" 
+F 0 "U?" H 5828 4301 50  0000 L CNN
+F 1 "Pump" H 5828 4210 50  0000 L CNN
+F 2 "Library_uScope:APD_P2_single" H 5600 4250 50  0001 C CNN
+F 3 "" H 5600 4250 50  0001 C CNN
+	2    5600 4250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
