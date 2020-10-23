@@ -1170,7 +1170,7 @@ P 6000 7200
 AR Path="/5F985527" Ref="U?"  Part="1" 
 AR Path="/5F61C123/5F985527" Ref="U4"  Part="1" 
 F 0 "U4" H 6228 7251 50  0000 L CNN
-F 1 "K" H 6228 7160 50  0000 L CNN
+F 1 "Pump" H 6228 7160 50  0000 L CNN
 F 2 "Library_uScope:APD_P2_single" H 6000 7200 50  0001 C CNN
 F 3 "" H 6000 7200 50  0001 C CNN
 	1    6000 7200
@@ -1819,6 +1819,7 @@ AR Path="/5F40DCB9/5FC7C18C" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5FC7C18C" Ref="#PWR?"  Part="1" 
 AR Path="/5FC7C18C" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5FC7C18C" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5FC7C18C" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3400 2190 50  0001 C CNN
 F 1 "GND" H 3400 2250 39  0000 C TNN
 F 2 "" H 3400 2350 50  0001 C CNN
@@ -1834,6 +1835,7 @@ AR Path="/5F40DCB9/5FC7C192" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/5FC7C192" Ref="#PWR?"  Part="1" 
 AR Path="/5FC7C192" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5FC7C192" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/5FC7C192" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3700 2190 50  0001 C CNN
 F 1 "GND" H 3700 2250 39  0000 C TNN
 F 2 "" H 3700 2350 50  0001 C CNN
@@ -1874,7 +1876,7 @@ U 1 1 5FCDAF2A
 P 3000 2100
 F 0 "L?" V 3205 2100 50  0000 C CNN
 F 1 "BLM18RK102" V 3114 2100 50  0000 C CNN
-F 2 "" H 3000 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3000 2100 50  0001 C CNN
 F 3 "~" H 3000 2100 50  0001 C CNN
 	1    3000 2100
 	0    -1   -1   0   
@@ -1927,7 +1929,7 @@ F 3 "" H 2150 3700 50  0001 C CNN
 	1    2150 3700
 	1    0    0    -1  
 $EndComp
-Text HLabel 1550 2450 0    50   Input ~ 0
+Text HLabel 1650 2650 0    50   Input ~ 0
 loadDAC
 $Comp
 L Device:R_Small R?
@@ -2010,17 +2012,6 @@ F 1 "100k" V 4950 7200 50  0000 C TNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 7200 50  0001 C CNN
 F 3 "~" H 5050 7200 50  0001 C CNN
 	1    5050 7200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 600B8FF1
-P 1750 2450
-F 0 "R?" V 1850 2450 50  0000 C BNN
-F 1 "10k" V 1650 2450 50  0000 C TNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 2450 50  0001 C CNN
-F 3 "~" H 1750 2450 50  0001 C CNN
-	1    1750 2450
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2134,13 +2125,9 @@ F 3 "~" H 4050 6300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1650 2450 1550 2450
+	1750 2650 1650 2650
 Wire Wire Line
-	2300 2450 2300 2750
-Wire Wire Line
-	2300 2750 2400 2750
-Wire Wire Line
-	1850 2450 2300 2450
+	2350 2750 2400 2750
 Wire Wire Line
 	5750 4600 5700 4600
 Wire Wire Line
@@ -2643,37 +2630,35 @@ F 3 "~" H 7950 4300 50  0001 C CNN
 	1    7950 4300
 	0    -1   -1   0   
 $EndComp
-Text HLabel 2100 2850 0    50   Input ~ 0
+Text HLabel 1650 2800 0    50   Input ~ 0
 DAC_SPI_DIN
-Text HLabel 2100 2950 0    50   Input ~ 0
+Text HLabel 1650 2950 0    50   Input ~ 0
 DAC_SPI_CLK
 Wire Wire Line
-	2100 2950 2400 2950
+	1650 2950 1750 2950
 Wire Wire Line
-	2400 2850 2100 2850
-Text HLabel 1600 3200 0    50   Input ~ 0
+	2050 2800 1650 2800
+Text HLabel 1700 3250 0    50   Input ~ 0
 ~DAC_SPI_CS
 $Comp
 L Device:R_Small R?
 U 1 1 601DDCFB
-P 1750 3200
-F 0 "R?" V 1850 3200 50  0000 C BNN
-F 1 "100R" V 1650 3200 50  0000 C TNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 3200 50  0001 C CNN
-F 3 "~" H 1750 3200 50  0001 C CNN
-	1    1750 3200
+P 1850 3250
+F 0 "R?" V 1950 3250 50  0000 C BNN
+F 1 "10R" V 1750 3250 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 3250 50  0001 C CNN
+F 3 "~" H 1850 3250 50  0001 C CNN
+	1    1850 3250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1850 3200 2350 3200
+	2350 3150 2400 3150
 Wire Wire Line
-	2350 3200 2400 3150
-Wire Wire Line
-	1650 3200 1600 3200
-Text HLabel 2050 3050 0    50   Input ~ 0
+	1750 3250 1700 3250
+Text HLabel 1650 3100 0    50   Input ~ 0
 ~DAC_SPI_SYNC
 Wire Wire Line
-	2050 3050 2400 3050
+	1650 3100 2050 3100
 $Comp
 L power:GND #PWR?
 U 1 1 602426A8
@@ -2682,6 +2667,7 @@ AR Path="/5F40DCB9/602426A8" Ref="#PWR?"  Part="1"
 AR Path="/5F618AB9/602426A8" Ref="#PWR?"  Part="1" 
 AR Path="/602426A8" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/602426A8" Ref="#PWR?"  Part="1" 
+AR Path="/5F61C123/602426A8" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3750 3490 50  0001 C CNN
 F 1 "GND" H 3750 3550 39  0000 C TNN
 F 2 "" H 3750 3650 50  0001 C CNN
@@ -2705,4 +2691,70 @@ Wire Wire Line
 Wire Wire Line
 	3750 3400 3750 3450
 NoConn ~ 3600 3550
+$Comp
+L Device:R_Small R?
+U 1 1 5F9685B2
+P 1850 2650
+F 0 "R?" V 1950 2650 50  0000 C BNN
+F 1 "10R" V 1750 2650 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 2650 50  0001 C CNN
+F 3 "~" H 1850 2650 50  0001 C CNN
+	1    1850 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F98196A
+P 2150 2800
+F 0 "R?" V 2250 2800 50  0000 C BNN
+F 1 "10R" V 2050 2800 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2080 2800 50  0001 C CNN
+F 3 "~" H 2150 2800 50  0001 C CNN
+	1    2150 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F981A72
+P 1850 2950
+F 0 "R?" V 1950 2950 50  0000 C BNN
+F 1 "10R" V 1750 2950 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 2950 50  0001 C CNN
+F 3 "~" H 1850 2950 50  0001 C CNN
+	1    1850 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F98217A
+P 2150 3100
+F 0 "R?" V 2250 3100 50  0000 C BNN
+F 1 "10R" V 2050 3100 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2080 3100 50  0001 C CNN
+F 3 "~" H 2150 3100 50  0001 C CNN
+	1    2150 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 2650 2350 2750
+Wire Wire Line
+	2400 2850 2300 2850
+Wire Wire Line
+	2300 2850 2300 2800
+Wire Wire Line
+	2300 2800 2250 2800
+Wire Wire Line
+	2400 3050 2300 3050
+Wire Wire Line
+	2300 3050 2300 3100
+Wire Wire Line
+	2300 3100 2250 3100
+Wire Wire Line
+	2350 3150 2350 3250
+Wire Wire Line
+	2350 3250 1950 3250
+Wire Wire Line
+	2400 2950 1950 2950
+Wire Wire Line
+	2350 2650 1950 2650
 $EndSCHEMATC

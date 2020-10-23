@@ -109,7 +109,7 @@ F 3 "" H 900 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 7500 4750 1200 1250
+S 7500 4750 800  1100
 U 5F61C123
 F0 "drivers" 50
 F1 "drivers.sch" 50
@@ -141,31 +141,23 @@ S 2450 6250 950  700
 U 5F620813
 F0 "supply" 50
 F1 "supply.sch" 50
-F2 "BATT_IN" I L 2450 6600 50 
 $EndSheet
 $Sheet
 S 900  6250 950  700 
 U 5F7A93EE
 F0 "Battery_Charger" 50
 F1 "Battery_Charger.sch" 50
-F2 "V_BATT" O R 1850 6600 50 
 F3 "PWRON_LOCK" I L 900 6700 50 
 $EndSheet
-Wire Wire Line
-	1850 6600 2450 6600
 $Sheet
 S 4700 5750 1700 1250
 U 5F7D6767
 F0 "MCU_low" 50
 F1 "MCU_low.sch" 50
 F2 "PWRON_MCU" O L 4700 6100 50 
-F3 "BATT_SENSE" I L 4700 6500 50 
-F4 "dac_K" O R 6400 6100 50 
-F5 "dac_F" O R 6400 6250 50 
-F6 "dac_E" O R 6400 6500 50 
 $EndSheet
 Text Notes 7950 1600 0    100  ~ 20
-TODO:\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow\n- zasilanie strony wysokiej przewidziec z baterii, miejsce zostawic (gdyby RECOM nie doszedl)\n- STM32G030K8 symbol dodac.. a moze 'F' bedzie ok? Porownac rozklad pinow\n- Nucleo dodac symbol connectorow, i wytrzasnac skads model 3D i footprint\n- ADS'y dodac symbole, rozpisac piny CPU (CubeMX) i wybrac proce.\n- IL300 moze byc zasilane z baterii, a jej zalaczanie zrobie przez transoptor
+TODO:\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow
 $Comp
 L power:-VDC #PWR?
 U 1 1 5F7DB7A7

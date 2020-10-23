@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
+Sheet 4 10
 Title ""
 Date ""
 Rev ""
@@ -162,37 +162,6 @@ Connection ~ 3400 4000
 Wire Wire Line
 	3400 4000 3450 4000
 $Comp
-L Diode:1N4148 D?
-U 1 1 5F618EEA
-P 2950 4150
-AR Path="/5F40DCB9/5F618EEA" Ref="D?"  Part="1" 
-AR Path="/5F618AB9/5F618EEA" Ref="D?"  Part="1" 
-F 0 "D?" V 2904 4229 50  0000 L CNN
-F 1 "1N4148" V 2995 4229 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2950 3975 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2950 4150 50  0001 C CNN
-	1    2950 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N4148 D?
-U 1 1 5F618EF1
-P 2650 4150
-AR Path="/5F40DCB9/5F618EF1" Ref="D?"  Part="1" 
-AR Path="/5F618AB9/5F618EF1" Ref="D?"  Part="1" 
-F 0 "D?" V 2696 4071 50  0000 R CNN
-F 1 "1N4148" V 2605 4071 50  0001 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2650 3975 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2650 4150 50  0001 C CNN
-	1    2650 4150
-	0    -1   -1   0   
-$EndComp
-Connection ~ 2950 4000
-Wire Wire Line
-	2950 4000 3400 4000
-Wire Wire Line
-	2650 4000 2950 4000
-$Comp
 L Device:C_Small C?
 U 1 1 5F618EFF
 P 4200 4450
@@ -277,9 +246,6 @@ Wire Wire Line
 	6500 3800 6800 3800
 Text Label 6550 3800 0    50   ~ 0
 I_adc
-Wire Wire Line
-	2650 4000 2450 4000
-Connection ~ 2650 4000
 Text HLabel 2450 4000 0    50   Input ~ 0
 in
 Text HLabel 6800 3800 2    50   Output ~ 0
@@ -362,4 +328,34 @@ Wire Wire Line
 	4900 3900 5300 3900
 Wire Wire Line
 	4900 3950 4900 3900
+$Comp
+L Diode:1N4448WS D?
+U 1 1 5FE19E0E
+P 2950 4150
+F 0 "D?" V 2904 4230 50  0000 L CNN
+F 1 "1N4448WS" V 2995 4230 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 2950 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81387/1n4448ws.pdf" H 2950 4150 50  0001 C CNN
+	1    2950 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 4000 2650 4000
+Connection ~ 2950 4000
+Wire Wire Line
+	2950 4000 3400 4000
+$Comp
+L Diode:1N4448WS D?
+U 1 1 5FE19EDD
+P 2650 4150
+F 0 "D?" V 2650 4070 50  0000 R CNN
+F 1 "1N4448WS" V 2605 4070 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323" H 2650 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/81387/1n4448ws.pdf" H 2650 4150 50  0001 C CNN
+	1    2650 4150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2650 4000
+Wire Wire Line
+	2650 4000 2950 4000
 $EndSCHEMATC

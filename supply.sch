@@ -390,8 +390,6 @@ F 3 "~" H 4150 2050 50  0001 C CNN
 	1    4150 2050
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1500 2800 0    50   Input ~ 0
-BATT_IN
 Wire Wire Line
 	4700 2800 5100 2800
 Wire Wire Line
@@ -478,8 +476,6 @@ Wire Wire Line
 Connection ~ 5450 2800
 Wire Wire Line
 	5450 2800 5750 2800
-Wire Wire Line
-	1500 2800 1600 2800
 $Comp
 L Device:R_Small R?
 U 1 1 5F82D176
@@ -1542,7 +1538,6 @@ $EndComp
 Wire Wire Line
 	1600 5900 1600 2800
 Connection ~ 1600 5900
-Connection ~ 1600 2800
 Wire Wire Line
 	1600 2800 1750 2800
 $Comp
@@ -1773,4 +1768,19 @@ $EndComp
 Wire Wire Line
 	6850 5900 6850 5850
 Connection ~ 6850 5900
+$Comp
+L power:+BATT #PWR?
+U 1 1 60010109
+P 1750 2700
+AR Path="/5F620813/60010109" Ref="#PWR?"  Part="1" 
+AR Path="/5F7A93EE/60010109" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 2550 50  0001 C CNN
+F 1 "+BATT" H 1765 2873 50  0000 C CNN
+F 2 "" H 1750 2700 50  0001 C CNN
+F 3 "" H 1750 2700 50  0001 C CNN
+	1    1750 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2700 1750 2800
 $EndSCHEMATC
