@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 10
+Sheet 2 11
 Title ""
 Date ""
 Rev ""
@@ -506,8 +506,8 @@ P 5900 3100
 AR Path="/5F40DCB9/5F6FE846" Ref="C?"  Part="1" 
 AR Path="/5F463F4C/5F6FE846" Ref="C?"  Part="1" 
 F 0 "C?" V 5950 3050 50  0001 R CNN
-F 1 "9n9 12k5V" V 6000 3100 50  0000 C CNN
-F 2 "" H 5900 3100 50  0001 C CNN
+F 1 "1n5 6kV" V 6000 3100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L26.5mm_W7.0mm_P22.50mm_MKS4" H 5900 3100 50  0001 C CNN
 F 3 "~" H 5900 3100 50  0001 C CNN
 	1    5900 3100
 	0    -1   -1   0   
@@ -1043,15 +1043,4 @@ Wire Wire Line
 	6000 3100 6450 3100
 Wire Wire Line
 	8550 3650 8900 3650
-$Comp
-L Interface_Optical:QSE159 U?
-U 1 1 5F82FE36
-P 5400 5000
-F 0 "U?" H 5138 5046 50  0000 R CNN
-F 1 "QSE159" H 5138 4955 50  0000 R CNN
-F 2 "OptoDevice:ONSemi_QSE15x" H 5400 4600 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/QSE159-D.pdf" H 6050 5300 50  0001 C CNN
-	1    5400 5000
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

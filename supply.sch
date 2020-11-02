@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -120,17 +120,6 @@ F 3 "" H 4000 3250 50  0001 C CNN
 	1    4000 3250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D_Schottky D?
-U 1 1 5F6394F8
-P 4100 2800
-F 0 "D?" H 4100 2583 50  0000 C CNN
-F 1 "PMEG3050BEP" H 4100 2674 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-128" H 4100 2800 50  0001 C CNN
-F 3 "~" H 4100 2800 50  0001 C CNN
-	1    4100 2800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3000 3250 2800 3250
 Wire Wire Line
@@ -156,7 +145,7 @@ U 1 1 5F63B5C1
 P 3400 2800
 F 0 "L?" V 3625 2800 50  0000 C CNN
 F 1 "6u8" V 3534 2800 50  0000 C CNN
-F 2 "" H 3400 2800 50  0001 C CNN
+F 2 "Inductor_SMD:L_Abracon_ASPI-0630LR" H 3400 2800 50  0001 C CNN
 F 3 "~" H 3400 2800 50  0001 C CNN
 	1    3400 2800
 	0    -1   -1   0   
@@ -324,17 +313,6 @@ Wire Wire Line
 	6250 1350 6600 1350
 Wire Wire Line
 	6600 1350 6600 1300
-$Comp
-L Device:R_Small R?
-U 1 1 5F62F985
-P 3950 2050
-F 0 "R?" V 4100 2050 50  0000 C CNN
-F 1 "1R" V 4050 2050 50  0000 C BNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3950 2050 50  0001 C CNN
-F 3 "~" H 3950 2050 50  0001 C CNN
-	1    3950 2050
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2800 3450 2800 3250
 Wire Wire Line
@@ -346,7 +324,7 @@ U 1 1 5F640601
 P 1750 2950
 F 0 "C?" H 1841 2996 50  0000 L CNN
 F 1 "47u" H 1841 2905 50  0000 L CNN
-F 2 "" H 1750 2950 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1750 2950 50  0001 C CNN
 F 3 "~" H 1750 2950 50  0001 C CNN
 	1    1750 2950
 	1    0    0    -1  
@@ -476,17 +454,6 @@ Wire Wire Line
 Connection ~ 5450 2800
 Wire Wire Line
 	5450 2800 5750 2800
-$Comp
-L Device:R_Small R?
-U 1 1 5F82D176
-P 4900 4150
-F 0 "R?" V 5050 4150 50  0000 C CNN
-F 1 "1R" V 5000 4150 50  0000 C BNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4900 4150 50  0001 C CNN
-F 3 "~" H 4900 4150 50  0001 C CNN
-	1    4900 4150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5200 4150 5300 4150
 Wire Wire Line
@@ -1117,7 +1084,7 @@ U 1 1 5F7AFFE0
 P 2600 5500
 F 0 "D?" H 2600 5300 50  0000 C CNN
 F 1 "PMEG4005EJ" H 2600 5400 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 2600 5325 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523-SMA_Universal_Handsoldering" H 2600 5325 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 2600 5500 50  0001 C CNN
 	1    2600 5500
 	-1   0    0    1   
@@ -1146,17 +1113,6 @@ F 1 "2u2" V 1984 5900 50  0000 C CNN
 F 2 "Inductor_SMD:L_1008_2520Metric" H 1850 5900 50  0001 C CNN
 F 3 "Murata DFE252012F-2R2M" H 1850 5900 50  0001 C CNN
 	1    1850 5900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5F7B415B
-P 2500 5150
-F 0 "R?" V 2650 5150 50  0000 C CNN
-F 1 "5R" V 2600 5150 50  0000 C BNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2500 5150 50  0001 C CNN
-F 3 "~" H 2500 5150 50  0001 C CNN
-	1    2500 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1404,28 +1360,6 @@ $EndComp
 Wire Wire Line
 	3700 5850 3700 5900
 Connection ~ 6150 4550
-$Comp
-L Device:R_Small R?
-U 1 1 5F6C2202
-P 4300 4750
-F 0 "R?" V 4450 4750 50  0000 C CNN
-F 1 "1R" V 4400 4750 50  0000 C BNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 4750 50  0001 C CNN
-F 3 "~" H 4300 4750 50  0001 C CNN
-	1    4300 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:PMEG4005EJ D?
-U 1 1 5F6C2210
-P 4700 4550
-F 0 "D?" V 4654 4629 50  0000 L CNN
-F 1 "PMEG4005EJ" V 4745 4629 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4700 4375 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4700 4550 50  0001 C CNN
-	1    4700 4550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4600 4750 4700 4750
 Wire Wire Line
@@ -1471,65 +1405,21 @@ Wire Wire Line
 Connection ~ 2100 5150
 $Comp
 L Diode:PMEG4005EJ D?
-U 1 1 5F6F2693
-P 4700 4950
-F 0 "D?" V 4654 5029 50  0000 L CNN
-F 1 "PMEG4005EJ" V 4745 5029 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4700 4775 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4700 4950 50  0001 C CNN
-	1    4700 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:PMEG4005EJ D?
-U 1 1 5F6F29B6
-P 5300 4350
-F 0 "D?" V 5254 4429 50  0000 L CNN
-F 1 "PMEG4005EJ" V 5345 4429 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5300 4175 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 5300 4350 50  0001 C CNN
-	1    5300 4350
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:PMEG4005EJ D?
 U 1 1 5F6F2A70
 P 5300 3950
 F 0 "D?" V 5254 4029 50  0000 L CNN
 F 1 "PMEG4005EJ" V 5345 4029 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5300 3775 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 5300 3775 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 5300 3950 50  0001 C CNN
 	1    5300 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:PMEG4005EJ D?
-U 1 1 5F6F2C6D
-P 4350 2250
-F 0 "D?" V 4304 2329 50  0000 L CNN
-F 1 "PMEG4005EJ" V 4395 2329 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4350 2075 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4350 2250 50  0001 C CNN
-	1    4350 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:PMEG4005EJ D?
-U 1 1 5F6F2D27
-P 4350 1850
-F 0 "D?" V 4304 1929 50  0000 L CNN
-F 1 "PMEG4005EJ" V 4395 1929 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4350 1675 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4350 1850 50  0001 C CNN
-	1    4350 1850
 	0    1    1    0   
 $EndComp
 $Comp
 L DiodesInc:PAM242x U?
 U 1 1 5F6FB7F8
 P 3400 3350
-F 0 "U?" H 3400 3917 50  0000 C CNN
-F 1 "PAM242x" H 3400 3826 50  0000 C CNN
+F 0 "U?" H 3150 3800 50  0000 C CNN
+F 1 "PAM242x" H 3550 3800 50  0000 C CNN
 F 2 "" H 3400 3850 50  0001 C CNN
 F 3 "" H 3400 3850 50  0001 C CNN
 	1    3400 3350
@@ -1783,4 +1673,127 @@ F 3 "" H 1750 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 2700 1750 2800
+$Comp
+L miscellaneous:Diode_DPAK D?
+U 1 1 5FCB52F2
+P 4100 2800
+F 0 "D?" H 4100 2552 50  0000 C CNN
+F 1 "STPS1045B" H 4100 2643 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4100 2525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 4100 2800 50  0001 C CNN
+	1    4100 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 2850 3950 2800
+Connection ~ 3950 2800
+Wire Wire Line
+	3950 2800 3950 2750
+$Comp
+L Device:R_Small R?
+U 1 1 5FA216FD
+P 2500 5150
+AR Path="/5F61C123/5FA216FD" Ref="R?"  Part="1" 
+AR Path="/5F620813/5FA216FD" Ref="R?"  Part="1" 
+F 0 "R?" V 2600 5150 50  0000 C BNN
+F 1 "5R" V 2400 5150 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 5150 50  0001 C CNN
+F 3 "~" H 2500 5150 50  0001 C CNN
+	1    2500 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA2EBC2
+P 4900 4150
+AR Path="/5F61C123/5FA2EBC2" Ref="R?"  Part="1" 
+AR Path="/5F620813/5FA2EBC2" Ref="R?"  Part="1" 
+F 0 "R?" V 5000 4150 50  0000 C BNN
+F 1 "1R" V 4800 4150 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4830 4150 50  0001 C CNN
+F 3 "~" H 4900 4150 50  0001 C CNN
+	1    4900 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA353DD
+P 4300 4750
+AR Path="/5F61C123/5FA353DD" Ref="R?"  Part="1" 
+AR Path="/5F620813/5FA353DD" Ref="R?"  Part="1" 
+F 0 "R?" V 4400 4750 50  0000 C BNN
+F 1 "1R" V 4200 4750 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4230 4750 50  0001 C CNN
+F 3 "~" H 4300 4750 50  0001 C CNN
+	1    4300 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA35657
+P 3950 2050
+AR Path="/5F61C123/5FA35657" Ref="R?"  Part="1" 
+AR Path="/5F620813/5FA35657" Ref="R?"  Part="1" 
+F 0 "R?" V 4050 2050 50  0000 C BNN
+F 1 "1R" V 3850 2050 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3880 2050 50  0001 C CNN
+F 3 "~" H 3950 2050 50  0001 C CNN
+	1    3950 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:PMEG4005EJ D?
+U 1 1 5FA5F6C6
+P 5300 4350
+F 0 "D?" V 5254 4429 50  0000 L CNN
+F 1 "PMEG4005EJ" V 5345 4429 50  0000 L CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 5300 4175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 5300 4350 50  0001 C CNN
+	1    5300 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:PMEG4005EJ D?
+U 1 1 5FA5F76E
+P 4700 4550
+F 0 "D?" V 4654 4629 50  0000 L CNN
+F 1 "PMEG4005EJ" V 4745 4629 50  0000 L CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 4700 4375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4700 4550 50  0001 C CNN
+	1    4700 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:PMEG4005EJ D?
+U 1 1 5FA5F818
+P 4700 4950
+F 0 "D?" V 4654 5029 50  0000 L CNN
+F 1 "PMEG4005EJ" V 4745 5029 50  0000 L CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 4700 4775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4700 4950 50  0001 C CNN
+	1    4700 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:PMEG4005EJ D?
+U 1 1 5FA5FD29
+P 4350 2250
+F 0 "D?" V 4304 2329 50  0000 L CNN
+F 1 "PMEG4005EJ" V 4395 2329 50  0000 L CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 4350 2075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4350 2250 50  0001 C CNN
+	1    4350 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:PMEG4005EJ D?
+U 1 1 5FA5FF11
+P 4350 1850
+F 0 "D?" V 4304 1929 50  0000 L CNN
+F 1 "PMEG4005EJ" V 4395 1929 50  0000 L CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 4350 1675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEGXX05EH_EJ_SER.pdf" H 4350 1850 50  0001 C CNN
+	1    4350 1850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
