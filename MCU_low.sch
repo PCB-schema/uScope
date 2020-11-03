@@ -58,7 +58,7 @@ U 1 1 5F8792B9
 P 10500 1400
 F 0 "U25" H 10300 1850 50  0000 L CNN
 F 1 "LCD_I2C" H 10650 1850 50  0000 L CNN
-F 2 "" H 10500 1400 50  0001 C CNN
+F 2 "miscellaneous_my:HD44780_20x4_wPCF8574" H 10500 1400 50  0001 C CNN
 F 3 "" H 10500 1400 50  0001 C CNN
 	1    10500 1400
 	1    0    0    -1  
@@ -214,21 +214,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5450 1400 50  
 F 3 "~" H 5450 1400 50  0001 C CNN
 	1    5450 1400
 	-1   0    0    1   
-$EndComp
-$Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5FC25067
-P 5150 1400
-AR Path="/5F7A93EE/5FC25067" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5FC25067" Ref="SW4"  Part="1" 
-F 0 "SW4" V 5200 1450 50  0000 R CNN
-F 1 "RST" V 5100 1450 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 5150 1700 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 5150 1700 50  0001 C CNN
-F 4 "TL3301TF160QG" V 5150 1400 50  0001 C CNN "Mfr. No"
-F 5 "1.27" V 5150 1400 50  0001 C CNN "Price [PLN]"
-	1    5150 1400
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:Crystal_Small Y1
@@ -452,12 +437,7 @@ Wire Wire Line
 	5450 1200 5150 1200
 Wire Wire Line
 	5450 1600 5450 1500
-Wire Wire Line
-	5050 1600 5150 1600
 Connection ~ 5450 1600
-Connection ~ 5150 1600
-Wire Wire Line
-	5150 1600 5450 1600
 Wire Wire Line
 	5150 1200 5150 1150
 Text Label 7000 2600 0    50   ~ 0
@@ -934,66 +914,6 @@ Wire Wire Line
 Wire Wire Line
 	7000 3100 7100 3100
 $Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5FD69F96
-P 10500 6000
-AR Path="/5F7A93EE/5FD69F96" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5FD69F96" Ref="SW10"  Part="1" 
-F 0 "SW10" V 10550 6050 50  0000 R CNN
-F 1 "ESC" V 10450 6050 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 10500 6300 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 10500 6300 50  0001 C CNN
-F 4 "TL3301TF160QG" V 10500 6000 50  0001 C CNN "Mfr. No"
-F 5 "1.27" V 10500 6000 50  0001 C CNN "Price [PLN]"
-	1    10500 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5FD6A226
-P 9550 6000
-AR Path="/5F7A93EE/5FD6A226" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5FD6A226" Ref="SW9"  Part="1" 
-F 0 "SW9" V 9600 6050 50  0000 R CNN
-F 1 "ENTER" V 9500 6050 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 9550 6300 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 9550 6300 50  0001 C CNN
-F 4 "TL3301TF160QG" V 9550 6000 50  0001 C CNN "Mfr. No"
-F 5 "1.27" V 9550 6000 50  0001 C CNN "Price [PLN]"
-	1    9550 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5FD6A472
-P 7650 6000
-AR Path="/5F7A93EE/5FD6A472" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5FD6A472" Ref="SW7"  Part="1" 
-F 0 "SW7" V 7700 6050 50  0000 R CNN
-F 1 "UP" V 7600 6050 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7650 6300 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 7650 6300 50  0001 C CNN
-F 4 "TL3301TF160QG" V 7650 6000 50  0001 C CNN "Mfr. No"
-F 5 "1.27" V 7650 6000 50  0001 C CNN "Price [PLN]"
-	1    7650 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5FD6A570
-P 8600 6000
-AR Path="/5F7A93EE/5FD6A570" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5FD6A570" Ref="SW8"  Part="1" 
-F 0 "SW8" V 8650 6050 50  0000 R CNN
-F 1 "DOWN" V 8550 6050 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8600 6300 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 8600 6300 50  0001 C CNN
-F 4 "TL3301TF160QG" V 8600 6000 50  0001 C CNN "Mfr. No"
-F 5 "1.27" V 8600 6000 50  0001 C CNN "Price [PLN]"
-	1    8600 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R159
 U 1 1 5FD73C02
 P 10750 5850
@@ -1069,7 +989,6 @@ Wire Wire Line
 Wire Wire Line
 	10500 6300 10500 6200
 Connection ~ 10500 6300
-Connection ~ 10500 6200
 Wire Wire Line
 	10750 6100 10750 6050
 Wire Wire Line
@@ -1086,7 +1005,6 @@ Wire Wire Line
 Wire Wire Line
 	10500 5700 10500 5800
 Connection ~ 10500 5700
-Connection ~ 10500 5800
 Wire Wire Line
 	10750 5700 10500 5700
 $Comp
@@ -1179,8 +1097,6 @@ Wire Wire Line
 Connection ~ 9550 5700
 Wire Wire Line
 	9800 5700 9550 5700
-Connection ~ 9550 6200
-Connection ~ 9550 5800
 $Comp
 L Device:R_Small R157
 U 1 1 5FDBE751
@@ -1365,25 +1281,6 @@ Wire Wire Line
 	7900 5700 7650 5700
 Text Label 8900 6050 0    50   ~ 0
 KEY_DOWN
-Connection ~ 7650 6200
-Connection ~ 7650 5800
-Connection ~ 8600 6200
-Connection ~ 8600 5800
-$Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5FDD2422
-P 6700 6000
-AR Path="/5F7A93EE/5FDD2422" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5FDD2422" Ref="SW6"  Part="1" 
-F 0 "SW6" V 6750 6050 50  0000 R CNN
-F 1 "X" V 6650 6050 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 6700 6300 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 6700 6300 50  0001 C CNN
-F 4 "TL3301TF160QG" V 6700 6000 50  0001 C CNN "Mfr. No"
-F 5 "1.27" V 6700 6000 50  0001 C CNN "Price [PLN]"
-	1    6700 6000
-	0    -1   -1   0   
-$EndComp
 Text Label 7000 6050 0    50   ~ 0
 KEY_5
 $Comp
@@ -1476,8 +1373,6 @@ Wire Wire Line
 Connection ~ 6700 5700
 Wire Wire Line
 	6950 5700 6700 5700
-Connection ~ 6700 6200
-Connection ~ 6700 5800
 Text Label 5250 3800 0    50   ~ 0
 KEY_ESC
 Text Label 5250 3700 0    50   ~ 0
@@ -2868,4 +2763,211 @@ Wire Wire Line
 	1900 5600 1900 5500
 Text GLabel 7350 2400 2    50   Output ~ 0
 PWR_LOCK
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA478FE
+P 7000 1400
+AR Path="/5F7A93EE/5FA478FE" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA478FE" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA478FE" Ref="TP26"  Part="1" 
+F 0 "TP26" V 7000 1588 50  0000 L CNN
+F 1 "TestPoint" V 7045 1588 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7200 1400 50  0001 C CNN
+F 3 "~" H 7200 1400 50  0001 C CNN
+	1    7000 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA48326
+P 7000 1500
+AR Path="/5F7A93EE/5FA48326" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA48326" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA48326" Ref="TP27"  Part="1" 
+F 0 "TP27" V 7000 1688 50  0000 L CNN
+F 1 "TestPoint" V 7045 1688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7200 1500 50  0001 C CNN
+F 3 "~" H 7200 1500 50  0001 C CNN
+	1    7000 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA483FE
+P 7000 1200
+AR Path="/5F7A93EE/5FA483FE" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA483FE" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA483FE" Ref="TP25"  Part="1" 
+F 0 "TP25" V 7000 1388 50  0000 L CNN
+F 1 "TestPoint" V 7045 1388 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7200 1200 50  0001 C CNN
+F 3 "~" H 7200 1200 50  0001 C CNN
+	1    7000 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA484EC
+P 7000 3300
+AR Path="/5F7A93EE/5FA484EC" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA484EC" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA484EC" Ref="TP31"  Part="1" 
+F 0 "TP31" V 7000 3488 50  0000 L CNN
+F 1 "TestPoint" V 7045 3488 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7200 3300 50  0001 C CNN
+F 3 "~" H 7200 3300 50  0001 C CNN
+	1    7000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA488C6
+P 7000 3400
+AR Path="/5F7A93EE/5FA488C6" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA488C6" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA488C6" Ref="TP32"  Part="1" 
+F 0 "TP32" V 7000 3588 50  0000 L CNN
+F 1 "TestPoint" V 7045 3588 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7200 3400 50  0001 C CNN
+F 3 "~" H 7200 3400 50  0001 C CNN
+	1    7000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA48C0E
+P 5700 3100
+AR Path="/5F7A93EE/5FA48C0E" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA48C0E" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA48C0E" Ref="TP30"  Part="1" 
+F 0 "TP30" V 5700 3288 50  0000 L CNN
+F 1 "TestPoint" V 5745 3288 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5900 3100 50  0001 C CNN
+F 3 "~" H 5900 3100 50  0001 C CNN
+	1    5700 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA490D2
+P 5700 3000
+AR Path="/5F7A93EE/5FA490D2" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA490D2" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA490D2" Ref="TP29"  Part="1" 
+F 0 "TP29" V 5700 3188 50  0000 L CNN
+F 1 "TestPoint" V 5745 3188 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5900 3000 50  0001 C CNN
+F 3 "~" H 5900 3000 50  0001 C CNN
+	1    5700 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA491B4
+P 5700 2700
+AR Path="/5F7A93EE/5FA491B4" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA491B4" Ref="TP?"  Part="1" 
+AR Path="/5F7D6767/5FA491B4" Ref="TP28"  Part="1" 
+F 0 "TP28" V 5700 2888 50  0000 L CNN
+F 1 "TestPoint" V 5745 2888 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5900 2700 50  0001 C CNN
+F 3 "~" H 5900 2700 50  0001 C CNN
+	1    5700 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FA3CFC5
+P 3350 4000
+AR Path="/5F61C123/5FA3CFC5" Ref="#FLG?"  Part="1" 
+AR Path="/5F7D6767/5FA3CFC5" Ref="#FLG0107"  Part="1" 
+F 0 "#FLG0107" H 3350 4075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 4174 50  0001 C CNN
+F 2 "" H 3350 4000 50  0001 C CNN
+F 3 "~" H 3350 4000 50  0001 C CNN
+	1    3350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FA6CE0B
+P 6100 1000
+AR Path="/5F61C123/5FA6CE0B" Ref="#FLG?"  Part="1" 
+AR Path="/5F7D6767/5FA6CE0B" Ref="#FLG0109"  Part="1" 
+F 0 "#FLG0109" H 6100 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 1174 50  0001 C CNN
+F 2 "" H 6100 1000 50  0001 C CNN
+F 3 "~" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6100 1000
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5FB6C661
+P 6600 6000
+F 0 "SW6" V 6650 5950 50  0000 R CNN
+F 1 "X" V 6550 5950 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 6600 6200 50  0001 C CNN
+F 3 "~" H 6600 6200 50  0001 C CNN
+	1    6600 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5FB8B8F5
+P 7550 6000
+F 0 "SW7" V 7600 5950 50  0000 R CNN
+F 1 "UP" V 7500 5950 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7550 6200 50  0001 C CNN
+F 3 "~" H 7550 6200 50  0001 C CNN
+	1    7550 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5FB8BB1D
+P 8500 6000
+F 0 "SW8" V 8550 5950 50  0000 R CNN
+F 1 "DOWN" V 8450 5950 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8500 6200 50  0001 C CNN
+F 3 "~" H 8500 6200 50  0001 C CNN
+	1    8500 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5FB8BC29
+P 9450 6000
+F 0 "SW9" V 9500 5950 50  0000 R CNN
+F 1 "ENTER" V 9400 5950 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 9450 6200 50  0001 C CNN
+F 3 "~" H 9450 6200 50  0001 C CNN
+	1    9450 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5FB8BE7E
+P 10400 6000
+F 0 "SW10" V 10450 5950 50  0000 R CNN
+F 1 "ESC" V 10350 5950 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 10400 6200 50  0001 C CNN
+F 3 "~" H 10400 6200 50  0001 C CNN
+	1    10400 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5FBB23AF
+P 5050 1400
+F 0 "SW4" V 5100 1350 50  0000 R CNN
+F 1 "RST" V 5000 1350 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 5050 1600 50  0001 C CNN
+F 3 "~" H 5050 1600 50  0001 C CNN
+	1    5050 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 1600 5450 1600
 $EndSCHEMATC

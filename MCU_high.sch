@@ -68,22 +68,6 @@ F 3 "~" H 3650 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Switch:SW_MEC_5E SW?
-U 1 1 5FA39686
-P 3350 3700
-AR Path="/5F7A93EE/5FA39686" Ref="SW?"  Part="1" 
-AR Path="/5F7D6767/5FA39686" Ref="SW?"  Part="1" 
-AR Path="/5F8337DC/5FA39686" Ref="SW11"  Part="1" 
-F 0 "SW11" V 3400 3750 50  0000 R CNN
-F 1 "RST" V 3300 3750 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 3350 4000 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3350 4000 50  0001 C CNN
-F 4 "TL3301TF160QG" V 3350 3700 50  0001 C CNN "Mfr. No"
-F 5 "1.27" V 3350 3700 50  0001 C CNN "Price [PLN]"
-	1    3350 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:Crystal_Small Y?
 U 1 1 5FA3968D
 P 3500 4450
@@ -246,11 +230,6 @@ Wire Wire Line
 	3650 3500 3350 3500
 Wire Wire Line
 	3650 3900 3650 3800
-Wire Wire Line
-	3250 3900 3350 3900
-Connection ~ 3350 3900
-Wire Wire Line
-	3350 3900 3650 3900
 Wire Wire Line
 	3350 3500 3350 3450
 Text Label 5200 4900 0    50   ~ 0
@@ -1606,4 +1585,242 @@ Wire Wire Line
 Connection ~ 8800 2750
 Wire Wire Line
 	8800 2750 8800 2650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26436
+P 5200 6000
+AR Path="/5F7A93EE/5FA26436" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26436" Ref="TP39"  Part="1" 
+AR Path="/5F7D6767/5FA26436" Ref="TP?"  Part="1" 
+F 0 "TP39" V 5200 6188 50  0000 L CNN
+F 1 "TestPoint" V 5245 6188 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6000 50  0001 C CNN
+F 3 "~" H 5400 6000 50  0001 C CNN
+	1    5200 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA264E4
+P 5200 6100
+AR Path="/5F7A93EE/5FA264E4" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA264E4" Ref="TP40"  Part="1" 
+AR Path="/5F7D6767/5FA264E4" Ref="TP?"  Part="1" 
+F 0 "TP40" V 5200 6288 50  0000 L CNN
+F 1 "TestPoint" V 5245 6288 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6100 50  0001 C CNN
+F 3 "~" H 5400 6100 50  0001 C CNN
+	1    5200 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA2656C
+P 5200 6200
+AR Path="/5F7A93EE/5FA2656C" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA2656C" Ref="TP41"  Part="1" 
+AR Path="/5F7D6767/5FA2656C" Ref="TP?"  Part="1" 
+F 0 "TP41" V 5200 6388 50  0000 L CNN
+F 1 "TestPoint" V 5245 6388 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6200 50  0001 C CNN
+F 3 "~" H 5400 6200 50  0001 C CNN
+	1    5200 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA265F6
+P 5200 6300
+AR Path="/5F7A93EE/5FA265F6" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA265F6" Ref="TP42"  Part="1" 
+AR Path="/5F7D6767/5FA265F6" Ref="TP?"  Part="1" 
+F 0 "TP42" V 5200 6488 50  0000 L CNN
+F 1 "TestPoint" V 5245 6488 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6300 50  0001 C CNN
+F 3 "~" H 5400 6300 50  0001 C CNN
+	1    5200 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26682
+P 5200 6400
+AR Path="/5F7A93EE/5FA26682" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26682" Ref="TP43"  Part="1" 
+AR Path="/5F7D6767/5FA26682" Ref="TP?"  Part="1" 
+F 0 "TP43" V 5200 6588 50  0000 L CNN
+F 1 "TestPoint" V 5245 6588 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6400 50  0001 C CNN
+F 3 "~" H 5400 6400 50  0001 C CNN
+	1    5200 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26710
+P 5200 6500
+AR Path="/5F7A93EE/5FA26710" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26710" Ref="TP44"  Part="1" 
+AR Path="/5F7D6767/5FA26710" Ref="TP?"  Part="1" 
+F 0 "TP44" V 5200 6688 50  0000 L CNN
+F 1 "TestPoint" V 5245 6688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6500 50  0001 C CNN
+F 3 "~" H 5400 6500 50  0001 C CNN
+	1    5200 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA267A2
+P 5200 6600
+AR Path="/5F7A93EE/5FA267A2" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA267A2" Ref="TP45"  Part="1" 
+AR Path="/5F7D6767/5FA267A2" Ref="TP?"  Part="1" 
+F 0 "TP45" V 5200 6788 50  0000 L CNN
+F 1 "TestPoint" V 5245 6788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6600 50  0001 C CNN
+F 3 "~" H 5400 6600 50  0001 C CNN
+	1    5200 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26834
+P 5200 6700
+AR Path="/5F7A93EE/5FA26834" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26834" Ref="TP46"  Part="1" 
+AR Path="/5F7D6767/5FA26834" Ref="TP?"  Part="1" 
+F 0 "TP46" V 5200 6888 50  0000 L CNN
+F 1 "TestPoint" V 5245 6888 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6700 50  0001 C CNN
+F 3 "~" H 5400 6700 50  0001 C CNN
+	1    5200 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26A16
+P 5200 4400
+AR Path="/5F7A93EE/5FA26A16" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26A16" Ref="TP35"  Part="1" 
+AR Path="/5F7D6767/5FA26A16" Ref="TP?"  Part="1" 
+F 0 "TP35" V 5200 4588 50  0000 L CNN
+F 1 "TestPoint" V 5245 4588 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 4400 50  0001 C CNN
+F 3 "~" H 5400 4400 50  0001 C CNN
+	1    5200 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26C2E
+P 5200 4500
+AR Path="/5F7A93EE/5FA26C2E" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26C2E" Ref="TP36"  Part="1" 
+AR Path="/5F7D6767/5FA26C2E" Ref="TP?"  Part="1" 
+F 0 "TP36" V 5200 4688 50  0000 L CNN
+F 1 "TestPoint" V 5245 4688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 4500 50  0001 C CNN
+F 3 "~" H 5400 4500 50  0001 C CNN
+	1    5200 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26CC4
+P 5200 4600
+AR Path="/5F7A93EE/5FA26CC4" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26CC4" Ref="TP37"  Part="1" 
+AR Path="/5F7D6767/5FA26CC4" Ref="TP?"  Part="1" 
+F 0 "TP37" V 5200 4788 50  0000 L CNN
+F 1 "TestPoint" V 5245 4788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 4600 50  0001 C CNN
+F 3 "~" H 5400 4600 50  0001 C CNN
+	1    5200 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26D60
+P 5200 4700
+AR Path="/5F7A93EE/5FA26D60" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26D60" Ref="TP38"  Part="1" 
+AR Path="/5F7D6767/5FA26D60" Ref="TP?"  Part="1" 
+F 0 "TP38" V 5200 4888 50  0000 L CNN
+F 1 "TestPoint" V 5245 4888 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 4700 50  0001 C CNN
+F 3 "~" H 5400 4700 50  0001 C CNN
+	1    5200 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26ECD
+P 5200 3700
+AR Path="/5F7A93EE/5FA26ECD" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26ECD" Ref="TP33"  Part="1" 
+AR Path="/5F7D6767/5FA26ECD" Ref="TP?"  Part="1" 
+F 0 "TP33" V 5200 3888 50  0000 L CNN
+F 1 "TestPoint" V 5245 3888 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 3700 50  0001 C CNN
+F 3 "~" H 5400 3700 50  0001 C CNN
+	1    5200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA26F87
+P 5200 3800
+AR Path="/5F7A93EE/5FA26F87" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FA26F87" Ref="TP34"  Part="1" 
+AR Path="/5F7D6767/5FA26F87" Ref="TP?"  Part="1" 
+F 0 "TP34" V 5200 3988 50  0000 L CNN
+F 1 "TestPoint" V 5245 3988 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 3800 50  0001 C CNN
+F 3 "~" H 5400 3800 50  0001 C CNN
+	1    5200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FA8B64F
+P 10250 1150
+AR Path="/5F61C123/5FA8B64F" Ref="#FLG?"  Part="1" 
+AR Path="/5F8337DC/5FA8B64F" Ref="#FLG0110"  Part="1" 
+F 0 "#FLG0110" H 10250 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 10250 1324 50  0001 C CNN
+F 2 "" H 10250 1150 50  0001 C CNN
+F 3 "~" H 10250 1150 50  0001 C CNN
+	1    10250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FA9D8B0
+P 4300 3300
+AR Path="/5F61C123/5FA9D8B0" Ref="#FLG?"  Part="1" 
+AR Path="/5F8337DC/5FA9D8B0" Ref="#FLG0112"  Part="1" 
+F 0 "#FLG0112" H 4300 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3474 50  0001 C CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "~" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4300 3300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FBBCFFE
+P 3250 3700
+AR Path="/5F7D6767/5FBBCFFE" Ref="SW?"  Part="1" 
+AR Path="/5F8337DC/5FBBCFFE" Ref="SW11"  Part="1" 
+F 0 "SW11" V 3300 3650 50  0000 R CNN
+F 1 "RST" V 3200 3650 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 3250 3900 50  0001 C CNN
+F 3 "~" H 3250 3900 50  0001 C CNN
+	1    3250 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 3900 3650 3900
 $EndSCHEMATC

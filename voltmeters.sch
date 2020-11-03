@@ -22,7 +22,7 @@ AR Path="/5F40DCB9/5F479BD5" Ref="U?"  Part="1"
 AR Path="/5F479892/5F479BD5" Ref="U8"  Part="1" 
 F 0 "U8" H 3900 2017 50  0000 C CNN
 F 1 "LMC6482" H 3900 1926 50  0000 C CNN
-F 2 "" H 3900 1650 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 3900 1650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 3900 1650 50  0001 C CNN
 	1    3900 1650
 	1    0    0    -1  
@@ -35,7 +35,7 @@ AR Path="/5F40DCB9/5F479BDC" Ref="U?"  Part="2"
 AR Path="/5F479892/5F479BDC" Ref="U8"  Part="2" 
 F 0 "U8" H 5000 1917 50  0000 C CNN
 F 1 "LMC6482" H 5000 1826 50  0000 C CNN
-F 2 "" H 5000 1550 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 5000 1550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 5000 1550 50  0001 C CNN
 	2    5000 1550
 	1    0    0    -1  
@@ -48,7 +48,7 @@ AR Path="/5F40DCB9/5F479BE3" Ref="U?"  Part="3"
 AR Path="/5F479892/5F479BE3" Ref="U8"  Part="3" 
 F 0 "U8" H 7058 1646 50  0000 L CNN
 F 1 "LMC6482" H 7058 1555 50  0000 L CNN
-F 2 "" H 7100 1600 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 7100 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 7100 1600 50  0001 C CNN
 	3    7100 1600
 	1    0    0    -1  
@@ -99,7 +99,7 @@ AR Path="/5F40DCB9/5F479C30" Ref="U?"  Part="1"
 AR Path="/5F479892/5F479C30" Ref="U9"  Part="1" 
 F 0 "U9" H 3900 3317 50  0000 C CNN
 F 1 "LMC6482" H 3900 3226 50  0000 C CNN
-F 2 "" H 3900 2950 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 3900 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 3900 2950 50  0001 C CNN
 	1    3900 2950
 	1    0    0    -1  
@@ -112,7 +112,7 @@ AR Path="/5F40DCB9/5F479C37" Ref="U?"  Part="2"
 AR Path="/5F479892/5F479C37" Ref="U9"  Part="2" 
 F 0 "U9" H 5000 3217 50  0000 C CNN
 F 1 "LMC6482" H 5000 3126 50  0000 C CNN
-F 2 "" H 5000 2850 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 5000 2850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 5000 2850 50  0001 C CNN
 	2    5000 2850
 	1    0    0    -1  
@@ -125,7 +125,7 @@ AR Path="/5F40DCB9/5F479C3E" Ref="U?"  Part="3"
 AR Path="/5F479892/5F479C3E" Ref="U9"  Part="3" 
 F 0 "U9" H 7008 3046 50  0000 L CNN
 F 1 "LMC6482" H 7008 2955 50  0000 L CNN
-F 2 "" H 7050 3000 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 7050 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 7050 3000 50  0001 C CNN
 	3    7050 3000
 	1    0    0    -1  
@@ -673,7 +673,7 @@ AR Path="/5F479892/5FE1E86B" Ref="U11"  Part="1"
 AR Path="/5FE1E86B" Ref="U?"  Part="1" 
 F 0 "U11" H 4100 5867 50  0000 C CNN
 F 1 "LMC6482" H 4100 5776 50  0000 C CNN
-F 2 "" H 4100 5500 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 4100 5500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 4100 5500 50  0001 C CNN
 	1    4100 5500
 	1    0    0    -1  
@@ -687,7 +687,7 @@ AR Path="/5F479892/5FE1E872" Ref="U11"  Part="2"
 AR Path="/5FE1E872" Ref="U?"  Part="2" 
 F 0 "U11" H 5000 5867 50  0000 C CNN
 F 1 "LMC6482" H 5000 5776 50  0000 C CNN
-F 2 "" H 5000 5500 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 5000 5500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 5000 5500 50  0001 C CNN
 	2    5000 5500
 	1    0    0    -1  
@@ -701,7 +701,7 @@ AR Path="/5F479892/5FE1E879" Ref="U11"  Part="3"
 AR Path="/5FE1E879" Ref="U?"  Part="3" 
 F 0 "U11" H 7158 5696 50  0000 L CNN
 F 1 "LMC6482" H 7158 5605 50  0000 L CNN
-F 2 "" H 7200 5650 50  0001 C CNN
+F 2 "miscellaneous_my:SO8-MSOP8_3x3mm_P0.65mm" H 7200 5650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 7200 5650 50  0001 C CNN
 	3    7200 5650
 	1    0    0    -1  
@@ -1010,4 +1010,76 @@ Text HLabel 3300 5800 0    50   Input ~ 0
 U_Kathode
 Text HLabel 5400 5500 2    50   Output ~ 0
 U_adcKathode
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FA4F000
+P 6850 1300
+F 0 "#FLG01" H 6850 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 6850 1474 50  0001 C CNN
+F 2 "" H 6850 1300 50  0001 C CNN
+F 3 "~" H 6850 1300 50  0001 C CNN
+	1    6850 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 1300
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5FA4F292
+P 6850 1900
+F 0 "#FLG02" H 6850 1975 50  0001 C CNN
+F 1 "PWR_FLAG" H 6850 2074 50  0001 C CNN
+F 2 "" H 6850 1900 50  0001 C CNN
+F 3 "~" H 6850 1900 50  0001 C CNN
+	1    6850 1900
+	-1   0    0    1   
+$EndComp
+Connection ~ 6850 1900
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5FA4F3D5
+P 6800 2700
+F 0 "#FLG03" H 6800 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6800 2874 50  0001 C CNN
+F 2 "" H 6800 2700 50  0001 C CNN
+F 3 "~" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 2700
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 5FA4F677
+P 6950 5350
+F 0 "#FLG05" H 6950 5425 50  0001 C CNN
+F 1 "PWR_FLAG" H 6950 5524 50  0001 C CNN
+F 2 "" H 6950 5350 50  0001 C CNN
+F 3 "~" H 6950 5350 50  0001 C CNN
+	1    6950 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 5350
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5FA4FB89
+P 6800 3300
+F 0 "#FLG04" H 6800 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 6800 3474 50  0001 C CNN
+F 2 "" H 6800 3300 50  0001 C CNN
+F 3 "~" H 6800 3300 50  0001 C CNN
+	1    6800 3300
+	-1   0    0    1   
+$EndComp
+Connection ~ 6800 3300
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5FA4FE2B
+P 6950 5950
+F 0 "#FLG06" H 6950 6025 50  0001 C CNN
+F 1 "PWR_FLAG" H 6950 6124 50  0001 C CNN
+F 2 "" H 6950 5950 50  0001 C CNN
+F 3 "~" H 6950 5950 50  0001 C CNN
+	1    6950 5950
+	-1   0    0    1   
+$EndComp
+Connection ~ 6950 5950
 $EndSCHEMATC

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 9950 3500 1000 400 
+S 5850 7200 1000 400 
 U 5F463F4C
 F0 "rippleMeas" 50
 F1 "rippleMeas.sch" 50
@@ -38,7 +38,7 @@ U 2 1 5F612F4D
 P 1300 1700
 F 0 "U2" H 1600 1600 50  0000 R CNN
 F 1 "E" H 1550 1700 50  0000 R CNN
-F 2 "Library_uScope:APD_P2_single" H 1300 1700 50  0001 C CNN
+F 2 "Power_my:DCDC_APD_P2_single" H 1300 1700 50  0001 C CNN
 F 3 "" H 1300 1700 50  0001 C CNN
 	2    1300 1700
 	-1   0    0    1   
@@ -49,7 +49,7 @@ U 2 1 5F612FE8
 P 3550 1700
 F 0 "U3" H 3728 1746 50  0000 L CNN
 F 1 "F" H 3728 1655 50  0000 L CNN
-F 2 "Library_uScope:APD_P2_single" H 3550 1700 50  0001 C CNN
+F 2 "Power_my:DCDC_APD_P2_single" H 3550 1700 50  0001 C CNN
 F 3 "" H 3550 1700 50  0001 C CNN
 	2    3550 1700
 	-1   0    0    1   
@@ -116,19 +116,19 @@ S 7800 5050 1700 1250
 U 5F7D6767
 F0 "MCU_low" 50
 F1 "MCU_low.sch" 50
-F3 "TIM1_CH1" O R 9500 5150 50 
-F4 "TIM1_CH2" O R 9500 5250 50 
-F5 "TIM1_CH3" O R 9500 5350 50 
-F6 "TIM1_CH4" O R 9500 5450 50 
-F7 "DAC_load" O R 9500 5700 50 
-F8 "DAC_NSS" O R 9500 6150 50 
-F9 "DAC_CS" O R 9500 6050 50 
-F10 "DAC_SCK" O R 9500 5950 50 
-F11 "DAC_MOSI" O R 9500 5850 50 
-F12 "UART_TX" O L 7800 5250 50 
-F13 "UART_RX" I L 7800 5150 50 
-F14 "ADC_CH0" I L 7800 5500 50 
-F15 "ADC_CH1" I L 7800 5600 50 
+F2 "TIM1_CH1" O R 9500 5150 50 
+F3 "TIM1_CH2" O R 9500 5250 50 
+F4 "TIM1_CH3" O R 9500 5350 50 
+F5 "TIM1_CH4" O R 9500 5450 50 
+F6 "DAC_load" O R 9500 5700 50 
+F7 "DAC_NSS" O R 9500 6150 50 
+F8 "DAC_CS" O R 9500 6050 50 
+F9 "DAC_SCK" O R 9500 5950 50 
+F10 "DAC_MOSI" O R 9500 5850 50 
+F11 "UART_TX" O L 7800 5250 50 
+F12 "UART_RX" I L 7800 5150 50 
+F13 "ADC_CH0" I L 7800 5500 50 
+F14 "ADC_CH1" I L 7800 5600 50 
 $EndSheet
 Text Notes 12000 1100 0    100  ~ 20
 TODO:\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow
@@ -169,7 +169,7 @@ U 2 1 5F612D06
 P 750 4300
 F 0 "U1" H 700 4050 50  0000 R CNN
 F 1 "K" H 650 4150 50  0000 R CNN
-F 2 "Library_uScope:APD_P2_single" H 750 4300 50  0001 C CNN
+F 2 "Power_my:DCDC_APD_P2_single" H 750 4300 50  0001 C CNN
 F 3 "" H 750 4300 50  0001 C CNN
 	2    750  4300
 	-1   0    0    1   
@@ -227,7 +227,7 @@ U 1 1 5F80C561
 P 2750 4250
 F 0 "U6" H 3050 4650 50  0000 L CNN
 F 1 "RHV2-1212S/R20" V 3100 3850 50  0000 L CNN
-F 2 "" H 1100 5500 50  0001 C CNN
+F 2 "Power_my:SIP16_RECOM" H 1100 5500 50  0001 C CNN
 F 3 "" H 1100 5500 50  0001 C CNN
 	1    2750 4250
 	1    0    0    -1  
@@ -250,15 +250,15 @@ $EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5F812227
-P 2600 4800
+P 2600 4850
 AR Path="/5F61C123/5F812227" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5F812227" Ref="#PWR?"  Part="1" 
 AR Path="/5F812227" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 2600 4650 50  0001 C CNN
-F 1 "+12V" H 2600 4916 39  0000 C CNN
-F 2 "" H 2600 4800 50  0001 C CNN
-F 3 "" H 2600 4800 50  0001 C CNN
-	1    2600 4800
+F 0 "#PWR010" H 2600 4700 50  0001 C CNN
+F 1 "+12V" H 2600 4966 39  0000 C CNN
+F 2 "" H 2600 4850 50  0001 C CNN
+F 3 "" H 2600 4850 50  0001 C CNN
+	1    2600 4850
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -323,14 +323,14 @@ $EndSheet
 Text Notes 850  7650 0    50   ~ 0
 NOTE:\n* ADS131M06 pin-to-pin compatible with: -M08
 $Comp
-L uScope:APD_P2_single U5
+L uScope:APD_P2_single U4
 U 2 1 5FA4EFC3
 P 8700 1100
-AR Path="/5FA4EFC3" Ref="U5"  Part="2" 
+AR Path="/5FA4EFC3" Ref="U4"  Part="2" 
 AR Path="/5F61C123/5FA4EFC3" Ref="U?"  Part="2" 
-F 0 "U5" H 8928 1151 50  0000 L CNN
+F 0 "U4" H 8928 1151 50  0000 L CNN
 F 1 "Pump" H 8928 1060 50  0000 L CNN
-F 2 "Library_uScope:APD_P2_single" H 8700 1100 50  0001 C CNN
+F 2 "Power_my:DCDC_APD_P2_single" H 8700 1100 50  0001 C CNN
 F 3 "" H 8700 1100 50  0001 C CNN
 	2    8700 1100
 	1    0    0    -1  
@@ -445,7 +445,7 @@ U 1 1 5F9E151F
 P 10150 2100
 F 0 "J5" V 10023 2180 50  0000 L CNN
 F 1 "Conn_01x02" V 10114 2180 50  0000 L CNN
-F 2 "" H 10150 2100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10150 2100 50  0001 C CNN
 F 3 "~" H 10150 2100 50  0001 C CNN
 	1    10150 2100
 	0    1    1    0   
@@ -906,4 +906,16 @@ Wire Wire Line
 	5950 4600 5950 4650
 Wire Wire Line
 	5950 4650 6100 4650
+Wire Wire Line
+	2600 4850 2600 4800
+Text Notes 8200 4100 0    100  ~ 0
+"High" side:\nHazardous voltage\nNegative voltage up to -6 kV
+Text Notes 8200 4650 0    100  ~ 0
+"Low" side:\nground / touch / interface potential
+Wire Notes Line
+	5700 7000 6950 7000
+Text Notes 5900 7500 0    50   ~ 0
+Separate circuit.\nNot part of the project,\nbut useful at testing.
+Wire Notes Line
+	5700 7750 5700 7000
 $EndSCHEMATC
