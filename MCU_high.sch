@@ -326,7 +326,7 @@ AR Path="/5F7D6767/5FA3DC81" Ref="Y?"  Part="1"
 AR Path="/5F8337DC/5FA3DC81" Ref="Y4"  Part="1" 
 F 0 "Y4" H 10500 2400 50  0000 C CNN
 F 1 "8.192" H 10500 2300 50  0000 C CNN
-F 2 "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Horizontal_1EP_style2" H 10500 2200 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 10500 2200 50  0001 C CNN
 F 3 "~" H 10500 2200 50  0001 C CNN
 	1    10500 2200
 	-1   0    0    1   

@@ -379,7 +379,7 @@ U 1 1 5F9DFB13
 P 9300 1500
 F 0 "TP3" V 9254 1688 50  0000 L CNN
 F 1 "Volt+" V 9345 1688 50  0000 L CNN
-F 2 "miscellaneous_my:Socket_banana4mm" H 9500 1500 50  0001 C CNN
+F 2 "miscellaneous_my:Banana4mmSocket_red" H 9500 1500 50  0001 C CNN
 F 3 "~" H 9500 1500 50  0001 C CNN
 	1    9300 1500
 	0    1    1    0   
@@ -422,7 +422,7 @@ U 1 1 5F9E0729
 P 9300 1700
 F 0 "TP4" V 9254 1888 50  0000 L CNN
 F 1 "Volt-" V 9345 1888 50  0000 L CNN
-F 2 "miscellaneous_my:Socket_banana4mm" H 9500 1700 50  0001 C CNN
+F 2 "miscellaneous_my:Banana4mmSocket_black" H 9500 1700 50  0001 C CNN
 F 3 "~" H 9500 1700 50  0001 C CNN
 	1    9300 1700
 	0    1    1    0   
@@ -456,7 +456,7 @@ U 1 1 5F9E1695
 P 10300 1300
 F 0 "TP2" H 10358 1420 50  0000 L CNN
 F 1 "Amp+" H 10358 1329 50  0000 L CNN
-F 2 "miscellaneous_my:Socket_banana4mm" H 10500 1300 50  0001 C CNN
+F 2 "miscellaneous_my:Banana4mmSocket_red" H 10500 1300 50  0001 C CNN
 F 3 "~" H 10500 1300 50  0001 C CNN
 	1    10300 1300
 	1    0    0    -1  
@@ -467,7 +467,7 @@ U 1 1 5F9E169C
 P 9900 1300
 F 0 "TP1" H 9958 1420 50  0000 L CNN
 F 1 "Amp-" H 9958 1329 50  0000 L CNN
-F 2 "miscellaneous_my:Socket_banana4mm" H 10100 1300 50  0001 C CNN
+F 2 "miscellaneous_my:Banana4mmSocket_black" H 10100 1300 50  0001 C CNN
 F 3 "~" H 10100 1300 50  0001 C CNN
 	1    9900 1300
 	1    0    0    -1  
