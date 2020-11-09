@@ -65,23 +65,23 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FC526B7
-P 4800 2050
+P 4950 2050
 AR Path="/5F40DCB9/5FC526B7" Ref="#PWR?"  Part="1" 
 AR Path="/5F618AB9/5FC526B7" Ref="#PWR?"  Part="1" 
 AR Path="/5FC526B7" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5FC526B7" Ref="#PWR?"  Part="1" 
 AR Path="/5F82F010/5FC526B7" Ref="#PWR0193"  Part="1" 
-F 0 "#PWR0193" H 4800 1890 50  0001 C CNN
-F 1 "GND" H 4800 1950 39  0000 C TNN
-F 2 "" H 4800 2050 50  0001 C CNN
-F 3 "" H 4800 2050 50  0001 C CNN
-	1    4800 2050
+F 0 "#PWR0193" H 4950 1890 50  0001 C CNN
+F 1 "GND" H 4950 1950 39  0000 C TNN
+F 2 "" H 4950 2050 50  0001 C CNN
+F 3 "" H 4950 2050 50  0001 C CNN
+	1    4950 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5FC52923
-P 5000 1050
+P 5150 1050
 AR Path="/5F40DCB9/5FC52923" Ref="C?"  Part="1" 
 AR Path="/5F463F4C/5FC52923" Ref="C?"  Part="1" 
 AR Path="/5F479892/5FC52923" Ref="C?"  Part="1" 
@@ -89,35 +89,35 @@ AR Path="/5F7D6767/5FC52923" Ref="C?"  Part="1"
 AR Path="/5F61C123/5FC52923" Ref="C?"  Part="1" 
 AR Path="/5FB035A9/5FC52923" Ref="C?"  Part="1" 
 AR Path="/5F82F010/5FC52923" Ref="C150"  Part="1" 
-F 0 "C150" H 5000 950 50  0000 R BNN
-F 1 "100n" H 5000 1150 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5000 1050 50  0001 C CNN
-F 3 "~" H 5000 1050 50  0001 C CNN
-	1    5000 1050
+F 0 "C150" H 5150 950 50  0000 R BNN
+F 1 "100n" H 5150 1150 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5150 1050 50  0001 C CNN
+F 3 "~" H 5150 1050 50  0001 C CNN
+	1    5150 1050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FC52934
-P 5000 1150
+P 5150 1150
 AR Path="/5F40DCB9/5FC52934" Ref="#PWR?"  Part="1" 
 AR Path="/5F618AB9/5FC52934" Ref="#PWR?"  Part="1" 
 AR Path="/5FC52934" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5FC52934" Ref="#PWR?"  Part="1" 
 AR Path="/5F82F010/5FC52934" Ref="#PWR0192"  Part="1" 
-F 0 "#PWR0192" H 5000 990 50  0001 C CNN
-F 1 "GND" H 5000 1050 39  0000 C TNN
-F 2 "" H 5000 1150 50  0001 C CNN
-F 3 "" H 5000 1150 50  0001 C CNN
-	1    5000 1150
+F 0 "#PWR0192" H 5150 990 50  0001 C CNN
+F 1 "GND" H 5150 1050 39  0000 C TNN
+F 2 "" H 5150 1150 50  0001 C CNN
+F 3 "" H 5150 1150 50  0001 C CNN
+	1    5150 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 1250 4800 900 
+	4950 1250 4950 900 
 Wire Wire Line
-	4800 900  5000 900 
+	4950 900  5150 900 
 Wire Wire Line
-	5000 900  5000 950 
+	5150 900  5150 950 
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5FC58E47
@@ -132,8 +132,8 @@ F 3 "" H 6300 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 850  4800 900 
-Connection ~ 4800 900 
+	4950 850  4950 900 
+Connection ~ 4950 900 
 $Comp
 L power_my:HV+5V #PWR?
 U 1 1 5FC5AE19
@@ -165,16 +165,16 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5FC7B7D3
-P 4800 850
+P 4950 850
 AR Path="/5F40DCB9/5FC7B7D3" Ref="#PWR?"  Part="1" 
 AR Path="/5F479892/5FC7B7D3" Ref="#PWR?"  Part="1" 
 AR Path="/5F620813/5FC7B7D3" Ref="#PWR?"  Part="1" 
 AR Path="/5F82F010/5FC7B7D3" Ref="#PWR0191"  Part="1" 
-F 0 "#PWR0191" H 4800 700 50  0001 C CNN
-F 1 "+5V" H 4815 1023 50  0000 C CNN
-F 2 "" H 4800 850 50  0001 C CNN
-F 3 "" H 4800 850 50  0001 C CNN
-	1    4800 850 
+F 0 "#PWR0191" H 4950 700 50  0001 C CNN
+F 1 "+5V" H 4965 1023 50  0000 C CNN
+F 2 "" H 4950 850 50  0001 C CNN
+F 3 "" H 4950 850 50  0001 C CNN
+	1    4950 850 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -196,12 +196,12 @@ Wire Wire Line
 $Comp
 L miscellaneous:OPTI128 U28
 U 1 1 5FC8BE03
-P 4800 1650
-F 0 "U28" H 5300 1900 50  0000 L CNN
-F 1 "OPTI128" H 5300 1800 50  0000 L CNN
-F 2 "miscellaneous_my:OPTI12x" H 4850 950 50  0001 C CNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&prodName=TLP2770" H 5850 500 50  0001 C CNN
-	1    4800 1650
+P 4950 1650
+F 0 "U28" H 5450 1900 50  0000 L CNN
+F 1 "OPTI128" H 5450 1800 50  0000 L CNN
+F 2 "miscellaneous_my:OPTI12x" H 5000 950 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&prodName=TLP2770" H 6000 500 50  0001 C CNN
+	1    4950 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -305,19 +305,6 @@ F 3 "~" H 5450 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power_my:HVGND #PWR?
-U 1 1 5F9EDFF6
-P 5450 6650
-AR Path="/5F9EDFF6" Ref="#PWR?"  Part="1" 
-AR Path="/5F82F010/5F9EDFF6" Ref="#PWR0212"  Part="1" 
-F 0 "#PWR0212" H 5450 6600 50  0001 C CNN
-F 1 "HVGND" H 5450 6477 50  0000 C CNN
-F 2 "" H 5450 6650 50  0001 C CNN
-F 3 "" H 5450 6650 50  0001 C CNN
-	1    5450 6650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5F9EE003
 P 5850 6450
@@ -349,18 +336,18 @@ Text Label 3800 3550 0    50   ~ 0
 A_HV
 Text Label 3800 3850 0    50   ~ 0
 K_HV
-Text Label 5950 1650 0    50   ~ 0
+Text Label 6100 1650 0    50   ~ 0
 RX_LV
 Wire Wire Line
 	3800 3450 3800 3550
-Text Label 3900 1500 0    50   ~ 0
+Text Label 4050 1500 0    50   ~ 0
 A_HV
-Text Label 3900 1800 0    50   ~ 0
+Text Label 4050 1800 0    50   ~ 0
 K_HV
 Wire Wire Line
-	4100 1500 3900 1500
+	4250 1500 4050 1500
 Wire Wire Line
-	4100 1800 3900 1800
+	4250 1800 4050 1800
 $Comp
 L Device:C_Small C?
 U 1 1 5F9FE878
@@ -374,7 +361,7 @@ AR Path="/5FB035A9/5F9FE878" Ref="C?"  Part="1"
 AR Path="/5F82F010/5F9FE878" Ref="C151"  Part="1" 
 F 0 "C151" H 5900 3100 50  0000 R BNN
 F 1 "100n" H 5900 3300 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5900 3200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 3200 50  0001 C CNN
 F 3 "~" H 5900 3200 50  0001 C CNN
 	1    5900 3200
 	-1   0    0    1   
@@ -422,7 +409,7 @@ $EndComp
 Text Label 5950 3700 0    50   ~ 0
 RX_LV
 Wire Wire Line
-	5350 1650 5950 1650
+	5500 1650 6100 1650
 Connection ~ 6300 3700
 Wire Wire Line
 	6300 3700 5900 3700
@@ -623,22 +610,6 @@ F 3 "~" H 2600 5250 50  0001 C CNN
 	1    2600 5250
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FA3BE46
-P 2600 5750
-AR Path="/5F40DCB9/5FA3BE46" Ref="#PWR?"  Part="1" 
-AR Path="/5F618AB9/5FA3BE46" Ref="#PWR?"  Part="1" 
-AR Path="/5FA3BE46" Ref="#PWR?"  Part="1" 
-AR Path="/5F620813/5FA3BE46" Ref="#PWR?"  Part="1" 
-AR Path="/5F82F010/5FA3BE46" Ref="#PWR0207"  Part="1" 
-F 0 "#PWR0207" H 2600 5590 50  0001 C CNN
-F 1 "GND" H 2600 5650 39  0000 C TNN
-F 2 "" H 2600 5750 50  0001 C CNN
-F 3 "" H 2600 5750 50  0001 C CNN
-	1    2600 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 5350 2600 5350
 Wire Wire Line
@@ -650,7 +621,7 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 5FA3C84B
-P 4000 5600
+P 4000 5550
 AR Path="/5F40DCB9/5FA3C84B" Ref="C?"  Part="1" 
 AR Path="/5F463F4C/5FA3C84B" Ref="C?"  Part="1" 
 AR Path="/5F479892/5FA3C84B" Ref="C?"  Part="1" 
@@ -658,38 +629,19 @@ AR Path="/5F7D6767/5FA3C84B" Ref="C?"  Part="1"
 AR Path="/5F61C123/5FA3C84B" Ref="C?"  Part="1" 
 AR Path="/5FB035A9/5FA3C84B" Ref="C?"  Part="1" 
 AR Path="/5F82F010/5FA3C84B" Ref="C152"  Part="1" 
-F 0 "C152" H 4000 5500 50  0000 R BNN
-F 1 "100n" H 4000 5700 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 5600 50  0001 C CNN
-F 3 "~" H 4000 5600 50  0001 C CNN
-	1    4000 5600
+F 0 "C152" H 4000 5450 50  0000 R BNN
+F 1 "100n" H 4000 5650 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 5550 50  0001 C CNN
+F 3 "~" H 4000 5550 50  0001 C CNN
+	1    4000 5550
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FA3C852
-P 4000 5700
-AR Path="/5F40DCB9/5FA3C852" Ref="#PWR?"  Part="1" 
-AR Path="/5F618AB9/5FA3C852" Ref="#PWR?"  Part="1" 
-AR Path="/5FA3C852" Ref="#PWR?"  Part="1" 
-AR Path="/5F620813/5FA3C852" Ref="#PWR?"  Part="1" 
-AR Path="/5F82F010/5FA3C852" Ref="#PWR0206"  Part="1" 
-F 0 "#PWR0206" H 4000 5540 50  0001 C CNN
-F 1 "GND" H 4000 5600 39  0000 C TNN
-F 2 "" H 4000 5700 50  0001 C CNN
-F 3 "" H 4000 5700 50  0001 C CNN
-	1    4000 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3800 5800 3800 5450
+	3800 5800 3800 5400
 Wire Wire Line
-	3800 5450 4000 5450
+	3800 5400 4000 5400
 Wire Wire Line
-	4000 5450 4000 5500
-Wire Wire Line
-	3800 5400 3800 5450
-Connection ~ 3800 5450
+	4000 5400 4000 5450
 $Comp
 L power_my:HV+5V #PWR?
 U 1 1 5FA3D073
@@ -779,4 +731,53 @@ Wire Notes Line
 	4200 5950 5300 5950
 Wire Notes Line
 	4200 6250 5300 6250
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FAF3C3F
+P 4000 5650
+AR Path="/5FAF3C3F" Ref="#PWR?"  Part="1" 
+AR Path="/5F82F010/5FAF3C3F" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 4000 5600 50  0001 C CNN
+F 1 "HVGND" H 4000 5477 50  0000 C CNN
+F 2 "" H 4000 5650 50  0001 C CNN
+F 3 "" H 4000 5650 50  0001 C CNN
+	1    4000 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 5400
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FAF749C
+P 2600 5750
+AR Path="/5FAF749C" Ref="#PWR?"  Part="1" 
+AR Path="/5F82F010/5FAF749C" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 2600 5700 50  0001 C CNN
+F 1 "HVGND" H 2600 5577 50  0000 C CNN
+F 2 "" H 2600 5750 50  0001 C CNN
+F 3 "" H 2600 5750 50  0001 C CNN
+	1    2600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAF97D0
+P 5450 6650
+AR Path="/5F40DCB9/5FAF97D0" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5FAF97D0" Ref="#PWR?"  Part="1" 
+AR Path="/5FAF97D0" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FAF97D0" Ref="#PWR?"  Part="1" 
+AR Path="/5F82F010/5FAF97D0" Ref="#PWR0206"  Part="1" 
+F 0 "#PWR0206" H 5450 6490 50  0001 C CNN
+F 1 "GND" H 5450 6550 39  0000 C TNN
+F 2 "" H 5450 6650 50  0001 C CNN
+F 3 "" H 5450 6650 50  0001 C CNN
+	1    5450 6650
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4750 3550 4750 500 
+Wire Notes Line
+	4750 5950 4750 3850
+Wire Notes Line
+	4750 7800 4750 6250
 $EndSCHEMATC
