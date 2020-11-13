@@ -147,7 +147,7 @@ F 4 "Vishay" V 1050 3750 50  0001 C CNN "Mfr."
 F 5 "VR25000004703JA500" V 1050 3750 50  0001 C CNN "Mfr. No"
 F 6 "0.6" V 1050 3750 50  0001 C CNN "Price [PLN]"
 	1    1050 3750
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C?
@@ -298,7 +298,7 @@ F 4 "Vishay" V 1550 3750 50  0001 C CNN "Mfr."
 F 5 "VR25000004703JA500" V 1550 3750 50  0001 C CNN "Mfr. No"
 F 6 "0.6" V 1550 3750 50  0001 C CNN "Price [PLN]"
 	1    1550 3750
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Sheet
 S 4200 3700 600  1100

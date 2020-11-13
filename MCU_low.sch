@@ -1477,7 +1477,7 @@ AR Path="/5F7A93EE/5FE73008" Ref="D?"  Part="1"
 AR Path="/5F7D6767/5FE73008" Ref="D23"  Part="1" 
 F 0 "D23" V 1100 2700 50  0000 R CNN
 F 1 "1N4448WS" V 1200 2700 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-323" H 1150 2625 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 1150 2625 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/81387/1n4448ws.pdf" H 1150 2800 50  0001 C CNN
 	1    1150 2800
 	0    1    1    0   
