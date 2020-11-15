@@ -119,14 +119,14 @@ Wire Wire Line
 Wire Wire Line
 	3150 4300 3200 4300
 $Comp
-L Device:Crystal_Small Y?
+L Device:Crystal_GND3_Small Y?
 U 1 1 5FA396AD
 P 3750 6900
 AR Path="/5F7D6767/5FA396AD" Ref="Y?"  Part="1" 
 AR Path="/5F8337DC/5FA396AD" Ref="Y6"  Part="1" 
 F 0 "Y6" H 3750 7100 50  0000 C CNN
 F 1 "32.768" H 3750 7000 50  0000 C CNN
-F 2 "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Horizontal_1EP_style2" H 3750 6900 50  0001 C CNN
+F 2 "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal_1EP_style1" H 3750 6900 50  0001 C CNN
 F 3 "~" H 3750 6900 50  0001 C CNN
 	1    3750 6900
 	1    0    0    -1  
@@ -167,7 +167,7 @@ F 1 "22p" H 3600 7200 50  0000 R TNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 7100 50  0001 C CNN
 F 3 "~" H 3600 7100 50  0001 C CNN
 	1    3600 7100
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3900 7000 3900 6900
@@ -470,17 +470,17 @@ Wire Wire Line
 	10250 3650 10600 3650
 Wire Wire Line
 	10600 3650 10600 3900
-Text Label 10250 3000 0    50   ~ 0
+Text Label 10650 3000 0    50   ~ 0
 ADC_SCK
-Text Label 10250 2700 0    50   ~ 0
+Text Label 10650 2700 0    50   ~ 0
 ADC_RESET
-Text Label 10250 3200 0    50   ~ 0
+Text Label 10650 3200 0    50   ~ 0
 ADC_CS
-Text Label 10250 2900 0    50   ~ 0
+Text Label 10650 2900 0    50   ~ 0
 ADC_MISO
-Text Label 10250 2800 0    50   ~ 0
+Text Label 10650 2800 0    50   ~ 0
 ADC_MOSI
-Text Label 10250 3100 0    50   ~ 0
+Text Label 10650 3100 0    50   ~ 0
 ADC_DRDY
 $Comp
 L Device:L_Core_Ferrite_Small L?
@@ -1060,79 +1060,79 @@ Wire Wire Line
 $Comp
 L Device:LED_Small D?
 U 1 1 5FD413E8
-P 900 3700
+P 900 3900
 AR Path="/5F7D6767/5FD413E8" Ref="D?"  Part="1" 
 AR Path="/5F8337DC/5FD413E8" Ref="D31"  Part="1" 
-F 0 "D31" V 946 3630 50  0000 R CNN
-F 1 "Green" V 855 3630 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 900 3700 50  0001 C CNN
-F 3 "~" V 900 3700 50  0001 C CNN
-	1    900  3700
+F 0 "D31" V 946 3830 50  0000 R CNN
+F 1 "Green" V 855 3830 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 900 3900 50  0001 C CNN
+F 3 "~" V 900 3900 50  0001 C CNN
+	1    900  3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5FD413EF
-P 900 3900
+P 900 3700
 AR Path="/5F7D6767/5FD413EF" Ref="R?"  Part="1" 
 AR Path="/5F8337DC/5FD413EF" Ref="R183"  Part="1" 
-F 0 "R183" H 959 3946 50  0000 L CNN
-F 1 "1k" H 959 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 900 3900 50  0001 C CNN
-F 3 "~" H 900 3900 50  0001 C CNN
-	1    900  3900
+F 0 "R183" H 959 3746 50  0000 L CNN
+F 1 "1k" H 959 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 900 3700 50  0001 C CNN
+F 3 "~" H 900 3700 50  0001 C CNN
+	1    900  3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D?
 U 1 1 5FD413FC
-P 1300 3700
+P 1300 3900
 AR Path="/5F7D6767/5FD413FC" Ref="D?"  Part="1" 
 AR Path="/5F8337DC/5FD413FC" Ref="D32"  Part="1" 
-F 0 "D32" V 1346 3630 50  0000 R CNN
-F 1 "Orange" V 1255 3630 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1300 3700 50  0001 C CNN
-F 3 "~" V 1300 3700 50  0001 C CNN
-	1    1300 3700
+F 0 "D32" V 1346 3830 50  0000 R CNN
+F 1 "Orange" V 1255 3830 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1300 3900 50  0001 C CNN
+F 3 "~" V 1300 3900 50  0001 C CNN
+	1    1300 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5FD41403
-P 1300 3900
+P 1300 3700
 AR Path="/5F7D6767/5FD41403" Ref="R?"  Part="1" 
 AR Path="/5F8337DC/5FD41403" Ref="R184"  Part="1" 
-F 0 "R184" H 1359 3946 50  0000 L CNN
-F 1 "1k" H 1359 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 3900 50  0001 C CNN
-F 3 "~" H 1300 3900 50  0001 C CNN
-	1    1300 3900
+F 0 "R184" H 1359 3746 50  0000 L CNN
+F 1 "1k" H 1359 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 3700 50  0001 C CNN
+F 3 "~" H 1300 3700 50  0001 C CNN
+	1    1300 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D?
 U 1 1 5FD41410
-P 1700 3700
+P 1700 3900
 AR Path="/5F7D6767/5FD41410" Ref="D?"  Part="1" 
 AR Path="/5F8337DC/5FD41410" Ref="D33"  Part="1" 
-F 0 "D33" V 1746 3630 50  0000 R CNN
-F 1 "Red" V 1655 3630 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1700 3700 50  0001 C CNN
-F 3 "~" V 1700 3700 50  0001 C CNN
-	1    1700 3700
+F 0 "D33" V 1746 3830 50  0000 R CNN
+F 1 "Red" V 1655 3830 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1700 3900 50  0001 C CNN
+F 3 "~" V 1700 3900 50  0001 C CNN
+	1    1700 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5FD41417
-P 1700 3900
+P 1700 3700
 AR Path="/5F7D6767/5FD41417" Ref="R?"  Part="1" 
 AR Path="/5F8337DC/5FD41417" Ref="R185"  Part="1" 
-F 0 "R185" H 1759 3946 50  0000 L CNN
-F 1 "1k" H 1759 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 3900 50  0001 C CNN
-F 3 "~" H 1700 3900 50  0001 C CNN
-	1    1700 3900
+F 0 "R185" H 1759 3746 50  0000 L CNN
+F 1 "1k" H 1759 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 3700 50  0001 C CNN
+F 3 "~" H 1700 3700 50  0001 C CNN
+	1    1700 3700
 	1    0    0    -1  
 $EndComp
 Text Label 900  3600 1    50   ~ 0
@@ -1144,27 +1144,27 @@ LED_RED
 $Comp
 L Device:LED_Small D?
 U 1 1 5FD41427
-P 2100 3700
+P 2100 3900
 AR Path="/5F7D6767/5FD41427" Ref="D?"  Part="1" 
 AR Path="/5F8337DC/5FD41427" Ref="D34"  Part="1" 
-F 0 "D34" V 2146 3630 50  0000 R CNN
-F 1 "Blue" V 2055 3630 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2100 3700 50  0001 C CNN
-F 3 "~" V 2100 3700 50  0001 C CNN
-	1    2100 3700
+F 0 "D34" V 2146 3830 50  0000 R CNN
+F 1 "Blue" V 2055 3830 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2100 3900 50  0001 C CNN
+F 3 "~" V 2100 3900 50  0001 C CNN
+	1    2100 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5FD4142E
-P 2100 3900
+P 2100 3700
 AR Path="/5F7D6767/5FD4142E" Ref="R?"  Part="1" 
 AR Path="/5F8337DC/5FD4142E" Ref="R186"  Part="1" 
-F 0 "R186" H 2159 3946 50  0000 L CNN
-F 1 "1k" H 2159 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2100 3900 50  0001 C CNN
-F 3 "~" H 2100 3900 50  0001 C CNN
-	1    2100 3900
+F 0 "R186" H 2159 3746 50  0000 L CNN
+F 1 "1k" H 2159 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2100 3700 50  0001 C CNN
+F 3 "~" H 2100 3700 50  0001 C CNN
+	1    2100 3700
 	1    0    0    -1  
 $EndComp
 Text Label 2100 3600 1    50   ~ 0
@@ -1190,17 +1190,7 @@ F 3 "" H 1500 4000 50  0001 C CNN
 	1    1500 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 4000 1700 4000
-Connection ~ 1300 4000
-Wire Wire Line
-	1300 4000 900  4000
 Connection ~ 1500 4000
-Wire Wire Line
-	1500 4000 1300 4000
-Connection ~ 1700 4000
-Wire Wire Line
-	1700 4000 1500 4000
 Wire Wire Line
 	8800 4100 8800 3950
 Wire Wire Line
@@ -1550,34 +1540,6 @@ Wire Wire Line
 	8800 2750 8800 2650
 $Comp
 L Connector:TestPoint TP?
-U 1 1 5FA26436
-P 5200 6000
-AR Path="/5F7A93EE/5FA26436" Ref="TP?"  Part="1" 
-AR Path="/5F8337DC/5FA26436" Ref="TP39"  Part="1" 
-AR Path="/5F7D6767/5FA26436" Ref="TP?"  Part="1" 
-F 0 "TP39" V 5200 6188 50  0000 L CNN
-F 1 "TestPoint" V 5245 6188 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6000 50  0001 C CNN
-F 3 "~" H 5400 6000 50  0001 C CNN
-	1    5200 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FA264E4
-P 5200 6100
-AR Path="/5F7A93EE/5FA264E4" Ref="TP?"  Part="1" 
-AR Path="/5F8337DC/5FA264E4" Ref="TP40"  Part="1" 
-AR Path="/5F7D6767/5FA264E4" Ref="TP?"  Part="1" 
-F 0 "TP40" V 5200 6288 50  0000 L CNN
-F 1 "TestPoint" V 5245 6288 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6100 50  0001 C CNN
-F 3 "~" H 5400 6100 50  0001 C CNN
-	1    5200 6100
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
 U 1 1 5FA2656C
 P 5200 6200
 AR Path="/5F7A93EE/5FA2656C" Ref="TP?"  Part="1" 
@@ -1791,4 +1753,118 @@ Wire Wire Line
 	4300 3300 4400 3300
 Wire Wire Line
 	4400 3250 4400 3300
+$Comp
+L Device:L_Core_Ferrite_Small L?
+U 1 1 5FCC03D9
+P 10450 3200
+AR Path="/5F7D6767/5FCC03D9" Ref="L?"  Part="1" 
+AR Path="/5F8337DC/5FCC03D9" Ref="L27"  Part="1" 
+F 0 "L27" V 10655 3200 50  0000 C CNN
+F 1 "BLM18TG102" V 10564 3200 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10450 3200 50  0001 C CNN
+F 3 "~" H 10450 3200 50  0001 C CNN
+	1    10450 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L?
+U 1 1 5FCC03E0
+P 10450 2700
+AR Path="/5F7D6767/5FCC03E0" Ref="L?"  Part="1" 
+AR Path="/5F8337DC/5FCC03E0" Ref="L22"  Part="1" 
+F 0 "L22" V 10655 2700 50  0001 C CNN
+F 1 "BLM18TG102" V 10564 2700 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10450 2700 50  0001 C CNN
+F 3 "~" H 10450 2700 50  0001 C CNN
+	1    10450 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L?
+U 1 1 5FCC03E6
+P 10450 2800
+AR Path="/5F7D6767/5FCC03E6" Ref="L?"  Part="1" 
+AR Path="/5F8337DC/5FCC03E6" Ref="L23"  Part="1" 
+F 0 "L23" V 10655 2800 50  0001 C CNN
+F 1 "BLM18TG102" V 10564 2800 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10450 2800 50  0001 C CNN
+F 3 "~" H 10450 2800 50  0001 C CNN
+	1    10450 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L?
+U 1 1 5FCC03EC
+P 10450 2900
+AR Path="/5F7D6767/5FCC03EC" Ref="L?"  Part="1" 
+AR Path="/5F8337DC/5FCC03EC" Ref="L24"  Part="1" 
+F 0 "L24" V 10655 2900 50  0001 C CNN
+F 1 "BLM18TG102" V 10564 2900 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10450 2900 50  0001 C CNN
+F 3 "~" H 10450 2900 50  0001 C CNN
+	1    10450 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L?
+U 1 1 5FCC03F2
+P 10450 3000
+AR Path="/5F7D6767/5FCC03F2" Ref="L?"  Part="1" 
+AR Path="/5F8337DC/5FCC03F2" Ref="L25"  Part="1" 
+F 0 "L25" V 10655 3000 50  0001 C CNN
+F 1 "BLM18TG102" V 10564 3000 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10450 3000 50  0001 C CNN
+F 3 "~" H 10450 3000 50  0001 C CNN
+	1    10450 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L?
+U 1 1 5FCC03F8
+P 10450 3100
+AR Path="/5F7D6767/5FCC03F8" Ref="L?"  Part="1" 
+AR Path="/5F8337DC/5FCC03F8" Ref="L26"  Part="1" 
+F 0 "L26" V 10655 3100 50  0001 C CNN
+F 1 "BLM18TG102" V 10564 3100 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10450 3100 50  0001 C CNN
+F 3 "~" H 10450 3100 50  0001 C CNN
+	1    10450 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10250 2700 10350 2700
+Wire Wire Line
+	10550 2700 10650 2700
+Wire Wire Line
+	10250 2800 10350 2800
+Wire Wire Line
+	10550 2800 10650 2800
+Wire Wire Line
+	10650 2900 10550 2900
+Wire Wire Line
+	10350 2900 10250 2900
+Wire Wire Line
+	10250 3000 10350 3000
+Wire Wire Line
+	10550 3000 10650 3000
+Wire Wire Line
+	10650 3100 10550 3100
+Wire Wire Line
+	10350 3100 10250 3100
+Wire Wire Line
+	10250 3200 10350 3200
+Wire Wire Line
+	10550 3200 10650 3200
+Wire Wire Line
+	1500 4000 1700 4000
+Wire Wire Line
+	900  4000 1300 4000
+Connection ~ 1300 4000
+Wire Wire Line
+	1300 4000 1500 4000
+Connection ~ 1700 4000
+Wire Wire Line
+	1700 4000 2100 4000
+Wire Wire Line
+	3750 7000 3750 7250
 $EndSCHEMATC
