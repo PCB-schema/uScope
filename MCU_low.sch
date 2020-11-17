@@ -859,11 +859,11 @@ Wire Wire Line
 Wire Wire Line
 	10200 2400 10200 2450
 Text Label 10300 2400 0    50   ~ 0
-ENC_SW
+ENC_SW_F
 Text Label 9000 3400 0    50   ~ 0
-ENC_A
+ENC_A_F
 Text Label 9900 3400 0    50   ~ 0
-ENC_B
+ENC_B_F
 Wire Wire Line
 	10200 2400 10300 2400
 Connection ~ 10200 2400
@@ -902,11 +902,11 @@ Wire Wire Line
 Wire Wire Line
 	10400 3000 10400 2950
 Text Label 7100 3100 0    50   ~ 0
-ENC_SW
+ENC_SW_F
 Text Label 7100 2900 0    50   ~ 0
-ENC_A
+ENC_A_F
 Text Label 7100 3000 0    50   ~ 0
-ENC_B
+ENC_B_F
 Wire Wire Line
 	7000 2900 7100 2900
 Wire Wire Line
@@ -952,9 +952,9 @@ F 3 "~" H 10500 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 10800 6050 0    50   ~ 0
-KEY_ESC
+ESC
 Text Label 9850 6050 0    50   ~ 0
-KEY_ENTER
+ENTER
 $Comp
 L power:GND #PWR?
 U 1 1 5FD929FC
@@ -1136,7 +1136,7 @@ F 3 "~" H 8600 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7950 6050 0    50   ~ 0
-KEY_LEFT
+LEFT
 $Comp
 L power:GND #PWR?
 U 1 1 5FDBE768
@@ -1280,15 +1280,15 @@ Connection ~ 7650 5700
 Wire Wire Line
 	7900 5700 7650 5700
 Text Label 8900 6050 0    50   ~ 0
-KEY_RIGHT
+RIGHT
 Text Label 5250 3800 0    50   ~ 0
-KEY_ESC
+ESC
 Text Label 5250 3700 0    50   ~ 0
-KEY_ENTER
+ENTER
 Text Label 5250 3600 0    50   ~ 0
-KEY_RIGHT
+RIGHT
 Text Label 5250 3500 0    50   ~ 0
-KEY_LEFT
+LEFT
 Wire Wire Line
 	5250 3500 5700 3500
 Wire Wire Line
@@ -2974,13 +2974,13 @@ Text Label 9200 4250 0    50   ~ 0
 KEY_LEFT
 Text Label 7050 4300 0    50   ~ 0
 KEY_PWR
-Text Label 9200 4650 0    50   ~ 0
+Text Label 9200 5050 0    50   ~ 0
 KEY_PWR
-Text Label 9200 4750 0    50   ~ 0
+Text Label 9200 4650 0    50   ~ 0
 ENC_SW
 Text Label 9200 4850 0    50   ~ 0
 ENC_A
-Text Label 9200 4950 0    50   ~ 0
+Text Label 9200 4750 0    50   ~ 0
 ENC_B
 $Comp
 L power:GND #PWR?
@@ -3066,7 +3066,7 @@ Text Label 7100 2400 0    50   ~ 0
 PWR_LOCK
 Wire Wire Line
 	7000 2400 7500 2400
-Text Label 9200 5050 0    50   ~ 0
+Text Label 9200 4950 0    50   ~ 0
 PWR_LOCK
 Wire Wire Line
 	8700 4250 8300 4250
@@ -3118,13 +3118,13 @@ Text Label 10750 4350 0    50   ~ 0
 KEY_RIGHT
 Text Label 10750 4250 0    50   ~ 0
 KEY_LEFT
-Text Label 10750 4650 0    50   ~ 0
+Text Label 10750 5050 0    50   ~ 0
 KEY_PWR
-Text Label 10750 4750 0    50   ~ 0
+Text Label 10750 4650 0    50   ~ 0
 ENC_SW
 Text Label 10750 4850 0    50   ~ 0
 ENC_A
-Text Label 10750 4950 0    50   ~ 0
+Text Label 10750 4750 0    50   ~ 0
 ENC_B
 $Comp
 L power:GND #PWR?
@@ -3202,7 +3202,7 @@ Text Label 10250 4350 2    50   ~ 0
 UART_TX
 Text Label 10250 4450 2    50   ~ 0
 UART_RX
-Text Label 10750 5050 0    50   ~ 0
+Text Label 10750 4950 0    50   ~ 0
 PWR_LOCK
 Wire Wire Line
 	10250 4250 9850 4250
@@ -3235,4 +3235,18 @@ F 3 "" H 10250 4550 50  0001 C CNN
 	1    10250 4550
 	0    1    1    0   
 $EndComp
+Text Label 10600 5700 0    50   ~ 0
+KEY_ESC
+Text Label 9650 5700 0    50   ~ 0
+KEY_ENTER
+Text Label 8700 5700 0    50   ~ 0
+KEY_RIGHT
+Text Label 7750 5700 0    50   ~ 0
+KEY_LEFT
+Text Label 9100 3000 0    50   ~ 0
+ENC_A
+Text Label 9800 3000 0    50   ~ 0
+ENC_B
+Text Label 9650 2400 0    50   ~ 0
+ENC_SW
 $EndSCHEMATC
