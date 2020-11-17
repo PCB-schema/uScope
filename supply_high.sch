@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 11
+Sheet 11 10
 Title ""
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ U 1 1 5FB117D6
 P 4250 5150
 F 0 "U38" H 4250 5567 50  0000 C CNN
 F 1 "TC7660S" H 4250 5476 50  0000 C CNN
-F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 4350 5050 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4350 5050 50  0001 C CNN
 F 3 "http://datasheets.maximintegrated.com/en/ds/ICL7660-MAX1044.pdf" H 4350 5050 50  0001 C CNN
 	1    4250 5150
 	1    0    0    -1  
@@ -164,21 +164,6 @@ Wire Wire Line
 	7100 2500 7100 2600
 Wire Wire Line
 	7400 2500 7400 2600
-Wire Wire Line
-	7700 2600 7700 2500
-$Comp
-L Device:C_Small C?
-U 1 1 5FB2D55D
-P 7700 2700
-AR Path="/5F620813/5FB2D55D" Ref="C?"  Part="1" 
-AR Path="/5FB035A9/5FB2D55D" Ref="C186"  Part="1" 
-F 0 "C186" H 7750 2750 50  0000 L BNN
-F 1 "100n" H 7750 2650 50  0000 L TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7700 2700 50  0001 C CNN
-F 3 "~" H 7700 2700 50  0001 C CNN
-	1    7700 2700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5FB2D564
@@ -199,10 +184,7 @@ Wire Wire Line
 	7100 2500 7400 2500
 Connection ~ 7400 2500
 Wire Wire Line
-	7400 2500 7700 2500
-Wire Wire Line
-	7700 2500 7700 2450
-Connection ~ 7700 2500
+	7400 2500 7400 2450
 $Comp
 L Device:C_Small C?
 U 1 1 5FB2D77C
@@ -282,14 +264,14 @@ $EndComp
 $Comp
 L power_my:HVGND #PWR?
 U 1 1 5FB3856A
-P 4850 4700
+P 4850 4650
 AR Path="/5FB3856A" Ref="#PWR?"  Part="1" 
 AR Path="/5FB035A9/5FB3856A" Ref="#PWR0242"  Part="1" 
-F 0 "#PWR0242" H 4850 4650 50  0001 C CNN
-F 1 "HVGND" H 4850 4527 50  0000 C CNN
-F 2 "" H 4850 4700 50  0001 C CNN
-F 3 "" H 4850 4700 50  0001 C CNN
-	1    4850 4700
+F 0 "#PWR0242" H 4850 4600 50  0001 C CNN
+F 1 "HVGND" H 4850 4477 50  0000 C CNN
+F 2 "" H 4850 4650 50  0001 C CNN
+F 3 "" H 4850 4650 50  0001 C CNN
+	1    4850 4650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -483,22 +465,6 @@ Wire Wire Line
 Connection ~ 2650 4800
 $Comp
 L Device:C_Small C?
-U 1 1 5FB5BC8C
-P 5850 5000
-AR Path="/5F620813/5FB5BC8C" Ref="C?"  Part="1" 
-AR Path="/5F7A93EE/5FB5BC8C" Ref="C?"  Part="1" 
-AR Path="/5FB035A9/5FB5BC8C" Ref="C193"  Part="1" 
-F 0 "C193" H 5900 5050 50  0000 L BNN
-F 1 "2u2" H 5900 4950 50  0000 L TNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5850 5000 50  0001 C CNN
-F 3 "~" H 5850 5000 50  0001 C CNN
-	1    5850 5000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5850 5100 5850 5300
-$Comp
-L Device:C_Small C?
 U 1 1 5FB5BCA6
 P 6200 5000
 AR Path="/5F620813/5FB5BCA6" Ref="C?"  Part="1" 
@@ -510,8 +476,6 @@ F 3 "~" H 6200 5000 50  0001 C CNN
 	1    6200 5000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5850 5300 6200 5300
 Wire Wire Line
 	6200 5100 6200 5300
 $Comp
@@ -557,7 +521,7 @@ AR Path="/5F620813/5FB5BCD3" Ref="D?"  Part="1"
 AR Path="/5FB035A9/5FB5BCD3" Ref="D38"  Part="1" 
 F 0 "D38" H 6600 5800 50  0000 C BNN
 F 1 "1N4448" H 6600 5750 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 6600 5650 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" V 6600 5650 50  0001 C CNN
 F 3 "~" V 6600 5650 50  0001 C CNN
 	1    6600 5650
 	-1   0    0    1   
@@ -577,7 +541,7 @@ AR Path="/5F620813/5FB5BCDE" Ref="D?"  Part="1"
 AR Path="/5FB035A9/5FB5BCDE" Ref="D37"  Part="1" 
 F 0 "D37" V 6954 5220 50  0000 L CNN
 F 1 "1N4448" H 7000 5050 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 7000 5150 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" V 7000 5150 50  0001 C CNN
 F 3 "~" V 7000 5150 50  0001 C CNN
 	1    7000 5150
 	0    1    1    0   
@@ -671,7 +635,6 @@ Connection ~ 6200 5300
 Wire Wire Line
 	6300 5300 6200 5300
 Connection ~ 7300 5300
-Connection ~ 5850 5300
 $Comp
 L power_my:HVGND #PWR?
 U 1 1 5FB5E06B
@@ -699,12 +662,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 4700 6200 4700
 Wire Wire Line
-	5850 4700 5850 4900
-Wire Wire Line
 	6200 4900 6200 4700
-Connection ~ 6200 4700
-Wire Wire Line
-	6200 4700 5850 4700
 Text Notes 3950 4400 0    50   ~ 0
 +12V to -12V
 Text Notes 6700 4400 0    50   ~ 0
@@ -723,12 +681,12 @@ $EndComp
 $Comp
 L power_my:HV+3V3 #PWR0239
 U 1 1 5FB7E4C4
-P 7700 2450
-F 0 "#PWR0239" H 7700 2300 50  0001 C CNN
-F 1 "HV+3V3" H 7705 2623 50  0000 C CNN
-F 2 "" H 7700 2450 50  0001 C CNN
-F 3 "" H 7700 2450 50  0001 C CNN
-	1    7700 2450
+P 7400 2450
+F 0 "#PWR0239" H 7400 2300 50  0001 C CNN
+F 1 "HV+3V3" H 7405 2623 50  0000 C CNN
+F 2 "" H 7400 2450 50  0001 C CNN
+F 3 "" H 7400 2450 50  0001 C CNN
+	1    7400 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -739,7 +697,7 @@ AR Path="/5F620813/5FB96CE6" Ref="D?"  Part="1"
 AR Path="/5FB035A9/5FB96CE6" Ref="D35"  Part="1" 
 F 0 "D35" H 3400 2300 50  0000 C BNN
 F 1 "1N4448" H 3400 2250 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 3400 2150 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" V 3400 2150 50  0001 C CNN
 F 3 "~" V 3400 2150 50  0001 C CNN
 	1    3400 2150
 	1    0    0    -1  
@@ -834,7 +792,7 @@ AR Path="/5F620813/5FB96D25" Ref="D?"  Part="1"
 AR Path="/5FB035A9/5FB96D25" Ref="D36"  Part="1" 
 F 0 "D36" V 3750 2700 50  0000 L BNN
 F 1 "1N4448" H 3800 2550 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 3800 2650 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" V 3800 2650 50  0001 C CNN
 F 3 "~" V 3800 2650 50  0001 C CNN
 	1    3800 2650
 	0    1    1    0   
@@ -986,11 +944,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 2950 5750 2950
 Wire Wire Line
-	7700 2950 7700 2800
-Connection ~ 7400 2950
-Wire Wire Line
-	7400 2950 7700 2950
-Wire Wire Line
 	7400 2800 7400 2950
 Wire Wire Line
 	7100 2800 7100 2950
@@ -1019,7 +972,7 @@ Wire Wire Line
 Connection ~ 4800 2500
 Text Notes 4200 2150 0    50   ~ 0
 +12V to +5V
-Text Notes 6100 2150 0    50   ~ 0
+Text Notes 6150 1900 0    50   ~ 0
 +5V to +3V3
 Wire Wire Line
 	2650 4100 2300 4100
@@ -1040,21 +993,19 @@ Wire Wire Line
 	5450 5050 5450 5300
 Connection ~ 5450 5300
 Wire Wire Line
-	5450 5300 5850 5300
+	4850 4650 4850 4700
 Wire Wire Line
-	4850 4700 4850 4750
+	5450 4850 5450 4700
 Wire Wire Line
-	5450 4850 5450 4750
+	5450 4700 5150 4700
+Connection ~ 4850 4700
 Wire Wire Line
-	5450 4750 5150 4750
-Connection ~ 4850 4750
+	4850 4700 4850 4850
 Wire Wire Line
-	4850 4750 4850 4850
+	5150 4850 5150 4700
+Connection ~ 5150 4700
 Wire Wire Line
-	5150 4850 5150 4750
-Connection ~ 5150 4750
-Wire Wire Line
-	5150 4750 4850 4750
+	5150 4700 4850 4700
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5FA95447
@@ -1105,4 +1056,28 @@ Wire Wire Line
 Connection ~ 3500 4600
 Wire Wire Line
 	3500 4600 3400 4600
+Wire Wire Line
+	5450 5300 6200 5300
+$Comp
+L Device:D_Small D?
+U 1 1 5FB3FF99
+P 6400 2150
+AR Path="/5F620813/5FB3FF99" Ref="D?"  Part="1" 
+AR Path="/5FB035A9/5FB3FF99" Ref="D13"  Part="1" 
+F 0 "D13" H 6400 2300 50  0000 C BNN
+F 1 "1N4448" H 6400 2250 50  0000 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" V 6400 2150 50  0001 C CNN
+F 3 "~" V 6400 2150 50  0001 C CNN
+	1    6400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2150 6800 2150
+Wire Wire Line
+	6300 2150 6000 2150
+Wire Wire Line
+	6000 2150 6000 2500
+Wire Wire Line
+	6800 2150 6800 2500
+Connection ~ 6800 2500
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -1276,9 +1276,9 @@ F 3 "~" H 8250 2850 50  0001 C CNN
 	1    8050 2850
 	0    -1   -1   0   
 $EndComp
-Text HLabel 8050 2250 0    50   Input ~ 0
+Text HLabel 7700 2350 0    50   Input ~ 0
 ADC_CH0
-Text HLabel 8050 2550 0    50   Input ~ 0
+Text HLabel 7700 2650 0    50   Input ~ 0
 ADC_CH1
 $Comp
 L Device:C_Small C?
@@ -1317,7 +1317,7 @@ Connection ~ 8500 2250
 Wire Wire Line
 	8500 2250 8900 2250
 Wire Wire Line
-	8150 2250 8050 2250
+	8150 2250 8100 2250
 Wire Wire Line
 	8500 2450 8800 2450
 Connection ~ 8800 2450
@@ -1360,7 +1360,7 @@ Connection ~ 8500 2550
 Wire Wire Line
 	8500 2550 8900 2550
 Wire Wire Line
-	8150 2550 8050 2550
+	8150 2550 8100 2550
 Wire Wire Line
 	8500 2750 8800 2750
 $Comp
@@ -1538,34 +1538,6 @@ Wire Wire Line
 Connection ~ 8800 2750
 Wire Wire Line
 	8800 2750 8800 2650
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FA2656C
-P 5200 6200
-AR Path="/5F7A93EE/5FA2656C" Ref="TP?"  Part="1" 
-AR Path="/5F8337DC/5FA2656C" Ref="TP41"  Part="1" 
-AR Path="/5F7D6767/5FA2656C" Ref="TP?"  Part="1" 
-F 0 "TP41" V 5200 6388 50  0000 L CNN
-F 1 "TestPoint" V 5245 6388 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6200 50  0001 C CNN
-F 3 "~" H 5400 6200 50  0001 C CNN
-	1    5200 6200
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FA265F6
-P 5200 6300
-AR Path="/5F7A93EE/5FA265F6" Ref="TP?"  Part="1" 
-AR Path="/5F8337DC/5FA265F6" Ref="TP42"  Part="1" 
-AR Path="/5F7D6767/5FA265F6" Ref="TP?"  Part="1" 
-F 0 "TP42" V 5200 6488 50  0000 L CNN
-F 1 "TestPoint" V 5245 6488 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5400 6300 50  0001 C CNN
-F 3 "~" H 5400 6300 50  0001 C CNN
-	1    5200 6300
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5FA26682
@@ -1867,4 +1839,204 @@ Wire Wire Line
 	1700 4000 2100 4000
 Wire Wire Line
 	3750 7000 3750 7250
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FB6AB77
+P 8050 2250
+AR Path="/5F7A93EE/5FB6AB77" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FB6AB77" Ref="TP40"  Part="1" 
+AR Path="/5F7D6767/5FB6AB77" Ref="TP?"  Part="1" 
+F 0 "TP40" V 8050 2438 50  0000 L CNN
+F 1 "TestPoint" V 8095 2438 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8250 2250 50  0001 C CNN
+F 3 "~" H 8250 2250 50  0001 C CNN
+	1    8050 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FB73BA5
+P 8050 2550
+AR Path="/5F7A93EE/5FB73BA5" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FB73BA5" Ref="TP41"  Part="1" 
+AR Path="/5F7D6767/5FB73BA5" Ref="TP?"  Part="1" 
+F 0 "TP41" V 8050 2738 50  0000 L CNN
+F 1 "TestPoint" V 8095 2738 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8250 2550 50  0001 C CNN
+F 3 "~" H 8250 2550 50  0001 C CNN
+	1    8050 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 2650 8100 2550
+Connection ~ 8100 2550
+Wire Wire Line
+	8100 2550 8050 2550
+Wire Wire Line
+	8100 2350 8100 2250
+Connection ~ 8100 2250
+Wire Wire Line
+	8100 2250 8050 2250
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J15
+U 1 1 5FB4E18D
+P 1750 6200
+F 0 "J15" H 1800 6517 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1800 6426 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 1750 6200 50  0001 C CNN
+F 3 "~" H 1750 6200 50  0001 C CNN
+	1    1750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FB4E463
+P 1550 5950
+AR Path="/5FB4E463" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FB4E463" Ref="#PWR0262"  Part="1" 
+F 0 "#PWR0262" H 1550 5900 50  0001 C CNN
+F 1 "HVGND" H 1550 5777 50  0000 C CNN
+F 2 "" H 1550 5950 50  0001 C CNN
+F 3 "" H 1550 5950 50  0001 C CNN
+	1    1550 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FB4EF2E
+P 2050 5950
+AR Path="/5FB4EF2E" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FB4EF2E" Ref="#PWR0263"  Part="1" 
+F 0 "#PWR0263" H 2050 5900 50  0001 C CNN
+F 1 "HVGND" H 2050 5777 50  0000 C CNN
+F 2 "" H 2050 5950 50  0001 C CNN
+F 3 "" H 2050 5950 50  0001 C CNN
+	1    2050 5950
+	-1   0    0    1   
+$EndComp
+Text Label 7750 2350 0    50   ~ 0
+ADC_CH0
+Text Label 7750 2650 0    50   ~ 0
+ADC_CH1
+Wire Wire Line
+	7700 2350 8100 2350
+Wire Wire Line
+	7700 2650 8100 2650
+Text Label 2050 6200 0    50   ~ 0
+ADC_CH0
+Text Label 2050 6300 0    50   ~ 0
+ADC_CH1
+$Comp
+L power_my:HV+5V #PWR?
+U 1 1 5FB85092
+P 1250 6200
+AR Path="/5FB035A9/5FB85092" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FB85092" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FB85092" Ref="#PWR0260"  Part="1" 
+F 0 "#PWR0260" H 1250 6050 50  0001 C CNN
+F 1 "HV+5V" H 1255 6373 50  0000 C CNN
+F 2 "" H 1250 6200 50  0001 C CNN
+F 3 "" H 1250 6200 50  0001 C CNN
+	1    1250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:HV-5V #PWR?
+U 1 1 5FB85098
+P 1250 6300
+AR Path="/5FB035A9/5FB85098" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FB85098" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FB85098" Ref="#PWR0261"  Part="1" 
+F 0 "#PWR0261" H 1250 6150 50  0001 C CNN
+F 1 "HV-5V" H 1255 6473 50  0000 C CNN
+F 2 "" H 1250 6300 50  0001 C CNN
+F 3 "" H 1250 6300 50  0001 C CNN
+	1    1250 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 6200 1550 6200
+Wire Wire Line
+	1550 6300 1250 6300
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J16
+U 1 1 5FBA5274
+P 1850 7050
+F 0 "J16" H 1900 7367 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1900 7276 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 1850 7050 50  0001 C CNN
+F 3 "~" H 1850 7050 50  0001 C CNN
+	1    1850 7050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FBA527B
+P 1550 6800
+AR Path="/5FBA527B" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FBA527B" Ref="#PWR0266"  Part="1" 
+F 0 "#PWR0266" H 1550 6750 50  0001 C CNN
+F 1 "HVGND" H 1550 6627 50  0000 C CNN
+F 2 "" H 1550 6800 50  0001 C CNN
+F 3 "" H 1550 6800 50  0001 C CNN
+	1    1550 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FBA5281
+P 2050 6800
+AR Path="/5FBA5281" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FBA5281" Ref="#PWR0267"  Part="1" 
+F 0 "#PWR0267" H 2050 6750 50  0001 C CNN
+F 1 "HVGND" H 2050 6627 50  0000 C CNN
+F 2 "" H 2050 6800 50  0001 C CNN
+F 3 "" H 2050 6800 50  0001 C CNN
+	1    2050 6800
+	-1   0    0    1   
+$EndComp
+Text Label 2050 7050 0    50   ~ 0
+ADC_CH0
+Text Label 2050 7150 0    50   ~ 0
+ADC_CH1
+$Comp
+L power_my:HV+5V #PWR?
+U 1 1 5FBA5289
+P 1250 7050
+AR Path="/5FB035A9/5FBA5289" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FBA5289" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FBA5289" Ref="#PWR0264"  Part="1" 
+F 0 "#PWR0264" H 1250 6900 50  0001 C CNN
+F 1 "HV+5V" H 1255 7223 50  0000 C CNN
+F 2 "" H 1250 7050 50  0001 C CNN
+F 3 "" H 1250 7050 50  0001 C CNN
+	1    1250 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:HV-5V #PWR?
+U 1 1 5FBA528F
+P 1250 7150
+AR Path="/5FB035A9/5FBA528F" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FBA528F" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FBA528F" Ref="#PWR0265"  Part="1" 
+F 0 "#PWR0265" H 1250 7000 50  0001 C CNN
+F 1 "HV-5V" H 1255 7323 50  0000 C CNN
+F 2 "" H 1250 7150 50  0001 C CNN
+F 3 "" H 1250 7150 50  0001 C CNN
+	1    1250 7150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 7050 1550 7050
+Wire Wire Line
+	1550 7150 1250 7150
+Wire Wire Line
+	1550 5950 1550 6100
+Wire Wire Line
+	2050 5950 2050 6100
+Wire Wire Line
+	2050 6950 2050 6800
+Wire Wire Line
+	1550 6950 1550 6800
 $EndSCHEMATC

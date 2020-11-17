@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -14,12 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 5850 7200 1000 400 
-U 5F463F4C
-F0 "rippleMeas" 50
-F1 "rippleMeas.sch" 50
-$EndSheet
 $Sheet
 S 6100 3700 1200 1100
 U 5F479892
@@ -912,10 +906,4 @@ Text Notes 8200 4100 0    100  ~ 0
 "High" side:\nHazardous voltage\nNegative voltage up to -6 kV
 Text Notes 8200 4650 0    100  ~ 0
 "Low" side:\nground / touch / interface potential
-Wire Notes Line
-	5700 7000 6950 7000
-Text Notes 5900 7500 0    50   ~ 0
-Separate circuit.\nNot part of the project,\nbut useful at testing.
-Wire Notes Line
-	5700 7750 5700 7000
 $EndSCHEMATC
