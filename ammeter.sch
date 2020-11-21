@@ -292,7 +292,7 @@ U 1 1 5FE19E0E
 P 2500 4150
 F 0 "D4" V 2454 4230 50  0000 L CNN
 F 1 "1N4448WS" V 2545 4230 50  0000 L CNN
-F 2 "miscellaneous_my:D_SOD-323-523-SMA_Universal_Handsoldering" H 2500 3975 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 2500 3975 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/81387/1n4448ws.pdf" H 2500 4150 50  0001 C CNN
 	1    2500 4150
 	0    1    1    0   
@@ -307,7 +307,7 @@ U 1 1 5FE19EDD
 P 2200 4150
 F 0 "D3" V 2200 4070 50  0000 R CNN
 F 1 "1N4448WS" V 2155 4070 50  0001 R CNN
-F 2 "miscellaneous_my:D_SOD-323-523-SMA_Universal_Handsoldering" H 2200 3975 50  0001 C CNN
+F 2 "miscellaneous_my:D_SOD-323-523_HandSoldering" H 2200 3975 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/81387/1n4448ws.pdf" H 2200 4150 50  0001 C CNN
 	1    2200 4150
 	0    -1   -1   0   
@@ -661,45 +661,22 @@ F 3 "" H 4500 2300 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Small R?
-U 1 1 5FC6946F
+U 1 1 5FC6A856
 P 1850 4000
-AR Path="/5F40DCB9/5FC6946F" Ref="R?"  Part="1" 
-AR Path="/5F479892/5FC6946F" Ref="R?"  Part="1" 
-AR Path="/5FC6946F" Ref="R?"  Part="1" 
-AR Path="/5F618AB9/5FC6946F" Ref="R201"  Part="1" 
-F 0 "R201" V 1950 4000 50  0000 C CNN
+AR Path="/5F40DCB9/5FC6A856" Ref="R?"  Part="1" 
+AR Path="/5F618AB9/5FC6A856" Ref="R200"  Part="1" 
+F 0 "R200" V 1950 4000 50  0000 C CNN
 F 1 "100k" V 1750 4000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1780 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 4000 50  0001 C CNN
 F 3 "~" H 1850 4000 50  0001 C CNN
 	1    1850 4000
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FC6A856
-P 1850 3700
-AR Path="/5F40DCB9/5FC6A856" Ref="R?"  Part="1" 
-AR Path="/5F618AB9/5FC6A856" Ref="R200"  Part="1" 
-F 0 "R200" V 1950 3700 50  0000 C CNN
-F 1 "100k" V 1750 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 3700 50  0001 C CNN
-F 3 "~" H 1850 3700 50  0001 C CNN
-	1    1850 3700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2000 4000 2000 3700
-Wire Wire Line
-	2000 3700 1950 3700
 Wire Wire Line
 	2000 4000 1950 4000
 Connection ~ 2000 4000
 Wire Wire Line
 	1750 4000 1700 4000
-Wire Wire Line
-	1700 4000 1700 3700
-Wire Wire Line
-	1700 3700 1750 3700
 Wire Wire Line
 	1700 4000 1400 4000
 Connection ~ 1700 4000
@@ -710,13 +687,7 @@ Alternate circuit
 Wire Wire Line
 	4100 1800 2800 1800
 Wire Wire Line
-	2000 1800 2000 3700
-Connection ~ 2000 3700
-Wire Wire Line
 	4100 2200 2800 2200
-Wire Wire Line
-	1700 2200 1700 3700
-Connection ~ 1700 3700
 $Comp
 L Device:R_Small R?
 U 1 1 5FC7CFD0
@@ -835,4 +806,8 @@ Wire Wire Line
 Connection ~ 3400 4000
 Wire Wire Line
 	3400 4000 3700 4000
+Wire Wire Line
+	1700 2200 1700 4000
+Wire Wire Line
+	2000 1800 2000 4000
 $EndSCHEMATC
