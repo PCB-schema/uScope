@@ -2039,4 +2039,243 @@ Wire Wire Line
 	2050 6950 2050 6800
 Wire Wire Line
 	1550 6950 1550 6800
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC005CB
+P 8450 5250
+AR Path="/5F7A93EE/5FC005CB" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC005CB" Ref="TP6"  Part="1" 
+AR Path="/5F7D6767/5FC005CB" Ref="TP?"  Part="1" 
+F 0 "TP6" V 8450 5438 50  0000 L CNN
+F 1 "TestPoint" V 8495 5438 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8650 5250 50  0001 C CNN
+F 3 "~" H 8650 5250 50  0001 C CNN
+	1    8450 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC00A9D
+P 8450 5350
+AR Path="/5F7A93EE/5FC00A9D" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC00A9D" Ref="TP8"  Part="1" 
+AR Path="/5F7D6767/5FC00A9D" Ref="TP?"  Part="1" 
+F 0 "TP8" V 8450 5538 50  0000 L CNN
+F 1 "TestPoint" V 8495 5538 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8650 5350 50  0001 C CNN
+F 3 "~" H 8650 5350 50  0001 C CNN
+	1    8450 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC00B43
+P 8450 5450
+AR Path="/5F7A93EE/5FC00B43" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC00B43" Ref="TP10"  Part="1" 
+AR Path="/5F7D6767/5FC00B43" Ref="TP?"  Part="1" 
+F 0 "TP10" V 8450 5638 50  0000 L CNN
+F 1 "TestPoint" V 8495 5638 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8650 5450 50  0001 C CNN
+F 3 "~" H 8650 5450 50  0001 C CNN
+	1    8450 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC00BE7
+P 8450 5550
+AR Path="/5F7A93EE/5FC00BE7" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC00BE7" Ref="TP12"  Part="1" 
+AR Path="/5F7D6767/5FC00BE7" Ref="TP?"  Part="1" 
+F 0 "TP12" V 8450 5738 50  0000 L CNN
+F 1 "TestPoint" V 8495 5738 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8650 5550 50  0001 C CNN
+F 3 "~" H 8650 5550 50  0001 C CNN
+	1    8450 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FC00E04
+P 8850 5450
+AR Path="/5FC00E04" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FC00E04" Ref="#PWR0278"  Part="1" 
+F 0 "#PWR0278" H 8850 5400 50  0001 C CNN
+F 1 "HVGND" H 8850 5277 50  0000 C CNN
+F 2 "" H 8850 5450 50  0001 C CNN
+F 3 "" H 8850 5450 50  0001 C CNN
+	1    8850 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:HV+5V #PWR?
+U 1 1 5FC01AB4
+P 9100 5250
+AR Path="/5FB035A9/5FC01AB4" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FC01AB4" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FC01AB4" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 9100 5100 50  0001 C CNN
+F 1 "HV+5V" H 9105 5423 50  0000 C CNN
+F 2 "" H 9100 5250 50  0001 C CNN
+F 3 "" H 9100 5250 50  0001 C CNN
+	1    9100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:HV-5V #PWR?
+U 1 1 5FC01ABA
+P 9100 5350
+AR Path="/5FB035A9/5FC01ABA" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FC01ABA" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FC01ABA" Ref="#PWR0276"  Part="1" 
+F 0 "#PWR0276" H 9100 5200 50  0001 C CNN
+F 1 "HV-5V" H 9105 5523 50  0000 C CNN
+F 2 "" H 9100 5350 50  0001 C CNN
+F 3 "" H 9100 5350 50  0001 C CNN
+	1    9100 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC2367C
+P 7550 5550
+AR Path="/5F7A93EE/5FC2367C" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC2367C" Ref="TP11"  Part="1" 
+AR Path="/5F7D6767/5FC2367C" Ref="TP?"  Part="1" 
+F 0 "TP11" V 7550 5738 50  0000 L CNN
+F 1 "TestPoint" V 7595 5738 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7750 5550 50  0001 C CNN
+F 3 "~" H 7750 5550 50  0001 C CNN
+	1    7550 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC23683
+P 7550 5450
+AR Path="/5F7A93EE/5FC23683" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC23683" Ref="TP9"  Part="1" 
+AR Path="/5F7D6767/5FC23683" Ref="TP?"  Part="1" 
+F 0 "TP9" V 7550 5638 50  0000 L CNN
+F 1 "TestPoint" V 7595 5638 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7750 5450 50  0001 C CNN
+F 3 "~" H 7750 5450 50  0001 C CNN
+	1    7550 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC2368A
+P 7550 5350
+AR Path="/5F7A93EE/5FC2368A" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC2368A" Ref="TP7"  Part="1" 
+AR Path="/5F7D6767/5FC2368A" Ref="TP?"  Part="1" 
+F 0 "TP7" V 7550 5538 50  0000 L CNN
+F 1 "TestPoint" V 7595 5538 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7750 5350 50  0001 C CNN
+F 3 "~" H 7750 5350 50  0001 C CNN
+	1    7550 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC23691
+P 7550 5250
+AR Path="/5F7A93EE/5FC23691" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FC23691" Ref="TP5"  Part="1" 
+AR Path="/5F7D6767/5FC23691" Ref="TP?"  Part="1" 
+F 0 "TP5" V 7550 5438 50  0000 L CNN
+F 1 "TestPoint" V 7595 5438 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7750 5250 50  0001 C CNN
+F 3 "~" H 7750 5250 50  0001 C CNN
+	1    7550 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FC4E67E
+P 7150 5450
+AR Path="/5FC4E67E" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FC4E67E" Ref="#PWR0277"  Part="1" 
+F 0 "#PWR0277" H 7150 5400 50  0001 C CNN
+F 1 "HVGND" H 7150 5277 50  0000 C CNN
+F 2 "" H 7150 5450 50  0001 C CNN
+F 3 "" H 7150 5450 50  0001 C CNN
+	1    7150 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:HV+5V #PWR?
+U 1 1 5FC4E684
+P 6900 5250
+AR Path="/5FB035A9/5FC4E684" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FC4E684" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FC4E684" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 6900 5100 50  0001 C CNN
+F 1 "HV+5V" H 6905 5423 50  0000 C CNN
+F 2 "" H 6900 5250 50  0001 C CNN
+F 3 "" H 6900 5250 50  0001 C CNN
+	1    6900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_my:HV-5V #PWR?
+U 1 1 5FC4E68A
+P 6900 5350
+AR Path="/5FB035A9/5FC4E68A" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FC4E68A" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FC4E68A" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 6900 5200 50  0001 C CNN
+F 1 "HV-5V" H 6905 5523 50  0000 C CNN
+F 2 "" H 6900 5350 50  0001 C CNN
+F 3 "" H 6900 5350 50  0001 C CNN
+	1    6900 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 5250 6900 5250
+Wire Wire Line
+	6900 5350 7550 5350
+Wire Wire Line
+	7550 5450 7150 5450
+Wire Wire Line
+	9100 5250 8450 5250
+Wire Wire Line
+	8450 5350 9100 5350
+Wire Wire Line
+	8850 5450 8450 5450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FCBE9EF
+P 9800 5450
+AR Path="/5F7A93EE/5FCBE9EF" Ref="TP?"  Part="1" 
+AR Path="/5F8337DC/5FCBE9EF" Ref="TP42"  Part="1" 
+AR Path="/5F7D6767/5FCBE9EF" Ref="TP?"  Part="1" 
+F 0 "TP42" V 9800 5638 50  0000 L CNN
+F 1 "TestPoint" V 9845 5638 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 10000 5450 50  0001 C CNN
+F 3 "~" H 10000 5450 50  0001 C CNN
+	1    9800 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power_my:HVGND #PWR?
+U 1 1 5FCBEACD
+P 9900 5450
+AR Path="/5FCBEACD" Ref="#PWR?"  Part="1" 
+AR Path="/5F8337DC/5FCBEACD" Ref="#PWR0279"  Part="1" 
+F 0 "#PWR0279" H 9900 5400 50  0001 C CNN
+F 1 "HVGND" H 9900 5277 50  0000 C CNN
+F 2 "" H 9900 5450 50  0001 C CNN
+F 3 "" H 9900 5450 50  0001 C CNN
+	1    9900 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5450 9900 5450
+Text Label 8450 5550 0    50   ~ 0
+ADC_CH1
+Text Label 7550 5550 2    50   ~ 0
+ADC_CH1
 $EndSCHEMATC

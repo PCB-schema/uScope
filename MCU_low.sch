@@ -1417,10 +1417,10 @@ $EndComp
 Wire Wire Line
 	1400 2550 1400 2600
 Connection ~ 1400 2600
-Text GLabel 7450 4300 2    39   Input ~ 0
+Text GLabel 7450 4400 2    39   Input ~ 0
 KEY_PWR
 Wire Wire Line
-	7000 4300 7450 4300
+	7000 4400 7450 4400
 $Comp
 L miscellaneous:ADS131M06 U27
 U 1 1 5F9B08B5
@@ -2645,7 +2645,7 @@ Wire Wire Line
 Connection ~ 1900 5600
 Wire Wire Line
 	1900 5600 1900 5500
-Text GLabel 7500 2400 2    50   Output ~ 0
+Text GLabel 7500 4300 2    50   Output ~ 0
 PWR_LOCK
 $Comp
 L Connector:TestPoint TP?
@@ -2953,18 +2953,7 @@ Wire Wire Line
 Connection ~ 1200 5400
 Wire Wire Line
 	1200 5400 1150 5400
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J13
-U 1 1 5FB42313
-P 8900 4650
-F 0 "J13" H 8950 5267 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 8950 5176 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Vertical" H 8900 4650 50  0001 C CNN
-F 3 "~" H 8900 4650 50  0001 C CNN
-	1    8900 4650
-	1    0    0    -1  
-$EndComp
-Text Label 7050 4300 0    50   ~ 0
+Text Label 7050 4400 0    50   ~ 0
 KEY_PWR
 Text Label 9200 5050 0    50   ~ 0
 KEY_PWR
@@ -2974,22 +2963,6 @@ Text Label 9200 4850 0    50   ~ 0
 ENC_A
 Text Label 9200 4750 0    50   ~ 0
 ENC_B
-$Comp
-L power:GND #PWR?
-U 1 1 5FC4AFAD
-P 8300 4250
-AR Path="/5F40DCB9/5FC4AFAD" Ref="#PWR?"  Part="1" 
-AR Path="/5F618AB9/5FC4AFAD" Ref="#PWR?"  Part="1" 
-AR Path="/5FC4AFAD" Ref="#PWR?"  Part="1" 
-AR Path="/5F620813/5FC4AFAD" Ref="#PWR?"  Part="1" 
-AR Path="/5F7D6767/5FC4AFAD" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 8300 4090 50  0001 C CNN
-F 1 "GND" H 8300 4150 39  0000 C TNN
-F 2 "" H 8300 4250 50  0001 C CNN
-F 3 "" H 8300 4250 50  0001 C CNN
-	1    8300 4250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FC4B228
@@ -3054,59 +3027,30 @@ Text Label 8700 4350 2    50   ~ 0
 UART_TX
 Text Label 8700 4450 2    50   ~ 0
 UART_RX
-Text Label 7100 2400 0    50   ~ 0
+Text Label 7050 4300 0    50   ~ 0
 PWR_LOCK
 Wire Wire Line
-	7000 2400 7500 2400
+	7000 4300 7500 4300
 Text Label 9200 4950 0    50   ~ 0
 PWR_LOCK
-Wire Wire Line
-	8700 4250 8300 4250
 $Comp
 L power:+15V #PWR?
 U 1 1 5FD3E190
-P 8700 4750
+P 8700 4250
 AR Path="/5F61C123/5FD3E190" Ref="#PWR?"  Part="1" 
 AR Path="/5F7D6767/5FD3E190" Ref="#PWR0252"  Part="1" 
-F 0 "#PWR0252" H 8700 4600 50  0001 C CNN
-F 1 "+15V" V 8700 5000 50  0000 C CNN
-F 2 "" H 8700 4750 50  0001 C CNN
-F 3 "" H 8700 4750 50  0001 C CNN
-	1    8700 4750
+F 0 "#PWR0252" H 8700 4100 50  0001 C CNN
+F 1 "+15V" V 8700 4500 50  0000 C CNN
+F 2 "" H 8700 4250 50  0001 C CNN
+F 3 "" H 8700 4250 50  0001 C CNN
+	1    8700 4250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD7D74E
-P 8700 4550
-AR Path="/5F40DCB9/5FD7D74E" Ref="#PWR?"  Part="1" 
-AR Path="/5F618AB9/5FD7D74E" Ref="#PWR?"  Part="1" 
-AR Path="/5FD7D74E" Ref="#PWR?"  Part="1" 
-AR Path="/5F620813/5FD7D74E" Ref="#PWR?"  Part="1" 
-AR Path="/5F7D6767/5FD7D74E" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 8700 4390 50  0001 C CNN
-F 1 "GND" H 8700 4450 39  0000 C TNN
-F 2 "" H 8700 4550 50  0001 C CNN
-F 3 "" H 8700 4550 50  0001 C CNN
-	1    8700 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J14
-U 1 1 5FD7FD64
-P 10550 4650
-F 0 "J14" H 10600 5267 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 10600 5176 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Vertical" H 10550 4650 50  0001 C CNN
-F 3 "~" H 10550 4650 50  0001 C CNN
-	1    10550 4650
-	-1   0    0    -1  
-$EndComp
-Text Label 10750 4250 0    50   ~ 0
-KEY_ESC
 Text Label 10750 4350 0    50   ~ 0
-KEY_ENTER
+KEY_ESC
 Text Label 10750 4450 0    50   ~ 0
+KEY_ENTER
+Text Label 9850 4550 0    50   ~ 0
 KEY_RIGHT
 Text Label 10750 4550 0    50   ~ 0
 KEY_LEFT
@@ -3118,22 +3062,6 @@ Text Label 10750 4850 0    50   ~ 0
 ENC_A
 Text Label 10750 4750 0    50   ~ 0
 ENC_B
-$Comp
-L power:GND #PWR?
-U 1 1 5FD7FD73
-P 9850 4250
-AR Path="/5F40DCB9/5FD7FD73" Ref="#PWR?"  Part="1" 
-AR Path="/5F618AB9/5FD7FD73" Ref="#PWR?"  Part="1" 
-AR Path="/5FD7FD73" Ref="#PWR?"  Part="1" 
-AR Path="/5F620813/5FD7FD73" Ref="#PWR?"  Part="1" 
-AR Path="/5F7D6767/5FD7FD73" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 9850 4090 50  0001 C CNN
-F 1 "GND" H 9850 4150 39  0000 C TNN
-F 2 "" H 9850 4250 50  0001 C CNN
-F 3 "" H 9850 4250 50  0001 C CNN
-	1    9850 4250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FD7FD79
@@ -3196,36 +3124,18 @@ Text Label 10250 4450 2    50   ~ 0
 UART_RX
 Text Label 10750 4950 0    50   ~ 0
 PWR_LOCK
-Wire Wire Line
-	10250 4250 9850 4250
 $Comp
 L power:+15V #PWR?
 U 1 1 5FD7FD95
-P 10250 4750
+P 10250 4250
 AR Path="/5F61C123/5FD7FD95" Ref="#PWR?"  Part="1" 
 AR Path="/5F7D6767/5FD7FD95" Ref="#PWR0253"  Part="1" 
-F 0 "#PWR0253" H 10250 4600 50  0001 C CNN
-F 1 "+15V" V 10250 5000 50  0000 C CNN
-F 2 "" H 10250 4750 50  0001 C CNN
-F 3 "" H 10250 4750 50  0001 C CNN
-	1    10250 4750
+F 0 "#PWR0253" H 10250 4100 50  0001 C CNN
+F 1 "+15V" V 10250 4500 50  0000 C CNN
+F 2 "" H 10250 4250 50  0001 C CNN
+F 3 "" H 10250 4250 50  0001 C CNN
+	1    10250 4250
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD7FD9B
-P 10250 4550
-AR Path="/5F40DCB9/5FD7FD9B" Ref="#PWR?"  Part="1" 
-AR Path="/5F618AB9/5FD7FD9B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD7FD9B" Ref="#PWR?"  Part="1" 
-AR Path="/5F620813/5FD7FD9B" Ref="#PWR?"  Part="1" 
-AR Path="/5F7D6767/5FD7FD9B" Ref="#PWR0177"  Part="1" 
-F 0 "#PWR0177" H 10250 4390 50  0001 C CNN
-F 1 "GND" H 10250 4450 39  0000 C TNN
-F 2 "" H 10250 4550 50  0001 C CNN
-F 3 "" H 10250 4550 50  0001 C CNN
-	1    10250 4550
-	0    1    1    0   
 $EndComp
 Text Label 10600 5700 0    50   ~ 0
 KEY_ESC
@@ -3241,12 +3151,177 @@ Text Label 9800 3000 0    50   ~ 0
 ENC_B
 Text Label 9650 2400 0    50   ~ 0
 ENC_SW
-Text Label 9200 4250 0    50   ~ 0
-KEY_ESC
 Text Label 9200 4350 0    50   ~ 0
-KEY_ENTER
+KEY_ESC
 Text Label 9200 4450 0    50   ~ 0
+KEY_ENTER
+Text Label 8300 4550 0    50   ~ 0
 KEY_RIGHT
 Text Label 9200 4550 0    50   ~ 0
 KEY_LEFT
+$Comp
+L power:GND #PWR?
+U 1 1 5FC55126
+P 8700 4750
+AR Path="/5F40DCB9/5FC55126" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5FC55126" Ref="#PWR?"  Part="1" 
+AR Path="/5FC55126" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FC55126" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FC55126" Ref="#PWR0269"  Part="1" 
+F 0 "#PWR0269" H 8700 4590 50  0001 C CNN
+F 1 "GND" H 8700 4650 39  0000 C TNN
+F 2 "" H 8700 4750 50  0001 C CNN
+F 3 "" H 8700 4750 50  0001 C CNN
+	1    8700 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC5576E
+P 10250 4750
+AR Path="/5F40DCB9/5FC5576E" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5FC5576E" Ref="#PWR?"  Part="1" 
+AR Path="/5FC5576E" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FC5576E" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FC5576E" Ref="#PWR0270"  Part="1" 
+F 0 "#PWR0270" H 10250 4590 50  0001 C CNN
+F 1 "GND" H 10250 4650 39  0000 C TNN
+F 2 "" H 10250 4750 50  0001 C CNN
+F 3 "" H 10250 4750 50  0001 C CNN
+	1    10250 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 4550 8300 4550
+Wire Wire Line
+	10250 4550 9850 4550
+$Comp
+L power:+12V #PWR?
+U 1 1 5FD42D4E
+P 10250 4150
+AR Path="/5F61C123/5FD42D4E" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FD42D4E" Ref="#PWR?"  Part="1" 
+AR Path="/5FD42D4E" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FD42D4E" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 10250 4000 50  0001 C CNN
+F 1 "+12V" V 10250 4350 39  0000 C CNN
+F 2 "" H 10250 4150 50  0001 C CNN
+F 3 "" H 10250 4150 50  0001 C CNN
+	1    10250 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FD4359C
+P 8700 4150
+AR Path="/5F61C123/5FD4359C" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FD4359C" Ref="#PWR?"  Part="1" 
+AR Path="/5FD4359C" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FD4359C" Ref="#PWR0268"  Part="1" 
+F 0 "#PWR0268" H 8700 4000 50  0001 C CNN
+F 1 "+12V" V 8700 4350 39  0000 C CNN
+F 2 "" H 8700 4150 50  0001 C CNN
+F 3 "" H 8700 4150 50  0001 C CNN
+	1    8700 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J13
+U 1 1 5FBC91F1
+P 8900 4550
+F 0 "J13" H 8950 5167 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 8950 5076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 8900 4550 50  0001 C CNN
+F 3 "~" H 8900 4550 50  0001 C CNN
+	1    8900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J14
+U 1 1 5FBC9337
+P 10550 4550
+F 0 "J14" H 10600 5167 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 10600 5076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 10550 4550 50  0001 C CNN
+F 3 "~" H 10550 4550 50  0001 C CNN
+	1    10550 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5FBD4F45
+P 9850 3850
+AR Path="/5F40DCB9/5FBD4F45" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FBD4F45" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FBD4F45" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FBD4F45" Ref="#PWR0271"  Part="1" 
+F 0 "#PWR0271" H 9850 3950 50  0001 C CNN
+F 1 "-5V" H 9865 4023 50  0000 C CNN
+F 2 "" H 9850 3850 50  0001 C CNN
+F 3 "" H 9850 3850 50  0001 C CNN
+	1    9850 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5FBF28A5
+P 9200 4150
+AR Path="/5F40DCB9/5FBF28A5" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FBF28A5" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FBF28A5" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FBF28A5" Ref="#PWR0272"  Part="1" 
+F 0 "#PWR0272" H 9200 4250 50  0001 C CNN
+F 1 "-5V" V 9200 4350 50  0000 C CNN
+F 2 "" H 9200 4150 50  0001 C CNN
+F 3 "" H 9200 4150 50  0001 C CNN
+	1    9200 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5FBF2EEB
+P 10750 4150
+AR Path="/5F40DCB9/5FBF2EEB" Ref="#PWR?"  Part="1" 
+AR Path="/5F479892/5FBF2EEB" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FBF2EEB" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FBF2EEB" Ref="#PWR0273"  Part="1" 
+F 0 "#PWR0273" H 10750 4250 50  0001 C CNN
+F 1 "-5V" V 10750 4350 50  0000 C CNN
+F 2 "" H 10750 4150 50  0001 C CNN
+F 3 "" H 10750 4150 50  0001 C CNN
+	1    10750 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBF2FC8
+P 9200 4250
+AR Path="/5F40DCB9/5FBF2FC8" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5FBF2FC8" Ref="#PWR?"  Part="1" 
+AR Path="/5FBF2FC8" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FBF2FC8" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FBF2FC8" Ref="#PWR0274"  Part="1" 
+F 0 "#PWR0274" H 9200 4090 50  0001 C CNN
+F 1 "GND" H 9200 4150 39  0000 C TNN
+F 2 "" H 9200 4250 50  0001 C CNN
+F 3 "" H 9200 4250 50  0001 C CNN
+	1    9200 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBF3177
+P 10750 4250
+AR Path="/5F40DCB9/5FBF3177" Ref="#PWR?"  Part="1" 
+AR Path="/5F618AB9/5FBF3177" Ref="#PWR?"  Part="1" 
+AR Path="/5FBF3177" Ref="#PWR?"  Part="1" 
+AR Path="/5F620813/5FBF3177" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D6767/5FBF3177" Ref="#PWR0275"  Part="1" 
+F 0 "#PWR0275" H 10750 4090 50  0001 C CNN
+F 1 "GND" H 10750 4150 39  0000 C TNN
+F 2 "" H 10750 4250 50  0001 C CNN
+F 3 "" H 10750 4250 50  0001 C CNN
+	1    10750 4250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
