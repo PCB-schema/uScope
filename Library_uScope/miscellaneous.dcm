@@ -1,0 +1,47 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADS131M06
+D ADS131M06 6-Channel, Simultaneously-Sampling, 24-Bit, Delta-Sigma ADC
+K ADS131, ADC, Delta-Sigma
+$ENDCMP
+#
+$CMP DAC8564
+D 16-Bit, Quad Channel, Ultra-Low Glitch, Voltage Output DAC with 2.5V, 2ppm/°C Internal Reference, TSSOP-16
+K DAC, Internal, Reference
+$ENDCMP
+#
+$CMP Diode_DPAK
+D 20V 3A Schottky Barrier Rectifier Diode, DO-201AD
+K diode Schottky
+F http://www.vishay.com/docs/88526/1n5820.pdf
+$ENDCMP
+#
+$CMP Eagle_12BHC186P
+D Cylindrical Battery Contacts, Clips, Holders & Springs 2X18650 PARALLEL CONNECTION
+K 18650, Li-ion, battery, holder, basket
+$ENDCMP
+#
+$CMP LCD_I2C
+D LCD connected on PCF8574 expander, typically HD44780 of various size
+K HD44780, PCF8574, LCD, 16x2, 20x4
+$ENDCMP
+#
+$CMP OPTI128
+D 20-Mbps low-power non inverting photocouple,5 kVrms, 2.7 to 5.5 Vdd, push-pull output, SO-6L
+K Photocouple highspeed non inverting push-pull output
+F https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&prodName=TLP2770
+$ENDCMP
+#
+$CMP QSE159
+D Plastic Silicon Photosensor
+K opto IR
+F http://www.onsemi.com/pub/Collateral/QSE159-D.pdf
+$ENDCMP
+#
+$CMP TC7660S
+D Switched-Capacitor Voltage Converter, 1.5V to 10.0V operating supply voltage, 10mA with a 0.5V output drop, SO-8/DIP-8/µMAX-8/TO-99
+K monolithic CMOS switched capacitor voltage converter invert double divide multiply boost
+F http://datasheets.maximintegrated.com/en/ds/ICL7660-MAX1044.pdf
+$ENDCMP
+#
+#End Doc Library

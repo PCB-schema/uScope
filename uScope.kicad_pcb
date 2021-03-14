@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 94)
-    (tracks 3745)
+    (tracks 3744)
     (zones 0)
     (modules 626)
     (nets 389)
@@ -18,7 +18,7 @@
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user hide)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.1778)
     (user_trace_width 0.5)
     (user_trace_width 1)
@@ -25170,7 +25170,7 @@
   (gr_text "GND\nAnode" (at 315.4045 19.8755 180) (layer F.SilkS) (tstamp 5FBDCEDE)
     (effects (font (size 2.5 2.5) (thickness 0.4)) (justify left))
   )
-  (gr_text "Kathode\nUK" (at 278.9555 19.685 180) (layer F.SilkS) (tstamp 5FBDCE68)
+  (gr_text "Cathode\nUC" (at 278.9555 19.685 180) (layer F.SilkS) (tstamp 5FBDCE68)
     (effects (font (size 2.5 2.5) (thickness 0.4)) (justify right))
   )
   (gr_text "Extract.\nUE" (at 257.4925 19.685 180) (layer F.SilkS) (tstamp 5FBDCE5D)
@@ -27596,7 +27596,6 @@
   (segment (start 86.52461 31.620797) (end 86.52461 30.647797) (width 0.5) (layer B.Cu) (net 142))
   (segment (start 89.57261 30.604797) (end 86.56761 30.604797) (width 0.5) (layer B.Cu) (net 142))
   (segment (start 86.56761 30.604797) (end 83.26561 30.604797) (width 0.5) (layer B.Cu) (net 142))
-  (segment (start 79.883 19.812) (end 80.01 19.939) (width 0.5) (layer B.Cu) (net 142))
   (via (at 87.122 27.178) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 142))
   (segment (start 86.56761 29.25639) (end 86.56761 30.604797) (width 0.5) (layer B.Cu) (net 142))
   (segment (start 87.122 27.178) (end 86.56761 27.73239) (width 0.5) (layer B.Cu) (net 142))

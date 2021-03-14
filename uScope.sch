@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 10
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Schemat główny"
+Date "2021-01-18"
+Rev "1.0"
+Comp "Łukasz Sitarek"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -94,13 +94,13 @@ F9 "~DAC_SPI_CS" I L 10100 6050 50
 F10 "~DAC_SPI_SYNC" I L 10100 6150 50 
 $EndSheet
 $Sheet
-S 2450 6250 950  700 
+S 2450 5650 950  700 
 U 5F620813
 F0 "supply" 50
 F1 "supply.sch" 50
 $EndSheet
 $Sheet
-S 900  6250 950  700 
+S 900  5650 950  700 
 U 5F7A93EE
 F0 "Battery_Charger" 50
 F1 "Battery_Charger.sch" 50
@@ -124,8 +124,6 @@ F12 "UART_RX" I L 7800 5150 50
 F13 "ADC_CH0" I L 7800 5500 50 
 F14 "ADC_CH1" I L 7800 5600 50 
 $EndSheet
-Text Notes 12000 1100 0    100  ~ 20
-TODO:\n- dla PAMxx dobrac tez mniejsza cewke (5u6? 4u7?)\nmoze byc potrzebna dla wiekszych pradow
 $Comp
 L Device:R_Small R?
 U 1 1 5F7FDE7C
@@ -314,8 +312,8 @@ F3 "UART_TX" O L 6050 1250 50
 F4 "ADC_CH0" I L 6050 1600 50 
 F5 "ADC_CH1" I L 6050 1750 50 
 $EndSheet
-Text Notes 850  7650 0    50   ~ 0
-NOTE:\n* ADS131M06 pin-to-pin compatible with: -M08
+Text Notes 850  7550 0    50   ~ 0
+NOTE:\n* ADS131M06 pin-to-pin compatible with: -M08\nERRORS/problems on PCB rev 2050:\n- H3 pin (BOOT0) of both MCU's should be connected to GND (problem with startup)\n- need large capacitor between BMS input and battery fuses. Large dropout on fuses caused UVLO at startup. 2700 uF works fine.\n- designators of Testpads on silcscreen\n- more testpoints: Vusb, Vbat, \n- more control of supply: turn-off ability (at least of Recom and high side) is useful at charging\nPOSSIBLE IMPROVEMENTS:\n- current measurement on each output\n- current and/or voltage measurement on pump (use rather IL300 and isolated DC-DC than separate ADC)\n- add buzzer to warn about High Voltage output, overload, etc.
 $Comp
 L uScope:APD_P2_single U4
 U 2 1 5FA4EFC3

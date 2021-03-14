@@ -1,0 +1,28 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HV+12V
+D Power symbol creates a global label with name "+10V"
+K power-flag
+$ENDCMP
+#
+$CMP HV+3V3
+D Power symbol creates a global label with name "+10V"
+K power-flag
+$ENDCMP
+#
+$CMP HV+5V
+D Power symbol creates a global label with name "+10V"
+K power-flag
+$ENDCMP
+#
+$CMP HV-5V
+D Power symbol creates a global label with name "+10V"
+K power-flag
+$ENDCMP
+#
+$CMP HVGND
+D Power symbol creates a global label with name "HVGND"
+K power-flag
+$ENDCMP
+#
+#End Doc Library

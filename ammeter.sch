@@ -4,11 +4,11 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 3 10
+Title "Amperomierz"
+Date "2021-01-18"
+Rev "1.0"
+Comp "Łukasz Sitarek"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -99,8 +99,8 @@ U 1 1 5F618EB7
 P 4800 4700
 AR Path="/5F40DCB9/5F618EB7" Ref="R?"  Part="1" 
 AR Path="/5F618AB9/5F618EB7" Ref="R34"  Part="1" 
-F 0 "R34" V 4900 4700 50  0000 C CNN
-F 1 "10k" V 4700 4700 50  0000 C CNN
+F 0 "R34" V 4850 4700 50  0000 C TNN
+F 1 "51k" V 4750 4700 50  0000 C BNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4730 4700 50  0001 C CNN
 F 3 "~" H 4800 4700 50  0001 C CNN
 	1    4800 4700
@@ -139,7 +139,7 @@ P 4800 4450
 AR Path="/5F40DCB9/5F618EFF" Ref="C?"  Part="1" 
 AR Path="/5F618AB9/5F618EFF" Ref="C29"  Part="1" 
 F 0 "C29" V 4750 4400 50  0000 R CNN
-F 1 "100p" V 4750 4500 50  0000 L CNN
+F 1 "1n" V 4750 4500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4800 4450 50  0001 C CNN
 F 3 "~" H 4800 4450 50  0001 C CNN
 	1    4800 4450
@@ -164,7 +164,7 @@ P 6450 3900
 AR Path="/5F40DCB9/5F618F0F" Ref="R?"  Part="1" 
 AR Path="/5F618AB9/5F618F0F" Ref="R31"  Part="1" 
 F 0 "R31" V 6550 3900 50  0000 C CNN
-F 1 "47k" V 6350 3900 50  0000 C CNN
+F 1 "100k" V 6350 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6380 3900 50  0001 C CNN
 F 3 "~" H 6450 3900 50  0001 C CNN
 	1    6450 3900
@@ -340,7 +340,7 @@ P 4400 4200
 AR Path="/5F40DCB9/5FC12659" Ref="C?"  Part="1" 
 AR Path="/5F618AB9/5FC12659" Ref="C27"  Part="1" 
 F 0 "C27" V 4350 4150 50  0000 R CNN
-F 1 "100p" V 4350 4250 50  0000 L CNN
+F 1 "1n" V 4350 4250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4400 4200 50  0001 C CNN
 F 3 "~" H 4400 4200 50  0001 C CNN
 	1    4400 4200
@@ -666,7 +666,7 @@ P 1850 4000
 AR Path="/5F40DCB9/5FC6A856" Ref="R?"  Part="1" 
 AR Path="/5F618AB9/5FC6A856" Ref="R200"  Part="1" 
 F 0 "R200" V 1950 4000 50  0000 C CNN
-F 1 "100k" V 1750 4000 50  0000 C CNN
+F 1 "0R" V 1750 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 4000 50  0001 C CNN
 F 3 "~" H 1850 4000 50  0001 C CNN
 	1    1850 4000
@@ -743,8 +743,8 @@ U 1 1 5FA9EA22
 P 4800 5000
 AR Path="/5F40DCB9/5FA9EA22" Ref="R?"  Part="1" 
 AR Path="/5F618AB9/5FA9EA22" Ref="R204"  Part="1" 
-F 0 "R204" V 4900 5000 50  0000 C CNN
-F 1 "10k" V 4700 5000 50  0000 C CNN
+F 0 "R204" V 4850 5000 50  0000 C TNN
+F 1 "nc" V 4750 5000 50  0000 C BNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4730 5000 50  0001 C CNN
 F 3 "~" H 4800 5000 50  0001 C CNN
 	1    4800 5000
@@ -779,7 +779,7 @@ AR Path="/5F620813/5FAE5C96" Ref="C?"  Part="1"
 AR Path="/5F61C123/5FAE5C96" Ref="C?"  Part="1" 
 AR Path="/5F618AB9/5FAE5C96" Ref="C96"  Part="1" 
 F 0 "C96" H 3500 4250 50  0000 L CNN
-F 1 "1n" H 3500 4150 50  0000 L CNN
+F 1 "nc" H 3500 4150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3400 4200 50  0001 C CNN
 F 3 "~" H 3400 4200 50  0001 C CNN
 	1    3400 4200
@@ -810,4 +810,10 @@ Wire Wire Line
 	1700 2200 1700 4000
 Wire Wire Line
 	2000 1800 2000 4000
+Text Notes 4400 5400 0    50   ~ 0
+50 uA * 51k = 2.55 V
+Text Notes 6350 5400 0    50   ~ 0
+2.55 V * (47k/100k) = 1.1985V
+Text Notes 1050 4850 0    50   ~ 0
+Calibratre current offset at floating input, \ndo not shortcircuit. Short to GND will cause \ngained offset on output. Noise should be \nthe same, just level shifted.
 $EndSCHEMATC
